@@ -16,6 +16,6 @@ lix run dox `
 	--input-path var `
 	--output-path docs/api `
 	--title "Bootstrap Bundle for Haxe" `
-	--toplevel-package $item
+	--toplevel-package js.bootstrap
 
 Copy-Item docs/favicon.ico docs/api

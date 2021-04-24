@@ -1,0 +1,11 @@
+--class-path src
+--define analyzer-optimize
+--define js-es=6
+--js var/bundle.js
+
+js.bootstrap.Collapse
+js.bootstrap.Modal
+js.bootstrap.Offcanvas
+js.bootstrap.Popover
+js.bootstrap.Tab
+js.bootstrap.Tooltip

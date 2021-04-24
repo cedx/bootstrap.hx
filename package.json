@@ -1,0 +1,23 @@
+{
+	"bugs": "https://github.com/cedx/bootstrap.hx/issues",
+	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
+	"homepage": "https://cedx.github.io/bootstrap.hx",
+	"license": "MIT",
+	"name": "@cedx/bootstrap",
+	"private": true,
+	"repository": "cedx/bootstrap.hx",
+	"type": "commonjs",
+	"version": "0.1.0",
+	"author": {
+		"email": "cedric@belin.io",
+		"name": "Cédric Belin",
+		"url": "https://belin.io"
+	},
+	"dependencies": {
+		"bootstrap": "^5.0.0-beta3",
+		"bootstrap-icons": "^1.4.1"
+	},
+	"engines": {
+		"node": ">=14.16.0"
+	}
+}

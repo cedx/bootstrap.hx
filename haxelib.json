@@ -1,0 +1,11 @@
+{
+	"classPath": "src/",
+	"contributors": ["cedx"],
+	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
+	"license": "MIT",
+	"name": "bootstrap_bundle",
+	"releasenote": "Initial release.",
+	"tags": ["bootstrap", "css", "extern", "js", "scss", "ui"],
+	"url": "https://cedx.github.io/bootstrap.hx",
+	"version": "0.1.0"
+}

@@ -1,0 +1,9 @@
+/lib/
+/node_modules/
+/var/
+
+/*.code-workspace
+/*.iml
+/**/.DS_Store
+/npm-debug.log
+/package-lock.json

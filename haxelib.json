@@ -1,6 +1,7 @@
 {
 	"classPath": "src/",
 	"contributors": ["cedx"],
+	"dependencies": {"tink_cli": ""},
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"license": "MIT",
 	"name": "bootstrap_bundle",

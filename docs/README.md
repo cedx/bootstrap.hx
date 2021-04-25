@@ -5,14 +5,11 @@
 > Bundle providing [Bootstrap](https://getbootstrap.com) and [Bootstrap Icons](https://icons.getbootstrap.com)
 > in one [Haxe](https://haxe.org) package.
 
-## Documentation
-- [User guide](https://cedx.github.io/bootstrap.hx)
-- [API reference](https://cedx.github.io/bootstrap.hx/api)
+## Quick start
+Install the latest version of **Bootstrap Bundle for Haxe** with [lix](https://github.com/lix-pm/lix.client) package manager:
 
-## Development
-- [Git repository](https://github.com/cedx/bootstrap.hx)
-- [Haxelib package](https://lib.haxe.org/p/bootstrap_bundle)
-- [Submit an issue](https://github.com/cedx/bootstrap.hx/issues)
+```shell
+lix +lib bootstrap
+```
 
-## License
-[Bootstrap Bundle for Haxe](https://cedx.github.io/bootstrap.hx) is distributed under the MIT License.
+For detailed instructions, see the [installation guide](installation.md).

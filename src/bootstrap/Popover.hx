@@ -1,7 +1,7 @@
-package js.bootstrap;
+package bootstrap;
 
 import haxe.extern.EitherType;
-import js.bootstrap.Tooltip.TooltipOptions;
+import bootstrap.Tooltip.TooltipOptions;
 import js.html.Element;
 
 /** Represents a popover. **/

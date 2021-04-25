@@ -1,4 +1,4 @@
-package js.bootstrap;
+package bootstrap;
 
 import haxe.extern.EitherType;
 import js.html.Element;

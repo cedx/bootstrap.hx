@@ -1,4 +1,4 @@
-package js.bootstrap;
+package bootstrap;
 
 import haxe.DynamicAccess;
 import haxe.extern.EitherType;

@@ -13,6 +13,7 @@ lix run dox `
 	--define themeColor 0x165898 `
 	--define version $version `
 	--define website "https://cedx.github.io/bootstrap.hx" `
+	--exclude "^bootstrap\.cli\." `
 	--input-path var `
 	--output-path docs/api `
 	--title "Bootstrap Bundle for Haxe" `

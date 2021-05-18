@@ -14,10 +14,10 @@
 		"url": "https://belin.io"
 	},
 	"dependencies": {
-		"bootstrap": "^5.0.0-beta3",
-		"bootstrap-icons": "^1.4.1"
+		"bootstrap": "^5.0.1",
+		"bootstrap-icons": "^1.5.0"
 	},
 	"engines": {
-		"node": ">=14.16.0"
+		"node": ">=16.0.0"
 	}
 }

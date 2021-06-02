@@ -86,7 +86,7 @@ typedef TooltipOptions = {
 	/** Value indicating whether to allow HTML in the tooltip. **/
 	var ?html: Bool;
 
-	/** Offset of the tooltip relative to its target. **/
+	/** The offset of the tooltip relative to its target. **/
 	var ?offset: EitherType<EitherType<Array<Int>, String>, ({}, Node) -> Array<Int>>;
 
 	/** How to position the tooltip. **/

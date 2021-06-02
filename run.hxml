@@ -1,0 +1,5 @@
+--class-path src
+--define analyzer-optimize
+--main bootstrap.cli.Program
+--library tink_cli
+--neko run.n

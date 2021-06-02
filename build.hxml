@@ -4,6 +4,7 @@
 --js var/bundle.js
 
 bootstrap.Collapse
+bootstrap.Dropdown
 bootstrap.Modal
 bootstrap.Offcanvas
 bootstrap.Popover

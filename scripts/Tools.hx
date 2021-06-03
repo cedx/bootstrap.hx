@@ -16,14 +16,11 @@ function cleanDirectory(directory: String) for (entry in readDirectory(directory
 }
 
 /** Recursively copies all files in the specified `source` directory to a given `destination` directory. **/
-function copyDirectory(source: String, destination: String) for (entry in readDirectory(source)) {
+function copyDirectory(source: String, destination: String, ?exclude: EReg) for (entry in readDirectory(source)) {
 	final input = join([source, entry]);
 	final output = join([destination, entry]);
-	if (isDirectory(input)) {
-		createDirectory(output);
-		copyDirectory(input, output);
-	}
-	else {
+	if (isDirectory(input)) copyDirectory(input, output, exclude);
+	else if (exclude != null && !exclude.match(withoutDirectory(input))) {
 		createDirectory(directory(output));
 		copy(input, output);
 	}

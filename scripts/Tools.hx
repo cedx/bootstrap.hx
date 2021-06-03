@@ -17,12 +17,16 @@ function cleanDirectory(directory: String) for (entry in readDirectory(directory
 
 /** Recursively copies all files in the specified `source` directory to a given `destination` directory. **/
 function copyDirectory(source: String, destination: String) for (entry in readDirectory(source)) {
-	final output = join([destination, entry]);
-	createDirectory(output);
-
 	final input = join([source, entry]);
-	if (isDirectory(input)) copyDirectory(input, output);
-	else copy(input, output);
+	final output = join([destination, entry]);
+	if (isDirectory(input)) {
+		createDirectory(output);
+		copyDirectory(input, output);
+	}
+	else {
+		createDirectory(directory(output));
+		copy(input, output);
+	}
 }
 
 /** Creates a ZIP archive from the specified file system entities. **/

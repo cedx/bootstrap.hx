@@ -17,5 +17,5 @@ function main() {
 	]) copyDirectory(source, destination);
 
 	copy("node_modules/bootstrap-icons/font/bootstrap-icons.css", "lib/css/bootstrap-icons.css");
-	updateFile("lib/css/bootstrap-icons.css", ~/\.\/fonts\//, "../fonts/");
+	updateFile("lib/css/bootstrap-icons.css", ~/\.\/fonts\//g, "../fonts/");
 }

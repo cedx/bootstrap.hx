@@ -1,8 +1,5 @@
 package bootstrap.cli;
 
-import tink.Cli;
-import tink.cli.Rest;
-
 /** TODO. **/
 class CopyCommand {
 

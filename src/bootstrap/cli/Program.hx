@@ -1,20 +1,14 @@
 package bootstrap.cli;
 
-import tink.Cli;
-import tink.cli.Rest;
-
-using haxe.io.Path;
-
-/** TODO. **/
+/** Command line interface of Bootstrap Bundle for Haxe. **/
 class Program {
 
 	/** Output usage information. **/
 	public var help = false;
 
-	/** Output the path to the Bootstrap assets. **/
-	@:alias("p")
-	@:flag("lib-path")
-	public var libPath = false;
+	/** Print the path to the Bootstrap assets. **/
+	@:command
+	public final libpath = new LibpathCommand();
 
 	/** Output the version number. **/
 	public var version = false;
@@ -27,18 +21,8 @@ class Program {
 
 	// Runs this command.
 	@:defaultCommand
-	public function run(rest: Rest<String>): Promise<Noise> {
-		if (help || version) {
-			Sys.println(help ? Cli.getDoc(this) : Version.getPackageVersion());
-			return Noise;
-		}
-
-		if (Sys.getEnv("HAXELIB_RUN") != "1" || rest.length > 1) {
-			// TODO
-			return new Error(BadRequest, "TODO");
-		}
-
-		Sys.println(Path.join([Sys.getCwd(), "lib"]));
-		return Noise;
+	public function run() {
+		Sys.println(version ? Version.getPackageVersion() : Cli.getDoc(this));
+		return Promise.NOISE;
 	}
 }

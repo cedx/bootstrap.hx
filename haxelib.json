@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"name": "bootstrap_bundle",
 	"releasenote": "Initial release.",
-	"tags": ["bootstrap", "css", "extern", "js", "scss", "ui"],
+	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://cedx.github.io/bootstrap.hx",
 	"version": "0.1.0"
 }

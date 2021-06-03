@@ -1,9 +1,9 @@
 package bootstrap.cli;
 
-import haxe.Json;
 import haxe.macro.Context;
 
 #if macro
+import haxe.Json;
 import sys.io.File;
 import sys.io.Process;
 #end

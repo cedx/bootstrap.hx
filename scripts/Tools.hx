@@ -20,7 +20,7 @@ function copyDirectory(source: String, destination: String, ?exclude: EReg) for 
 	final input = join([source, entry]);
 	final output = join([destination, entry]);
 	if (isDirectory(input)) copyDirectory(input, output, exclude);
-	else if (exclude != null && !exclude.match(withoutDirectory(input))) {
+	else if (exclude == null || !exclude.match(withoutDirectory(input))) {
 		createDirectory(directory(output));
 		copy(input, output);
 	}

@@ -3,6 +3,10 @@ package bootstrap.cli;
 /** Command line interface of Bootstrap Bundle for Haxe. **/
 class Program {
 
+	/** Copy the Bootstrap assets to a given directory. **/
+	@:command
+	public final copy = new CopyCommand();
+
 	/** Output usage information. **/
 	public var help = false;
 

@@ -2,6 +2,8 @@
 --define analyzer-optimize
 --define js-es=6
 --js var/bundle.js
+--library coconut.data;
+--library coconut.ui;
 
 bootstrap.BaseComponent
 bootstrap.Collapse

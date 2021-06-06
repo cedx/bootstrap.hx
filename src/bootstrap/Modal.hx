@@ -5,16 +5,13 @@ import js.html.Element;
 
 /** Represents a modal, also known as dialog box. **/
 @:native("bootstrap.Modal")
-extern class Modal {
+extern class Modal extends BaseComponent {
 
 	/** Creates a new modal. **/
 	function new(element: EitherType<Element, String>, ?options: ModalOptions);
 
 	/** Gets the modal instance associated with the specified DOM element. **/
 	static function getInstance(element: Element): Modal;
-
-	/** Destroys this modal. **/
-	function dispose(): Void;
 
 	/** Readjusts this modal's position. **/
 	function handleUpdate(): Void;

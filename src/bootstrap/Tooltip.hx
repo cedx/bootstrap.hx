@@ -7,7 +7,7 @@ import js.html.Node;
 
 /** Represents a tooltip. **/
 @:native("bootstrap.Tooltip")
-extern class Tooltip {
+extern class Tooltip extends BaseComponent {
 
 	/** Creates a new tooltip. **/
 	function new(element: EitherType<Element, String>, ?options: TooltipOptions);
@@ -17,9 +17,6 @@ extern class Tooltip {
 
 	/** Removes the ability for an element's tooltip to be shown. **/
 	function disable(): Void;
-
-	/** Hides and destroys an element's tooltip. **/
-	function dispose(): Void;
 
 	/** Gives an element's tooltip the ability to be shown. **/
 	function enable(): Void;

@@ -3,6 +3,7 @@
 --define js-es=6
 --js var/bundle.js
 
+bootstrap.BaseComponent
 bootstrap.Collapse
 bootstrap.Dropdown
 bootstrap.Modal

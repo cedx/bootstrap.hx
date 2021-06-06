@@ -5,7 +5,7 @@ import js.html.Element;
 
 /** Represents a sidebar component. **/
 @:native("bootstrap.Offcanvas")
-extern class Offcanvas {
+extern class Offcanvas extends BaseComponent {
 
 	/** Creates a new offcanvas. **/
 	function new(element: EitherType<Element, String>, ?options: OffcanvasOptions);

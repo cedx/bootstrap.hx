@@ -5,16 +5,13 @@ import js.html.Element;
 
 /** Represents a collapsible element. **/
 @:native("bootstrap.Collapse")
-extern class Collapse {
+extern class Collapse extends BaseComponent {
 
 	/** Creates a new collapsible element. **/
 	function new(element: EitherType<Element, String>, ?options: CollapseOptions);
 
 	/** Gets the collapse instance associated with the specified DOM element. **/
 	static function getInstance(element: Element): Collapse;
-
-	/** Destroys an element's collapse. **/
-	function dispose(): Void;
 
 	/** Hides a collapsible element. **/
 	function hide(): Void;

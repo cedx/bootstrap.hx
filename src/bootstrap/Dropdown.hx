@@ -6,16 +6,13 @@ import js.html.Node;
 
 /** Represents a toggleable, contextual overlay for displaying lists of links and more. **/
 @:native("bootstrap.Dropdown")
-extern class Dropdown {
+extern class Dropdown extends BaseComponent {
 
 	/** Creates a new dropdown element. **/
 	function new(element: EitherType<Element, String>, ?options: DropdownOptions);
 
 	/** Gets the dropdown instance associated with the specified DOM element. **/
 	static function getInstance(element: Element): Dropdown;
-
-	/** Destroys an element's dropdown. **/
-	function dispose(): Void;
 
 	/** Hides the dropdown menu of a given navbar or tabbed navigation. **/
 	function hide(): Void;

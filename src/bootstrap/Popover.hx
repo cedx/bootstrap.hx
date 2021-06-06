@@ -6,7 +6,7 @@ import js.html.Element;
 
 /** Represents a popover. **/
 @:native("bootstrap.Popover")
-extern class Popover {
+extern class Popover extends BaseComponent {
 
 	/** Creates a new popover. **/
 	function new(element: EitherType<Element, String>, ?options: PopoverOptions);
@@ -16,9 +16,6 @@ extern class Popover {
 
 	/** Removes the ability for an element's popover to be shown. **/
 	function disable(): Void;
-
-	/** Hides and destroys an element's popover. **/
-	function dispose(): Void;
 
 	/** Gives an element's popover the ability to be shown. **/
 	function enable(): Void;

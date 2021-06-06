@@ -23,6 +23,22 @@ extern class Offcanvas {
 	function toggle(): Void;
 }
 
+/** Enumeration of events emitted by offcanvas elements. **/
+enum abstract OffcanvasEvent(String) {
+
+	/** Fired immediately when the `Offcanvas.hide()` method is called. **/
+	var Hide = "hide.bs.offcanvas";
+
+	/** Fired when the offcanvas element has been hidden from the user. **/
+	var Hidden = "hidden.bs.offcanvas";
+
+	/** Fired immediately when the `Offcanvas.show()` method is called. **/
+	var Show = "show.bs.offcanvas";
+
+	/** Fired when the offcanvas element has been made visible to the user. **/
+	var Shown = "shown.bs.offcanvas";
+}
+
 /** Defines the options of an `Offcanvas` instance. **/
 typedef OffcanvasOptions = {
 

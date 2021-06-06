@@ -26,6 +26,22 @@ extern class Collapse {
 	function toggle(): Void;
 }
 
+/** Enumeration of events emitted by collapsible elements. **/
+enum abstract CollapseEvent(String) {
+
+	/** Fired immediately when the `Collapse.hide()` method is called. **/
+	var Hide = "hide.bs.collapse";
+
+	/** Fired when the collapsible element has been hidden from the user. **/
+	var Hidden = "hidden.bs.collapse";
+
+	/** Fired immediately when the `Collapse.show()` method is called. **/
+	var Show = "show.bs.collapse";
+
+	/** Fired when the collapsible element has been made visible to the user. **/
+	var Shown = "shown.bs.collapse";
+}
+
 /** Defines the options of a `Collapse` instance. **/
 typedef CollapseOptions = {
 

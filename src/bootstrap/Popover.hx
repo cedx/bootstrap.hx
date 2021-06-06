@@ -39,6 +39,25 @@ extern class Popover {
 	function update(): Void;
 }
 
+/** Enumeration of events emitted by popovers. **/
+enum abstract PopoverEvent(String) {
+
+	/** Fired immediately when the `Popover.hide()` method is called. **/
+	var Hide = "hide.bs.popover";
+
+	/** Fired when the popover has been hidden from the user. **/
+	var Hidden = "hidden.bs.popover";
+
+	/** Fired after the `Show` event when the popover template has been added to the DOM. **/
+	var Inserted = "inserted.bs.popover";
+
+	/** Fired immediately when the `Popover.show()` method is called. **/
+	var Show = "show.bs.popover";
+
+	/** Fired when the popover has been made visible to the user. **/
+	var Shown = "shown.bs.popover";
+}
+
 /** Defines the options of a `Popover` instance. **/
 typedef PopoverOptions = TooltipOptions & {
 

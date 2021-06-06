@@ -50,6 +50,25 @@ typedef TooltipDelay = {
 	var show: Int;
 }
 
+/** Enumeration of events emitted by tooltips. **/
+enum abstract TooltipEvent(String) {
+
+	/** Fired immediately when the `Tooltip.hide()` method is called. **/
+	var Hide = "hide.bs.tooltip";
+
+	/** Fired when the tooltip has been hidden from the user. **/
+	var Hidden = "hidden.bs.tooltip";
+
+	/** Fired after the `Show` event when the tooltip template has been added to the DOM. **/
+	var Inserted = "inserted.bs.tooltip";
+
+	/** Fired immediately when the `Tooltip.show()` method is called. **/
+	var Show = "show.bs.tooltip";
+
+	/** Fired when the tooltip has been made visible to the user. **/
+	var Shown = "shown.bs.tooltip";
+}
+
 /** Specifies the placement of a tooltip. **/
 enum abstract TooltipPlacement(String) to String {
 	var Auto = "auto";

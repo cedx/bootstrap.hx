@@ -36,6 +36,22 @@ enum abstract DropdownDisplay(String) to String {
 	var Static = "static";
 }
 
+/** Enumeration of events emitted by dropdown elements. **/
+enum abstract DropdownEvent(String) {
+
+	/** Fired immediately when the `Dropdown.hide()` method is called. **/
+	var Hide = "hide.bs.dropdown";
+
+	/** Fired when the dropdown has been hidden from the user. **/
+	var Hidden = "hidden.bs.dropdown";
+
+	/** Fired immediately when the `Dropdown.show()` method is called. **/
+	var Show = "show.bs.dropdown";
+
+	/** Fired when the dropdown has been made visible to the user. **/
+	var Shown = "shown.bs.dropdown";
+}
+
 /** Defines the options of a `Dropdown` instance. **/
 typedef DropdownOptions = {
 

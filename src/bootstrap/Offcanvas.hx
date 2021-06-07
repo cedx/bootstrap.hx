@@ -24,7 +24,7 @@ extern class Offcanvas extends BaseComponent {
 }
 
 /** Enumeration of events emitted by offcanvas elements. **/
-enum abstract OffcanvasEvent(String) {
+enum abstract OffcanvasEvent(String) to String {
 
 	/** Fired immediately when the `Offcanvas.hide()` method is called. **/
 	var Hide = "hide.bs.offcanvas";

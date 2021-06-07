@@ -1,7 +1,7 @@
 package coconut.bootstrap;
 
 /** A generic close button for dismissing content like modals and alerts. **/
-class CloseButton {
+class CloseButton extends View {
 
 	/** Value indicating whether this button is disabled. **/
 	@:attribute var disabled: Bool = false;

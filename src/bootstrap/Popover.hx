@@ -37,7 +37,7 @@ extern class Popover extends BaseComponent {
 }
 
 /** Enumeration of events emitted by popovers. **/
-enum abstract PopoverEvent(String) {
+enum abstract PopoverEvent(String) to String {
 
 	/** Fired immediately when the `Popover.hide()` method is called. **/
 	var Hide = "hide.bs.popover";

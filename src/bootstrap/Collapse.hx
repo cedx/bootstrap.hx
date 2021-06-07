@@ -24,7 +24,7 @@ extern class Collapse extends BaseComponent {
 }
 
 /** Enumeration of events emitted by collapsible elements. **/
-enum abstract CollapseEvent(String) {
+enum abstract CollapseEvent(String) to String {
 
 	/** Fired immediately when the `Collapse.hide()` method is called. **/
 	var Hide = "hide.bs.collapse";

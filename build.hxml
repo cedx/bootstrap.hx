@@ -1,9 +1,10 @@
 --class-path src
+--dce full
 --define analyzer-optimize
 --define js-es=6
 --js var/bundle.js
---library coconut.data;
---library coconut.ui;
+--library coconut.ui
+--library coconut.vdom
 
 bootstrap.BaseComponent
 bootstrap.Collapse
@@ -13,3 +14,5 @@ bootstrap.Offcanvas
 bootstrap.Popover
 bootstrap.Tab
 bootstrap.Tooltip
+
+coconut.bootstrap.CloseButton

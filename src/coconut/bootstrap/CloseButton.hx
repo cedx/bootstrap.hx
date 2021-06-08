@@ -12,7 +12,7 @@ class CloseButton extends View {
 	/** Value indicating whether this button is white. **/
 	@:attribute var white: Bool = false;
 
-	/** The handler of "click" events. **/
+	/** Fired when this button has been clicked. **/
 	@:attribute function onClick(): Void;
 
 	/** Renders this view. **/

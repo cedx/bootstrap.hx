@@ -18,6 +18,8 @@ function main() {
 		"--define", "version", version,
 		"--define", "website", "https://cedx.github.io/bootstrap.hx",
 		"--exclude", "^bootstrap\\.cli\\.",
+		"--include", "^bootstrap\\.",
+		"--include", "^coconut\\.bootstrap\\.",
 		"--input-path", "var",
 		"--output-path", "docs/api",
 		"--title", "Bootstrap Bundle for Haxe",

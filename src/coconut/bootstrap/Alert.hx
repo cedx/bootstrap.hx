@@ -11,6 +11,9 @@ class Alert extends View {
 	/** The view children. **/
 	@:attribute var children: Children;
 
+	/** The applied CSS classes. **/
+	@:optional @:attribute var className: ClassName;
+
 	/** The label of the close button. **/
 	@:attribute var closeLabel: String = "Close";
 
@@ -45,9 +48,11 @@ class Alert extends View {
 	/** Renders this view. **/
 	function render()
 		<if ${show}>
-			<div class=${{alert: true, 'alert-$variant': true, "alert-dismissible": dismissible, fade: animate, show: true}} role="alert">
+			<div class=${className.add({alert: true, 'alert-$variant': true, "alert-dismissible": dismissible, fade: animate, show: true})} role="alert">
 				${...children}
-				<if ${dismissible}><CloseButton label=${closeLabel} onClick=${close}/></if>
+				<if ${dismissible}>
+					<CloseButton label=${closeLabel} onClick=${close}/>
+				</if>
 			</div>
 		</if>
 	;

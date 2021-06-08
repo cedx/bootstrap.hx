@@ -6,6 +6,9 @@ class Badge extends View {
 	/** The view children. **/
 	@:attribute var children: Children;
 
+	/** The applied CSS classes. **/
+	@:optional @:attribute var className: ClassName;
+
 	/** Value indicating whether to make this badge more rounded. **/
 	@:attribute var pill: Bool = false;
 
@@ -14,6 +17,8 @@ class Badge extends View {
 
 	/** Renders this view. **/
 	function render()
-		<span class=${{badge: true, 'bg-$variant': true, "rounded-pill": pill}}>${...children}</span>
+		<span class=${className.add({badge: true, 'bg-$variant': true, "rounded-pill": pill})}>
+			${...children}
+		</span>
 	;
 }

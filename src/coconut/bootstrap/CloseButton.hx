@@ -3,6 +3,9 @@ package coconut.bootstrap;
 /** A generic close button for dismissing content like modals and alerts. **/
 class CloseButton extends View {
 
+	/** The applied CSS classes. **/
+	@:optional @:attribute var className: ClassName;
+
 	/** Value indicating whether this button is disabled. **/
 	@:attribute var disabled: Bool = false;
 
@@ -17,5 +20,8 @@ class CloseButton extends View {
 
 	/** Renders this view. **/
 	function render()
-		<button aria-label=${label} class=${{"btn-close": true, "btn-close-white": white}} disabled=${disabled} type="button"></button>;
+		<let classes=${className.add({"btn-close": true, "btn-close-white": white})}>
+			<button aria-label=${label} class=${classes} disabled=${disabled} onclick=${onClick} type="button"></button>
+		</let>
+	;
 }

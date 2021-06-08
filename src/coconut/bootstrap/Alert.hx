@@ -30,7 +30,7 @@ class Alert extends View {
 	@:state var show: Bool = true;
 
 	/** A contextual modifier. **/
-	@:attribute var variant: Variant = Variant.Info;
+	@:attribute var variant: Variant = Variant.Primary;
 
 	/** Closes this alert by removing it from the DOM. **/
 	public function close() {

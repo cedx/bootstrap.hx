@@ -31,7 +31,7 @@ class Button extends View {
 
 	/** Renders this view. **/
 	function render()
-		<let classes=${className.add({"btn": true, 'btn-$variant': !outline, 'btn-outline-$variant': outline, 'btn-$size': size != Default})}>
+		<let classes=${className.add(["btn" => true, 'btn-$variant' => !outline, 'btn-outline-$variant' => outline, 'btn-$size' => size != Default])}>
 			<button class=${classes} disabled=${disabled} onclick=${onClick} type=${type}>
 				${...children}
 			</button>

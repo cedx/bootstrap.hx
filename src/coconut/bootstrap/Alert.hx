@@ -6,7 +6,7 @@ import js.html.Element;
 class Alert extends View {
 
 	/** Value indicating whether to animate this alert when dismissing it. **/
-	@:attribute var animate: Bool = true;
+	@:attribute var animate: Bool = false;
 
 	/** The view children. **/
 	@:attribute var children: Children;
@@ -48,12 +48,14 @@ class Alert extends View {
 	/** Renders this view. **/
 	function render()
 		<if ${show}>
-			<div class=${className.add({alert: true, 'alert-$variant': true, "alert-dismissible": dismissible, fade: animate, show: true})} role="alert">
-				${...children}
-				<if ${dismissible}>
-					<CloseButton label=${closeLabel} onClick=${close}/>
-				</if>
-			</div>
+			<let classes=${className.add(["alert" => true, 'alert-$variant' => true, "alert-dismissible" => dismissible, "fade" => animate, "show" => true])}>
+				<div class=${classes} role="alert">
+					${...children}
+					<if ${dismissible}>
+						<CloseButton label=${closeLabel} onClick=${close}/>
+					</if>
+				</div>
+			</let>
 		</if>
 	;
 }

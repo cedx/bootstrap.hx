@@ -17,7 +17,7 @@ class Badge extends View {
 
 	/** Renders this view. **/
 	function render()
-		<span class=${className.add({badge: true, 'bg-$variant': true, "rounded-pill": pill})}>
+		<span class=${className.add(["badge" => true, 'bg-$variant' => true, "rounded-pill" => pill])}>
 			${...children}
 		</span>
 	;

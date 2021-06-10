@@ -20,7 +20,7 @@ class CloseButton extends View {
 
 	/** Renders this view. **/
 	function render()
-		<let classes=${className.add({"btn-close": true, "btn-close-white": white})}>
+		<let classes=${className.add(["btn-close" => true, "btn-close-white" => white])}>
 			<button aria-label=${label} class=${classes} disabled=${disabled} onclick=${onClick} type="button"></button>
 		</let>
 	;

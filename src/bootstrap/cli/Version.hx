@@ -9,7 +9,7 @@ import sys.io.Process;
 #end
 
 /** Provides information about the program version. **/
-class Version {
+abstract class Version {
 
 	/** Gets the hash of the current Git commit. **/
 	macro public static function getGitCommitHash(): ExprOf<String> {
@@ -17,7 +17,7 @@ class Version {
 			return macro $v{""};
 		#else
 			final process = new Process("git", ["rev-parse", "HEAD"]);
-			final hash = process.exitCode() == 0 ? process.stdout.readLine() : "ERROR";
+			final hash = process.exitCode() == 0 ? process.stdout.readLine() : process.stderr.readLine();
 			process.close();
 			return macro $v{hash};
 		#end
@@ -36,6 +36,6 @@ class Version {
 		#if display
 			return macro $v{"0.0.0"};
 		#else
-			return macro $v{try Json.parse(File.getContent("haxelib.json")).version catch (e) "0.0.0"};
+			return macro $v{Json.parse(File.getContent("haxelib.json")).version};
 		#end
 }

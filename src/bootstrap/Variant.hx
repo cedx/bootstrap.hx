@@ -1,7 +1,7 @@
 package bootstrap;
 
 /** Defines a variant, also known as contextual modifier. **/
-enum abstract Variant(String) {
+enum abstract Variant(String) from String {
 
 	/** A danger. **/
 	var Danger = "danger";

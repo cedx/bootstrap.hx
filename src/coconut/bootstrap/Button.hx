@@ -8,7 +8,7 @@ class Button extends View {
 	/** The view children. **/
 	@:attribute var children: Children;
 
-	/** The applied CSS classes. **/
+	/** The CSS classes. **/
 	@:optional @:attribute var className: ClassName;
 
 	/** Value indicating whether this button is disabled. **/

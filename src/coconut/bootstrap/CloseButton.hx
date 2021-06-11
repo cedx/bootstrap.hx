@@ -9,6 +9,9 @@ class CloseButton extends View {
 	/** Value indicating whether this button is disabled. **/
 	@:attribute var disabled: Bool = false;
 
+	/** The button label. **/
+	@:optional @:attribute var label: String;
+
 	/** Value indicating whether this button is white. **/
 	@:attribute var white: Bool = false;
 
@@ -18,7 +21,7 @@ class CloseButton extends View {
 	/** Renders this view. **/
 	function render()
 		<let classes=${className.add(["btn-close" => true, "btn-close-white" => white])}>
-			<button class=${classes} disabled=${disabled} onclick=${onClick} type="button"></button>
+			<button aria-label=${label} class=${classes} disabled=${disabled} onclick=${onClick} type="button"></button>
 		</let>
 	;
 }

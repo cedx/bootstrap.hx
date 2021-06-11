@@ -1,22 +1,16 @@
-//! --class-path src
+//! --class-path src --library tink_cli --library tink_core
 import Tools.updateFile;
-import bootstrap.Version;
+import bootstrap.cli.Version.*;
 import haxe.DynamicAccess;
 import haxe.Json;
 import sys.io.File.*;
 
 /** Runs the script. **/
 function main() {
-	final version = Json.parse(getContent("haxelib.json")).version;
+	final version = getPackageVersion();
 	updateFile("package.json", ~/"version": "\d+(\.\d+){2}"/, '"version": "$version"');
 
 	final dependencies: DynamicAccess<String> = Json.parse(getContent("package.json")).dependencies;
-	updateFile("src/bootstrap/Version.hx", ~/bootstrap = "\d+(\.\d+){2}"/, 'bootstrap = "${dependencies["bootstrap"].substring(1)}"');
-	updateFile("src/bootstrap/Version.hx", ~/bootstrapIcons = "\d+(\.\d+){2}"/, 'bootstrapIcons = "${dependencies["bootstrap-icons"].substring(1)}"');
-
-	for (key => value in ["bootstrap" => Version.bootstrap, "bootstrap-icons" => Version.bootstrapIcons]) {
-		for (file in ["README.md", "docs/README.md"]) {
-			// TODO: updateFile("README.md", ~/bootstrap = "\d+(\.\d+){2}"/, 'bootstrap = "${dependencies["bootstrap"].substring(1)}"');
-		}
-	}
+	for (file in ["README.md", "docs/README.md"])
+		for (lib in ["bootstrap", "bootstrap-icons"]) updateFile(file, new EReg('$lib/v\\d+(\\.\\d+){2}', ""), '$lib/v${dependencies[lib].substring(1)}');
 }

@@ -51,7 +51,7 @@ enum abstract ModalEvent(String) to String {
 /** Defines the options of a `Modal` instance. **/
 typedef ModalOptions = {
 
-	/** Value indicating whether to include a modal-backdrop element. **/
+	/** Value indicating whether to include a modal-backdrop element. Specify `"static"` for a backdrop which doesn't close the modal on click. **/
 	var ?backdrop: EitherType<Bool, String>;
 
 	/** Value indicating whether to put the focus on the modal when initialized. **/

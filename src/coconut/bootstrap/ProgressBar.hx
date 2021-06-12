@@ -9,7 +9,7 @@ class ProgressBar extends View {
 	/** The CSS classes. **/
 	@:optional @:attribute var className: ClassName;
 
-	/** The progress height. **/
+	/** The progress height, in CSS unit. **/
 	@:optional @:attribute var height: String;
 
 	/** The progress label. **/

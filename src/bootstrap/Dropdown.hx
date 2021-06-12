@@ -29,7 +29,11 @@ extern class Dropdown extends BaseComponent {
 
 /** Specifies how a dropdown is positioned. **/
 enum abstract DropdownDisplay(String) to String {
+
+	/** The dropdown is dynamically positioned. **/
 	var Dynamic = "dynamic";
+
+	/** The dropdown is statically positioned. **/
 	var Static = "static";
 }
 

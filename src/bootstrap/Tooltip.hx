@@ -68,10 +68,20 @@ enum abstract TooltipEvent(String) to String {
 
 /** Specifies the placement of a tooltip. **/
 enum abstract TooltipPlacement(String) to String {
+
+	/** The tooltip is automatically placed. **/
 	var Auto = "auto";
+
+	/** The tooltip is placed at the bottom. **/
 	var Bottom = "bottom";
+
+	/** The tooltip is placed at the left. **/
 	var Left = "left";
+
+	/** The tooltip is placed at the right. **/
 	var Right = "right";
+
+	/** The tooltip is placed at the top. **/
 	var Top = "top";
 }
 
@@ -132,8 +142,16 @@ typedef TooltipOptions = {
 
 /** Specifies how a tooltip is triggered. **/
 enum abstract TooltipTrigger(String) to String {
+
+	/** The tooltip is triggered by a click. **/
 	var Click = "click";
+
+	/** The tooltip is triggered on focus. **/
 	var Focus = "focus";
+
+	/** The tooltip is triggered on hover. **/
 	var Hover = "hover";
+
+	/** The tooltip is manually triggered. **/
 	var Manual = "manual";
 }

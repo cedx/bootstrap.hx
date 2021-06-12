@@ -3,7 +3,7 @@ package bootstrap;
 import haxe.extern.EitherType;
 import js.html.Element;
 
-/** Represents a tab. **/
+/** A tab. **/
 @:native("bootstrap.Tab")
 extern class Tab extends BaseComponent {
 

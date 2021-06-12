@@ -3,7 +3,7 @@ package bootstrap;
 import haxe.extern.EitherType;
 import js.html.Element;
 
-/** Represents an alert message. **/
+/** An alert message. **/
 @:native("bootstrap.Alert")
 extern class Alert extends BaseComponent {
 

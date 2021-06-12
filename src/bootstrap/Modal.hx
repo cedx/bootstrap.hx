@@ -3,7 +3,7 @@ package bootstrap;
 import haxe.extern.EitherType;
 import js.html.Element;
 
-/** Represents a modal, also known as dialog box. **/
+/** A modal, also known as dialog box. **/
 @:native("bootstrap.Modal")
 extern class Modal extends BaseComponent {
 

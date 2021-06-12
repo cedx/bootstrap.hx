@@ -5,3 +5,4 @@
 --js var/bundle.js
 --library coconut.ui
 --library coconut.vdom
+--library tink_url

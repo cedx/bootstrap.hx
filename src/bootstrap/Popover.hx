@@ -4,7 +4,7 @@ import haxe.extern.EitherType;
 import bootstrap.Tooltip.TooltipOptions;
 import js.html.Element;
 
-/** Represents a popover. **/
+/** A popover. **/
 @:native("bootstrap.Popover")
 extern class Popover extends BaseComponent {
 

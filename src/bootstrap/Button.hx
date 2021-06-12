@@ -3,7 +3,7 @@ package bootstrap;
 import haxe.extern.EitherType;
 import js.html.Element;
 
-/** Represents a button. **/
+/** A button. **/
 @:native("bootstrap.Button")
 extern class Button extends BaseComponent {
 

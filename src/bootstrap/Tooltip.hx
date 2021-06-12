@@ -5,7 +5,7 @@ import haxe.extern.EitherType;
 import js.html.Element;
 import js.html.Node;
 
-/** Represents a tooltip. **/
+/** A tooltip. **/
 @:native("bootstrap.Tooltip")
 extern class Tooltip extends BaseComponent {
 

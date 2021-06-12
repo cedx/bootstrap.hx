@@ -40,7 +40,7 @@ class Button extends View {
 }
 
 /** Defines the type of a button. **/
-enum abstract ButtonType(String) to String {
+enum abstract ButtonType(String) from String to String {
 
 	/** A generic button. **/
 	var Button = "button";

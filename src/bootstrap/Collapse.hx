@@ -3,7 +3,7 @@ package bootstrap;
 import haxe.extern.EitherType;
 import js.html.Element;
 
-/** Represents a collapsible element. **/
+/** A collapsible element. **/
 @:native("bootstrap.Collapse")
 extern class Collapse extends BaseComponent {
 

@@ -1,6 +1,7 @@
 package coconut.bootstrap;
 
 import js.html.Element;
+import tink.Url;
 
 /** An alert message. **/
 class Alert extends View {
@@ -13,6 +14,9 @@ class Alert extends View {
 
 	/** The CSS classes. **/
 	@:optional @:attribute var className: ClassName;
+
+	/** The label of the close button. **/
+	@:optional @:attribute var closeLabel: String;
 
 	/** Value indicating whether this alert is dismissible. **/
 	@:attribute var dismissible: Bool = false;
@@ -37,6 +41,11 @@ class Alert extends View {
 		<h4 class=${attrs.className.add("alert-heading")}>${...attrs.children}</h4>
 	');
 
+	/** Creates an alert link. **/
+	public static function Link(attrs: {children: Children, ?className: ClassName, href: Url, ?target: Anchor.AnchorTarget}) return hxx('
+		<Anchor class=${attrs.className.add("alert-link")} href=${attrs.href} target=${attrs.target}>${...attrs.children}</Anchor>
+	');
+
 	/** Closes this alert by removing it from the DOM. **/
 	public function close() {
 		onClose();
@@ -50,11 +59,11 @@ class Alert extends View {
 	/** Renders this view. **/
 	function render()
 		<if ${show}>
-			<let classes=${className.add(["alert" => true, 'alert-$variant' => true, "alert-dismissible" => dismissible, "fade" => animate, "show" => true])}>
-				<div class=${classes} role="alert">
+			<let classes=${className.add(["alert" => true, 'alert-$variant' => true, "alert-dismissible" => dismissible, "fade" => animate, "show" => animate])}>
+				<div class=${classes} ref=${root} role="alert">
 					${...children}
 					<if ${dismissible}>
-						<CloseButton onClick=${close}/>
+						<CloseButton label=${closeLabel} onClick=${close}/>
 					</if>
 				</div>
 			</let>

@@ -3,7 +3,7 @@ package bootstrap;
 import haxe.extern.EitherType;
 import js.html.Element;
 
-/** Represents a sidebar component. **/
+/** A sidebar component. **/
 @:native("bootstrap.Offcanvas")
 extern class Offcanvas extends BaseComponent {
 

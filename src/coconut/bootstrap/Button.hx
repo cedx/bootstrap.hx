@@ -5,6 +5,9 @@ import js.html.Event;
 /** A button. **/
 class Button extends View {
 
+	/** Value indicating whether this button is active. **/
+	@:attribute var active: Bool = false;
+
 	/** The view children. **/
 	@:attribute var children: Children;
 
@@ -18,7 +21,7 @@ class Button extends View {
 	@:optional @:attribute function onClick(event: Event): Void;
 
 	/** Value indicating whether this button is outlined. **/
-	@:attribute var outline: Bool = false;
+	@:attribute var outlined: Bool = false;
 
 	/** The button size. **/
 	@:attribute var size: Size = Size.Default;
@@ -31,7 +34,13 @@ class Button extends View {
 
 	/** Renders this view. **/
 	function render()
-		<let classes=${className.add(["btn" => true, 'btn-$variant' => !outline, 'btn-outline-$variant' => outline, 'btn-$size' => size != Default])}>
+		<let classes=${className.add([
+			"active" => active,
+			"btn" => true,
+			'btn-$variant' => !outlined,
+			'btn-outline-$variant' => outlined,
+			'btn-$size' => size != Default
+		])}>
 			<button class=${classes} disabled=${disabled} onclick=${onClick} type=${type}>
 				${...children}
 			</button>

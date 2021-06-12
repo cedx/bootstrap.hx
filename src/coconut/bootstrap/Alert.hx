@@ -7,7 +7,7 @@ import tink.Url;
 class Alert extends View {
 
 	/** Value indicating whether to animate this alert when dismissing it. **/
-	@:attribute var animate: Bool = false;
+	@:attribute var animated: Bool = false;
 
 	/** The view children. **/
 	@:attribute var children: Children;
@@ -53,13 +53,13 @@ class Alert extends View {
 		Tools.executeAfterTransition(() -> {
 			show = false;
 			onClosed();
-		}, root, animate);
+		}, root, animated);
 	}
 
 	/** Renders this view. **/
 	function render()
 		<if ${show}>
-			<let classes=${className.add(["alert" => true, 'alert-$variant' => true, "alert-dismissible" => dismissible, "fade" => animate, "show" => animate])}>
+			<let classes=${className.add(["alert" => true, 'alert-$variant' => true, "alert-dismissible" => dismissible, "fade" => animated, "show" => animated])}>
 				<div class=${classes} ref=${root} role="alert">
 					${...children}
 					<if ${dismissible}>

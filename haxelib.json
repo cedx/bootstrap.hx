@@ -1,7 +1,7 @@
 {
 	"classPath": "src/",
 	"contributors": ["cedx"],
-	"dependencies": {"coconut.ui": "", "coconut.vdom": ""},
+	"dependencies": {"coconut.ui": "", "coconut.vdom": "", "tink_url": ""},
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"license": "MIT",
 	"name": "bootstrap_bundle",

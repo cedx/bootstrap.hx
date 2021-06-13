@@ -11,6 +11,7 @@ function main() {
 	updateFile("package.json", ~/"version": "\d+(\.\d+){2}"/, '"version": "$version"');
 
 	final dependencies: DynamicAccess<String> = Json.parse(getContent("package.json")).dependencies;
+	final pattern = new EReg('$lib/v\\d+(\\.\\d+){2}', "");
 	for (file in ["README.md", "docs/README.md"])
-		for (lib in ["bootstrap", "bootstrap-icons"]) updateFile(file, new EReg('$lib/v\\d+(\\.\\d+){2}', ""), '$lib/v${dependencies[lib].substring(1)}');
+		for (lib in ["bootstrap", "bootstrap-icons"]) updateFile(file, pattern, '$lib/v${dependencies[lib].substring(1)}');
 }

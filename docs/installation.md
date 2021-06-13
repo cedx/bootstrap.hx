@@ -6,10 +6,8 @@ You can verify if you're already good to go with the following command:
 
 ```shell
 haxe --version
-# 4.2.1
+# 4.2.2
 ```
-
-?> If you plan to play with the package sources, you will also need [PowerShell](https://docs.microsoft.com/en-us/powershell).
 
 ## Installing with a package manager
 
@@ -18,17 +16,15 @@ From a command prompt, run:
 
 ```shell
 # haxelib
-haxelib install externs
+haxelib install bootstrap_bundle
 
 # lix
-lix +lib externs
+lix +lib bootstrap_bundle
 ```
 
 ### 2. Import it
 Now in your [Haxe](https://haxe.org) code, you can use:
 
 ```haxe
-import js.browser.*;
-import js.npm.*;
-import php.composer.*;
+import boostrap.*;
 ```

@@ -4,8 +4,8 @@ package bootstrap;
 abstract class Version {
 
 	/** The version number of the [Bootstrap](https://getbootstrap.com) library. **/
-	public static inline final bootstrap = "6.6.6";
+	public static inline final bootstrap = "5.0.1";
 
 	/** The version number of the [Bootstrap Icons](https://icons.getbootstrap.com) library. **/
-	public static inline final bootstrapIcons = "6.6.6";
+	public static inline final bootstrapIcons = "1.5.0";
 }

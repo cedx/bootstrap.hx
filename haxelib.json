@@ -8,5 +8,5 @@
 	"releasenote": "Fixed the `Button` component.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://cedx.github.io/bootstrap.hx",
-	"version": "0.1.1"
+	"version": "0.2.0"
 }

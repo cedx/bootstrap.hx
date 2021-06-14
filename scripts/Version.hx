@@ -19,7 +19,6 @@ function main() {
 	for (field => lib in versions)
 		updateFile("src/bootstrap/Version.hx", new EReg('$field = "\\d+(\\.\\d+){2}"', ""), '$field = "${lib.version}"');
 
-	for (lib in versions)
-		for (file in ["README.md", "docs/README.md"])
-			updateFile(file, new EReg('${lib.pkg}/v\\d+(\\.\\d+){2}', ""), '${lib.pkg}/v${lib.version}');
+	for (lib in versions) for (file in ["README.md", "docs/README.md"])
+		updateFile(file, new EReg('${lib.pkg}/v\\d+(\\.\\d+){2}', ""), '${lib.pkg}/v${lib.version}');
 }

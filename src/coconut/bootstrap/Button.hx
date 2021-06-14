@@ -27,7 +27,7 @@ class Button extends View {
 	@:attribute var size: Size = Size.Default;
 
 	/** The button type. **/
-	@:attribute var type: ButtonType = Button;
+	@:attribute var type: ButtonType = Default;
 
 	/** A contextual modifier. **/
 	@:attribute var variant: Variant = Variant.Primary;
@@ -52,7 +52,7 @@ class Button extends View {
 enum abstract ButtonType(String) from String to String {
 
 	/** A generic button. **/
-	var Button = "button";
+	var Default = "button";
 
 	/** A reset button **/
 	var Reset = "reset";

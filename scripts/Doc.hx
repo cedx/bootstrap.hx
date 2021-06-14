@@ -22,8 +22,7 @@ function main() {
 		"--include", "^coconut\\.bootstrap\\.",
 		"--input-path", "var",
 		"--output-path", "docs/api",
-		"--title", "Bootstrap Bundle for Haxe",
-		"--toplevel-package", "bootstrap"
+		"--title", "Bootstrap Bundle for Haxe"
 	]);
 
 	copy("docs/favicon.ico", "docs/api/favicon.ico");

@@ -4,13 +4,16 @@
 		"path": "RELATIVE_TO_PROJECT",
 		"MemberName": [
 			"src/bootstrap/Alert",
+			"src/bootstrap/Carousel",
 			"src/bootstrap/Collapse",
 			"src/bootstrap/Dropdown",
 			"src/bootstrap/Modal",
 			"src/bootstrap/Offcanvas",
 			"src/bootstrap/Popover",
+			"src/bootstrap/Scrollspy",
 			"src/bootstrap/Size",
 			"src/bootstrap/Tab",
+			"src/bootstrap/Toast",
 			"src/bootstrap/Tooltip",
 			"src/bootstrap/Variant"
 		],

@@ -22,6 +22,7 @@ bootstrap.Tab
 bootstrap.Toast
 bootstrap.Tooltip
 bootstrap.Variant
+bootstrap.Version
 
 coconut.bootstrap.Alert
 coconut.bootstrap.Anchor

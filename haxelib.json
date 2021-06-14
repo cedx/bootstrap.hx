@@ -5,7 +5,7 @@
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"license": "MIT",
 	"name": "bootstrap_bundle",
-	"releasenote": "Fixed the `Button` component.",
+	"releasenote": "Added the `ButtonGroup` and `ButtonToolbar` components, added the `Version` class.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://cedx.github.io/bootstrap.hx",
 	"version": "0.2.0"

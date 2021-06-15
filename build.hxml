@@ -23,17 +23,3 @@ bootstrap.Toast
 bootstrap.Tooltip
 bootstrap.Variant
 bootstrap.Version
-
-coconut.bootstrap.Alert
-coconut.bootstrap.Anchor
-coconut.bootstrap.Badge
-coconut.bootstrap.Button
-coconut.bootstrap.ButtonGroup
-coconut.bootstrap.ButtonToolbar
-coconut.bootstrap.CloseButton
-coconut.bootstrap.Icon
-coconut.bootstrap.ProgressBar
-coconut.bootstrap.Size
-coconut.bootstrap.Spinner
-coconut.bootstrap.Tools
-coconut.bootstrap.Variant

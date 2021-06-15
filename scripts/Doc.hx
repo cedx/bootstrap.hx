@@ -18,11 +18,10 @@ function main() {
 		"--define", "version", getPackageVersion(),
 		"--define", "website", "https://cedx.github.io/bootstrap.hx",
 		"--exclude", "^bootstrap\\.cli\\.",
-		"--include", "^bootstrap\\.",
-		"--include", "^coconut\\.bootstrap\\.",
 		"--input-path", "var",
 		"--output-path", "docs/api",
-		"--title", "Bootstrap Bundle for Haxe"
+		"--title", "Bootstrap Bundle for Haxe",
+		"--toplevel-package", "bootstrap"
 	]);
 
 	copy("docs/favicon.ico", "docs/api/favicon.ico");

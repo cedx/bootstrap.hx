@@ -8,5 +8,5 @@
 	"releasenote": "Added the `ButtonGroup` and `ButtonToolbar` components, added the `Version` class.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://cedx.github.io/bootstrap.hx",
-	"version": "0.2.0"
+	"version": "0.2.1"
 }

@@ -2,6 +2,7 @@ package coconut.bootstrap;
 
 import js.html.Element;
 import tink.Url;
+import tink.domspec.Attributes.AnchorRel;
 
 /** An alert message. **/
 class Alert extends View {
@@ -21,6 +22,12 @@ class Alert extends View {
 	/** Value indicating whether this alert is dismissible. **/
 	@:attribute var dismissible: Bool = false;
 
+	/** Fired immediately when the `close()` method is called. **/
+	@:optional @:attribute function onClose(): Void;
+
+	/** Fired when this alert has been closed. **/
+	@:optional @:attribute function onClosed(): Void;
+
 	/** The root element. **/
 	@:ref final root: Element;
 
@@ -36,14 +43,18 @@ class Alert extends View {
 	');
 
 	/** Creates an alert link. **/
-	public static function Link(attrs: {children: Children, ?className: ClassName, href: Url, ?target: Anchor.AnchorTarget}) return hxx('
-		<Anchor class=${attrs.className.add("alert-link")} href=${attrs.href} target=${attrs.target}>${...attrs.children}</Anchor>
+	public static function Link(attrs: {children: Children, ?className: ClassName, href: Url, ?rel: AnchorRel, ?target: Anchor.AnchorTarget}) return hxx('
+		<Anchor class=${attrs.className.add("alert-link")} href=${attrs.href} rel=${attrs.rel} target=${attrs.target}>${...attrs.children}</Anchor>
 	');
 
 	/** Closes this alert by removing it from the DOM. **/
 	public function close() {
+		onClose();
 		root.classList.remove("show");
-		Tools.executeAfterTransition(() -> show = false, root, animated);
+		Tools.executeAfterTransition(() -> {
+			show = false;
+			onClosed();
+		}, root, animated);
 	}
 
 	/** Renders this view. **/

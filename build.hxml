@@ -28,6 +28,7 @@ coconut.bootstrap.Alert
 coconut.bootstrap.Anchor
 coconut.bootstrap.Badge
 coconut.bootstrap.Button
+coconut.bootstrap.ButtonGroup
 coconut.bootstrap.ButtonToolbar
 coconut.bootstrap.CloseButton
 coconut.bootstrap.Icon

@@ -1,11 +1,10 @@
 {
 	"classPath": "src/",
 	"contributors": ["cedx"],
-	"dependencies": {"coconut.ui": "", "coconut.vdom": "", "tink_url": ""},
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"license": "MIT",
 	"name": "bootstrap_bundle",
-	"releasenote": "Added the `ButtonGroup` and `ButtonToolbar` components, added the `Version` class.",
+	"releasenote": "Removed the dependency on Coconut : it is now a peer dependency.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://cedx.github.io/bootstrap.hx",
 	"version": "0.2.1"

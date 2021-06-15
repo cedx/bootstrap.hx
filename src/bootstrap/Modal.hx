@@ -34,7 +34,7 @@ enum abstract ModalEvent(String) to String {
 
 	/**
 		Fired when the modal is shown, its backdrop is `static` and a click outside the modal
-		or an escape key press is performed with the `keyboard` set to `false`.
+		or an escape key press is performed with the `keyboard` option set to `false`.
 	**/
 	var HidePrevented = "hidePrevented.bs.modal";
 

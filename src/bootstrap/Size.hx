@@ -3,12 +3,21 @@ package bootstrap;
 /** Defines the size of a component. **/
 enum abstract Size(String) from String {
 
-	/** A default size. **/
-	var Default = "";
+	/** An extra small size. **/
+	var ExtraSmall = "xs";
+
+	/** A small size. **/
+	var Small = "sm";
+
+	/** A medium size. **/
+	var Medium = "md";
 
 	/** A large size. **/
 	var Large = "lg";
 
-	/** A small size. **/
-	var Small = "sm";
+	/** An extra large size. **/
+	var ExtraLarge = "xl";
+
+	/** An extra extra large size. **/
+	var ExtraExtraLarge = "xxl";
 }

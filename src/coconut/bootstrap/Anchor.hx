@@ -1,6 +1,7 @@
 package coconut.bootstrap;
 
 import tink.Url;
+import tink.domspec.Attributes.AnchorRel;
 
 /** An anchor, also known as hyperlink. **/
 class Anchor extends View {
@@ -17,12 +18,15 @@ class Anchor extends View {
 	/** The anchor URL. **/
 	@:attribute var href: Url;
 
+	/** The relationship of the linked URL. **/
+	@:optional @:attribute var rel: AnchorRel;
+
 	/** The anchor URL. **/
 	@:optional @:attribute var target: AnchorTarget;
 
 	/** Renders this view. **/
 	function render()
-		<a class=${className.add(["disabled" => disabled])} href=${href} target=${target}>
+		<a class=${className.add(["disabled" => disabled])} href=${href} rel=${rel} target=${target}>
 			${...children}
 		</a>
 	;

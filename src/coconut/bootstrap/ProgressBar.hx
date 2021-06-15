@@ -3,7 +3,7 @@ package coconut.bootstrap;
 /** A progress bar. **/
 class ProgressBar extends View {
 
-	/** Value indicating whether to animate the striped gradient. **/
+	/** Value indicating whether to animate this progress bar. **/
 	@:attribute var animated: Bool = false;
 
 	/** The CSS classes. **/

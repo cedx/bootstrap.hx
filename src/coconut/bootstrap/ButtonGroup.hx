@@ -13,14 +13,14 @@ class ButtonGroup extends View {
 	@:optional @:attribute var label: String;
 
 	/** The group size. **/
-	@:attribute var size: Size = Size.Default;
+	@:attribute var size: Size = Size.Medium;
 
 	/** Value indicating whether this set of buttons appears vertically stacked. **/
 	@:attribute var vertical: Bool = false;
 
 	/** Renders this view. **/
 	function render()
-		<let classes=${className.add(["btn-group" => !vertical, "btn-group-vertical" => vertical, 'btn-group-$size' => size != Default])}>
+		<let classes=${className.add(["btn-group" => !vertical, "btn-group-vertical" => vertical, 'btn-group-$size' => size != Medium])}>
 			<div aria-label=${label} class=${classes} role="group">
 				${...children}
 			</div>

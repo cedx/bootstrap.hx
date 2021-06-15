@@ -6,7 +6,7 @@ import js.html.Event;
 class Button extends View {
 
 	/** Value indicating whether this button is active. **/
-	@:attribute var active: Bool = false;
+	@:controlled var active: Bool = false;
 
 	/** The view children. **/
 	@:attribute var children: Children;
@@ -24,13 +24,16 @@ class Button extends View {
 	@:attribute var outlined: Bool = false;
 
 	/** The button size. **/
-	@:attribute var size: Size = Size.Default;
+	@:attribute var size: Size = Size.Medium;
 
 	/** The button type. **/
 	@:attribute var type: ButtonType = Default;
 
 	/** A contextual modifier. **/
 	@:attribute var variant: Variant = Variant.Primary;
+
+	/** Toggles the push state. **/
+	public function toggle() active = !active;
 
 	/** Renders this view. **/
 	function render()
@@ -39,7 +42,7 @@ class Button extends View {
 			"btn" => true,
 			'btn-$variant' => !outlined,
 			'btn-outline-$variant' => outlined,
-			'btn-$size' => size != Default
+			'btn-$size' => size != Medium
 		])}>
 			<button class=${classes} disabled=${disabled} onclick=${onClick} type=${type}>
 				${...children}

@@ -13,14 +13,14 @@ class Spinner extends View {
 	@:optional @:attribute var className: ClassName;
 
 	/** The spinner size. **/
-	@:attribute var size: Size = Size.Default;
+	@:attribute var size: Size = Size.Medium;
 
 	/** A contextual modifier. **/
 	@:optional @:attribute var variant: Variant;
 
 	/** Renders this view. **/
 	function render()
-		<let classes=${className.add(['spinner-$animation' => true, 'spinner-$animation-$size' => size != Default, 'text-$variant' => variant != null])}>
+		<let classes=${className.add(['spinner-$animation' => true, 'spinner-$animation-$size' => size != Medium, 'text-$variant' => variant != null])}>
 			<div class=${classes} role="status">
 				${...children}
 			</div>

@@ -7,5 +7,5 @@
 	"releasenote": "Removed the dependency on Coconut : it is now a peer dependency.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://cedx.github.io/bootstrap.hx",
-	"version": "0.2.1"
+	"version": "0.2.2"
 }

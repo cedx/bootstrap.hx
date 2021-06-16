@@ -1,7 +1,7 @@
 package bootstrap;
 
 /** Defines the size of a component. **/
-enum abstract Size(String) from String {
+enum abstract Size(String) from String to String {
 
 	/** An extra small size. **/
 	var ExtraSmall = "xs";

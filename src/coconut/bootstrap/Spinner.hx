@@ -29,7 +29,7 @@ class Spinner extends View {
 }
 
 /** Defines the animation of a spinner. **/
-enum abstract SpinnerAnimation(String) from String {
+enum abstract SpinnerAnimation(String) from String to String {
 
 	/** A border spinner. **/
 	var Border = "border";

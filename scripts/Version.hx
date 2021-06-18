@@ -1,5 +1,5 @@
 //! --class-path src --library tink_cli --library tink_core
-import Tools.updateFile;
+import Tools.replaceInFile;
 import bootstrap.cli.Version.*;
 import haxe.DynamicAccess;
 import haxe.Json;
@@ -8,7 +8,7 @@ import sys.io.File.*;
 /** Runs the script. **/
 function main() {
 	final version = getPackageVersion();
-	updateFile("package.json", ~/"version": "\d+(\.\d+){2}"/, '"version": "$version"');
+	replaceInFile("package.json", ~/"version": "\d+(\.\d+){2}"/, '"version": "$version"');
 
 	final dependencies: DynamicAccess<String> = Json.parse(getContent("package.json")).dependencies;
 	final versions = [
@@ -17,8 +17,8 @@ function main() {
 	];
 
 	for (lib in versions)
-		updateFile("src/bootstrap/Version.hx", new EReg('${lib.field} = "\\d+(\\.\\d+){2}"', ""), '${lib.field} = "${lib.version}"');
+		replaceInFile("src/bootstrap/Version.hx", new EReg('${lib.field} = "\\d+(\\.\\d+){2}"', ""), '${lib.field} = "${lib.version}"');
 
 	for (lib in versions) for (file in ["README.md", "docs/README.md"])
-		updateFile(file, new EReg('${lib.pack}/v\\d+(\\.\\d+){2}', ""), '${lib.pack}/v${lib.version}');
+		replaceInFile(file, new EReg('${lib.pack}/v\\d+(\\.\\d+){2}', ""), '${lib.pack}/v${lib.version}');
 }

@@ -1,6 +1,6 @@
 import Tools.copyDirectory;
 import Tools.removeDirectory;
-import Tools.updateFile;
+import Tools.replaceInFile;
 import sys.FileSystem.*;
 import sys.io.File.*;
 
@@ -16,5 +16,5 @@ function main() {
 	]) copyDirectory(source, destination, ~/\.map$/i);
 
 	copy("node_modules/bootstrap-icons/font/bootstrap-icons.css", "lib/css/bootstrap-icons.css");
-	updateFile("lib/css/bootstrap-icons.css", ~/\.\/fonts\//g, "../fonts/");
+	replaceInFile("lib/css/bootstrap-icons.css", ~/\.\/fonts\//g, "../fonts/");
 }

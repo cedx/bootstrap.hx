@@ -44,7 +44,7 @@ function removeDirectory(directory: String) {
 }
 
 /** Replaces in the specified `file` the substring which the `pattern` matches with the given `replacement`. **/
-function updateFile(file: String, pattern: EReg, replacement: String)
+function replaceInFile(file: String, pattern: EReg, replacement: String)
 	saveContent(file, pattern.replace(getContent(file), replacement));
 
 /** Compresses the content of the specified `directory` in ZIP format. **/

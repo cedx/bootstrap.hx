@@ -1,3 +1,4 @@
+import Sys.*;
 import Tools.copyDirectory;
 import Tools.removeDirectory;
 import Tools.replaceInFile;
@@ -6,6 +7,8 @@ import sys.io.File.*;
 
 /** Runs the script. **/
 function main() {
+	command("haxe run.hxml");
+
 	if (exists("lib")) removeDirectory("lib");
 	for (source => destination in [
 		"node_modules/bootstrap/dist/css" => "lib/css",

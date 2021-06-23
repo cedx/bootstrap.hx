@@ -7,5 +7,5 @@
 	"releasenote": "Fixed the signature of some abstract enumerations.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://cedx.github.io/bootstrap.hx",
-	"version": "0.2.2"
+	"version": "0.3.0"
 }

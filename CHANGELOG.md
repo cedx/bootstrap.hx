@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [0.3.0](https://github.com/cedx/bootstrap.hx/compare/v0.2.2...v0.3.0)
+- Provides [Bootstrap](https://getbootstrap.com) 5.0.2.
+
 ## Version [0.2.2](https://github.com/cedx/bootstrap.hx/compare/v0.2.1...v0.2.2)
 - Fixed the signature of some abstract enumerations.
 

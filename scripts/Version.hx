@@ -16,9 +16,8 @@ function main() {
 		{field: "bootstrapIcons", pack: "bootstrap-icons", version: dependencies["bootstrap-icons"].substring(1)}
 	];
 
-	for (lib in versions)
+	for (lib in versions) {
 		replaceInFile("src/bootstrap/Version.hx", new EReg('${lib.field} = "\\d+(\\.\\d+){2}"', ""), '${lib.field} = "${lib.version}"');
-
-	for (lib in versions) for (file in ["README.md", "docs/README.md"])
-		replaceInFile(file, new EReg('${lib.pack}/v\\d+(\\.\\d+){2}', ""), '${lib.pack}/v${lib.version}');
+		for (file in ["README.md", "docs/README.md"]) replaceInFile(file, new EReg('${lib.pack}/v\\d+(\\.\\d+){2}', ""), '${lib.pack}/v${lib.version}');
+	}
 }

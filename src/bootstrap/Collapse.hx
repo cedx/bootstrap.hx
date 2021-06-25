@@ -10,6 +10,9 @@ extern class Collapse extends BaseComponent {
 	/** Creates a new collapsible element. **/
 	function new(element: EitherType<Element, String>, ?options: CollapseOptions);
 
+	/** Gets the button instance associated with the specified DOM element or creates a new one in case it wasn't initialised. **/
+	static function getOrCreateInstance(element: Element): Collapse;
+
 	/** Gets the collapse instance associated with the specified DOM element. **/
 	static function getInstance(element: Element): Collapse;
 

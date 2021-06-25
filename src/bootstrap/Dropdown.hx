@@ -11,6 +11,9 @@ extern class Dropdown extends BaseComponent {
 	/** Creates a new dropdown element. **/
 	function new(element: EitherType<Element, String>, ?options: DropdownOptions);
 
+	/** Gets the dropdown instance associated with the specified DOM element or creates a new one in case it wasn't initialised. **/
+	static function getOrCreateInstance(element: Element): Dropdown;
+
 	/** Gets the dropdown instance associated with the specified DOM element. **/
 	static function getInstance(element: Element): Dropdown;
 

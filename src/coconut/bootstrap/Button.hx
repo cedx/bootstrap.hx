@@ -36,7 +36,7 @@ class Button extends View {
 	public function toggle() active = !active;
 
 	/** Renders this view. **/
-	function render()
+	function render() '
 		<let classes=${className.add([
 			"active" => active,
 			"btn" => true,
@@ -48,7 +48,7 @@ class Button extends View {
 				${...children}
 			</button>
 		</let>
-	;
+	';
 }
 
 /** Defines the type of a button. **/

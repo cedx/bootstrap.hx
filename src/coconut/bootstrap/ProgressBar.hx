@@ -37,7 +37,7 @@ class ProgressBar extends View {
 	}
 
 	/** Renders this view. **/
-	function render()
+	function render() '
 		<div class=${className.add("progress")} style=${height != null ? {height: height} : null}>
 			<div
 				aria-valuemax=${max} aria-valuemin=${min} aria-valuenow=${now}
@@ -45,5 +45,5 @@ class ProgressBar extends View {
 				role="progressbar"
 				style=${{width: '${getPercentage(now, min, max)}%'}}>${label}</div>
 		</div>
-	;
+	';
 }

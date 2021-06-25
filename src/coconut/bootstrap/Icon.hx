@@ -10,7 +10,7 @@ class Icon extends View {
 	@:attribute var name: String;
 
 	/** Renders this view. **/
-	function render()
+	function render() '
 		<i class=${className.add('bi-$name')}/>
-	;
+	';
 }

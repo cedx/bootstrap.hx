@@ -19,11 +19,11 @@ class ButtonGroup extends View {
 	@:attribute var vertical: Bool = false;
 
 	/** Renders this view. **/
-	function render()
+	function render() '
 		<let classes=${className.add(["btn-group" => !vertical, "btn-group-vertical" => vertical, 'btn-group-$size' => size != Medium])}>
 			<div aria-label=${label} class=${classes} role="group">
 				${...children}
 			</div>
 		</let>
-	;
+	';
 }

@@ -58,7 +58,7 @@ class Alert extends View {
 	}
 
 	/** Renders this view. **/
-	function render()
+	function render() '
 		<if ${show}>
 			<let classes=${className.add(["alert" => true, 'alert-$variant' => true, "alert-dismissible" => dismissible, "fade" => animated, "show" => animated])}>
 				<div class=${classes} ref=${root} role="alert">
@@ -69,5 +69,5 @@ class Alert extends View {
 				</div>
 			</let>
 		</if>
-	;
+	';
 }

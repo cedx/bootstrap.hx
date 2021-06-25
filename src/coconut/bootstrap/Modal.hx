@@ -31,7 +31,7 @@ class Modal extends View {
 	public function toggle() BsModal.getInstance(root).toggle();
 
 	/** Renders this view. **/
-	function render()
+	function render() '
 		<div class=${className.add(["modal" => true, "fade" => animated])} ref=${root} tabIndex=${-1}>
 			<div class=${["modal-dialog" => true, "modal-dialog-scrollable" => scrollable]}>
 				<div class="modal-content">
@@ -39,7 +39,7 @@ class Modal extends View {
 				</div>
 			</div>
 		</div>
-	;
+	';
 
 	/** Method invoked after this view is mounted. **/
 	override function viewDidMount() {

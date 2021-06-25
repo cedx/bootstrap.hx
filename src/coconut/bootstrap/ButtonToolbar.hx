@@ -13,9 +13,9 @@ class ButtonToolbar extends View {
 	@:optional @:attribute var label: String;
 
 	/** Renders this view. **/
-	function render()
+	function render() '
 		<div aria-label=${label} class=${className.add("btn-toolbar")} role="toolbar">
 			${...children}
 		</div>
-	;
+	';
 }

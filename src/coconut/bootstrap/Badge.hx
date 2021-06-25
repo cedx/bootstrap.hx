@@ -16,9 +16,9 @@ class Badge extends View {
 	@:attribute var variant: Variant = Variant.Primary;
 
 	/** Renders this view. **/
-	function render()
+	function render() '
 		<span class=${className.add(["badge" => true, 'bg-$variant' => true, "rounded-pill" => pill])}>
 			${...children}
 		</span>
-	;
+	';
 }

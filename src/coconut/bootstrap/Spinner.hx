@@ -19,13 +19,13 @@ class Spinner extends View {
 	@:optional @:attribute var variant: Variant;
 
 	/** Renders this view. **/
-	function render()
+	function render() '
 		<let classes=${className.add(['spinner-$animation' => true, 'spinner-$animation-$size' => size != Medium, 'text-$variant' => variant != null])}>
 			<div class=${classes} role="status">
 				${...children}
 			</div>
 		</let>
-	;
+	';
 }
 
 /** Defines the animation of a spinner. **/

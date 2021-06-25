@@ -25,11 +25,11 @@ class Anchor extends View {
 	@:optional @:attribute var target: AnchorTarget;
 
 	/** Renders this view. **/
-	function render()
+	function render() '
 		<a class=${className.add(["disabled" => disabled])} href=${href} rel=${rel} target=${target}>
 			${...children}
 		</a>
-	;
+	';
 }
 
 /** Defines the target of an anchor. **/

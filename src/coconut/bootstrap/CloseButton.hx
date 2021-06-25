@@ -19,9 +19,9 @@ class CloseButton extends View {
 	@:attribute function onClick(): Void;
 
 	/** Renders this view. **/
-	function render()
+	function render() '
 		<let classes=${className.add(["btn-close" => true, "btn-close-white" => white])}>
 			<button aria-label=${label} class=${classes} disabled=${disabled} onclick=${onClick} type="button"></button>
 		</let>
-	;
+	';
 }

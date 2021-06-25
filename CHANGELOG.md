@@ -1,5 +1,9 @@
 # Changelog
 
+## Version [0.4.0](https://github.com/cedx/bootstrap.hx/compare/v0.3.0...v0.4.0)
+- Added the `BaseComponent.getOrCreateInstance()` static method.
+- Breaking change: removed the [Coconut](https://github.com/MVCoconut) components.
+
 ## Version [0.3.0](https://github.com/cedx/bootstrap.hx/compare/v0.2.2...v0.3.0)
 - Provides [Bootstrap](https://getbootstrap.com) 5.0.2.
 

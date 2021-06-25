@@ -10,11 +10,11 @@ abstract class Tools {
 	/** Executes the specified `callback` after the transition defined for the given `element`. **/
 	public static function executeAfterTransition(callback: () -> Void, transitionElement: Element, waitForTransition = true) {
 		if (!waitForTransition) callback();
-		else Timer.delay(callback, getTransitionDurationFromElement(transitionElement));
+		else Timer.delay(callback, getTransitionDuration(transitionElement));
 	}
 
 	/** Gets the transition duration of the specified `element`, in milliseconds. **/
-	public static function getTransitionDurationFromElement(element: Element) {
+	public static function getTransitionDuration(element: Element) {
 		final style = window.getComputedStyle(element);
 
 		var transitionDelay = Std.parseFloat(style.transitionDelay.split(",")[0]);

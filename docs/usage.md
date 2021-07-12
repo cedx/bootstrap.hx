@@ -1,2 +1,2 @@
 # Usage
-TODO: document the usage of the `bootstrap` library.
+TODO: document the usage of the `bootstrap_bundle` library.

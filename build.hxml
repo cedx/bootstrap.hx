@@ -4,9 +4,6 @@
 --define js-es=6
 --define no-deprecation-warnings
 --js var/bundle.js
---library coconut.ui
---library coconut.vdom
---library tink_url
 
 bootstrap.Alert
 bootstrap.Button

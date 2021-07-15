@@ -9,7 +9,7 @@ in one [Haxe](https://haxe.org) package.
 Install the latest version of **Bootstrap Bundle for Haxe** with [lix](https://github.com/lix-pm/lix.client) package manager:
 
 ```shell
-lix +lib bootstrap
+lix +lib bootstrap_bundle
 ```
 
 For detailed instructions, see the [installation guide](installation.md).

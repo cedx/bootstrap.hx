@@ -11,10 +11,10 @@ extern class Tab extends BaseComponent {
 	function new(element: EitherType<Element, String>);
 
 	/** Gets the tab instance associated with the specified DOM element or creates a new one in case it wasn't initialised. **/
-	static function getOrCreateInstance(element: Element): Tab;
+	static function getOrCreateInstance(element: EitherType<Element, String>): Tab;
 
 	/** Gets the tab instance associated with the specified DOM element. **/
-	static function getInstance(element: Element): Tab;
+	static function getInstance(element: EitherType<Element, String>): Tab;
 
 	/** Selects the given tab and shows its associated pane. **/
 	function show(): Void;

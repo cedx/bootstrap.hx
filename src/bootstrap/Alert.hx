@@ -11,10 +11,10 @@ extern class Alert extends BaseComponent {
 	function new(element: EitherType<Element, String>);
 
 	/** Gets the alert instance associated with the specified DOM element or creates a new one in case it wasn't initialised. **/
-	static function getOrCreateInstance(element: Element): Alert;
+	static function getOrCreateInstance(element: EitherType<Element, String>): Alert;
 
 	/** Gets the alert instance associated with the specified DOM element. **/
-	static function getInstance(element: Element): Alert;
+	static function getInstance(element: EitherType<Element, String>): Alert;
 
 	/** Closes an alert by removing it from the DOM. **/
 	function close(): Void;

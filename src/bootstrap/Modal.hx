@@ -11,10 +11,10 @@ extern class Modal extends BaseComponent {
 	function new(element: EitherType<Element, String>, ?options: ModalOptions);
 
 	/** Gets the modal instance associated with the specified DOM element or creates a new one in case it wasn't initialised. **/
-	static function getOrCreateInstance(element: Element): Modal;
+	static function getOrCreateInstance(element: EitherType<Element, String>): Modal;
 
 	/** Gets the modal instance associated with the specified DOM element. **/
-	static function getInstance(element: Element): Modal;
+	static function getInstance(element: EitherType<Element, String>): Modal;
 
 	/** Readjusts this modal's position. **/
 	function handleUpdate(): Void;

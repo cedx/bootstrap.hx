@@ -7,5 +7,5 @@
 	"releasenote": "Added the `BaseComponent.getOrCreateInstance()` static method.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://cedx.github.io/bootstrap.hx",
-	"version": "1.0.0"
+	"version": "0.4.0"
 }

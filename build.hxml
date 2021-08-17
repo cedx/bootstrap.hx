@@ -4,18 +4,18 @@
 --define js-es=6
 --js var/bundle.js
 
-bootstrap.Alert
-bootstrap.Button
-bootstrap.Carousel
-bootstrap.Collapse
-bootstrap.Dropdown
-bootstrap.Modal
-bootstrap.Offcanvas
-bootstrap.Popover
-bootstrap.Scrollspy
-bootstrap.Size
-bootstrap.Tab
-bootstrap.Toast
-bootstrap.Tooltip
-bootstrap.Variant
-bootstrap.Version
+js.bootstrap.Alert
+js.bootstrap.Button
+js.bootstrap.Carousel
+js.bootstrap.Collapse
+js.bootstrap.Dropdown
+js.bootstrap.Modal
+js.bootstrap.Offcanvas
+js.bootstrap.Popover
+js.bootstrap.Scrollspy
+js.bootstrap.Size
+js.bootstrap.Tab
+js.bootstrap.Toast
+js.bootstrap.Tooltip
+js.bootstrap.Variant
+js.bootstrap.Version

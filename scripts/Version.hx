@@ -17,7 +17,7 @@ function main() {
 	];
 
 	for (lib in versions) {
-		replaceInFile("src/bootstrap/Version.hx", new EReg('${lib.field} = "\\d+(\\.\\d+){2}"', ""), '${lib.field} = "${lib.version}"');
+		replaceInFile("src/js/bootstrap/Version.hx", new EReg('${lib.field} = "\\d+(\\.\\d+){2}"', ""), '${lib.field} = "${lib.version}"');
 		for (file in ["README.md", "docs/README.md"]) replaceInFile(file, new EReg('${lib.pack}/v\\d+(\\.\\d+){2}', ""), '${lib.pack}/v${lib.version}');
 	}
 }

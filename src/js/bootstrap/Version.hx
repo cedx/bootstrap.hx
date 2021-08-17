@@ -1,4 +1,4 @@
-package bootstrap;
+package js.bootstrap;
 
 /** Provides information about the Bootstrap versions. **/
 abstract class Version {

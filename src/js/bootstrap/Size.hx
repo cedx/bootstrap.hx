@@ -1,4 +1,4 @@
-package bootstrap;
+package js.bootstrap;
 
 /** Defines the size of a component. **/
 enum abstract Size(String) from String to String {

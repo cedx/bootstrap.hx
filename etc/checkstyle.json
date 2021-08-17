@@ -3,19 +3,19 @@
 	"exclude": {
 		"path": "RELATIVE_TO_PROJECT",
 		"MemberName": [
-			"src/bootstrap/Alert",
-			"src/bootstrap/Carousel",
-			"src/bootstrap/Collapse",
-			"src/bootstrap/Dropdown",
-			"src/bootstrap/Modal",
-			"src/bootstrap/Offcanvas",
-			"src/bootstrap/Popover",
-			"src/bootstrap/Scrollspy",
-			"src/bootstrap/Size",
-			"src/bootstrap/Tab",
-			"src/bootstrap/Toast",
-			"src/bootstrap/Tooltip",
-			"src/bootstrap/Variant"
+			"src/js/bootstrap/Alert",
+			"src/js/bootstrap/Carousel",
+			"src/js/bootstrap/Collapse",
+			"src/js/bootstrap/Dropdown",
+			"src/js/bootstrap/Modal",
+			"src/js/bootstrap/Offcanvas",
+			"src/js/bootstrap/Popover",
+			"src/js/bootstrap/Scrollspy",
+			"src/js/bootstrap/Size",
+			"src/js/bootstrap/Tab",
+			"src/js/bootstrap/Toast",
+			"src/js/bootstrap/Tooltip",
+			"src/js/bootstrap/Variant"
 		],
 		"ReturnCount": ["src/bootstrap/cli/CopyCommand:run"]
 	},

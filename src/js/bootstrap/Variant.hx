@@ -1,4 +1,4 @@
-package bootstrap;
+package js.bootstrap;
 
 /** Defines a variant, also known as contextual modifier. **/
 enum abstract Variant(String) from String to String {

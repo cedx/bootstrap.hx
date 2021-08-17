@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [0.5.0](https://github.com/cedx/bootstrap.hx/compare/v0.4.0...v0.5.0)
+- Breaking change: renamed the `bootstrap` package to `js.bootstrap`.
+
 ## Version [0.4.0](https://github.com/cedx/bootstrap.hx/compare/v0.3.0...v0.4.0)
 - Breaking change: removed the [Coconut](https://github.com/MVCoconut) components.
 - Added the `BaseComponent.getOrCreateInstance()` static method.

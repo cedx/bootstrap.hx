@@ -17,11 +17,11 @@ function main() {
 		"--define", "themeColor", "0xffc105",
 		"--define", "version", getPackageVersion(),
 		"--define", "website", "https://cedx.github.io/bootstrap.hx",
-		"--exclude", "^bootstrap\\.cli\\.",
+		"--include", "js\\.bootstrap\\.*",
 		"--input-path", "var",
 		"--output-path", "docs/api",
 		"--title", "Bootstrap Bundle for Haxe",
-		"--toplevel-package", "bootstrap"
+		"--toplevel-package", "js.bootstrap"
 	]);
 
 	copy("docs/favicon.ico", "docs/api/favicon.ico");

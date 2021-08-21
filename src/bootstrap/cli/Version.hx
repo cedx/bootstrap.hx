@@ -23,12 +23,10 @@ abstract class Version {
 	}
 
 	/** Gets the name of the Haxe target. **/
-	macro public static function getHaxeTarget()
-		return macro $v{Context.definedValue("target.name")};
+	macro public static function getHaxeTarget() return macro $v{Context.definedValue("target.name")};
 
 	/** Gets the version of the Haxe compiler. **/
-	macro public static function getHaxeVersion()
-		return macro $v{Context.definedValue("haxe")};
+	macro public static function getHaxeVersion() return macro $v{Context.definedValue("haxe")};
 
 	/** Gets the package version of this program. **/
 	macro public static function getPackageVersion()

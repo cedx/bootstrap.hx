@@ -15,7 +15,11 @@ class LibpathCommand {
 	// Runs this command.
 	@:defaultCommand
 	public function run() {
-		Sys.println(help ? Cli.getDoc(this) : Path.join([Sys.getCwd(), "lib"]).replace("/", Sys.systemName() == "Windows" ? "\\" : "/"));
+		Sys.println(help
+			? Cli.getDoc(this)
+			: Path.join([Sys.programPath().directory(), "lib"]).replace("/", Sys.systemName() == "Windows" ? "\\" : "/")
+		);
+
 		return Promise.NOISE;
 	}
 }

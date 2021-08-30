@@ -46,7 +46,7 @@ class CopyCommand {
 		var directories = sources.filter(source -> Reflect.field(this, source));
 		if (directories.length == 0) directories = sources;
 
-		final input = Path.join([Sys.getCwd(), "lib"]);
+		final input = Path.join([Sys.programPath().directory(), "lib"]);
 		for (directory in directories) copyDirectory(Path.join([input, directory]), directories.length == 1 ? output : Path.join([output, directory]));
 		return Noise;
 	}

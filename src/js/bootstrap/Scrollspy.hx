@@ -10,6 +10,12 @@ extern class Scrollspy extends BaseComponent {
 	/** Creates a new scrollspy. **/
 	function new(element: EitherType<Element, String>, ?options: ScrollspyOptions);
 
+	/** Gets the scrollspy instance associated with the specified DOM element or creates a new one in case it wasn't initialised. **/
+	static function getOrCreateInstance(element: EitherType<Element, String>): Scrollspy;
+
+	/** Gets the scrollspy instance associated with the specified DOM element. **/
+	static function getInstance(element: EitherType<Element, String>): Scrollspy;
+
 	/** Refreshes this component, after adding or removing of elements from the DOM. **/
 	function refresh(): Void;
 }

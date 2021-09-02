@@ -26,5 +26,5 @@ lix +lib bootstrap_bundle
 Now in your [Haxe](https://haxe.org) code, you can use:
 
 ```haxe
-import boostrap.*;
+import js.boostrap.*;
 ```

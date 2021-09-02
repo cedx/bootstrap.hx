@@ -1,4 +1,4 @@
-//! --class-path src --library tink_cli --library tink_core
+//! --class-path src --library tink_cli
 import Sys.*;
 import Tools.removeDirectory;
 import bootstrap.cli.Version.*;

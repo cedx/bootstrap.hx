@@ -7,5 +7,5 @@
 	"releasenote": "Renamed the `bootstrap` package to `js.bootstrap`.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://cedx.github.io/bootstrap.hx",
-	"version": "0.5.0"
+	"version": "1.0.0"
 }

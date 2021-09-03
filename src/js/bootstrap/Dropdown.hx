@@ -1,8 +1,9 @@
 package js.bootstrap;
 
 import haxe.extern.EitherType;
+import js.bootstrap.Popper.PopperOptions;
+import js.html.DOMRect;
 import js.html.Element;
-import js.html.Node;
 
 /** Represents a toggleable, contextual overlay for displaying lists of links and more. **/
 @:native("bootstrap.Dropdown")
@@ -28,6 +29,16 @@ extern class Dropdown extends BaseComponent {
 
 	/** Updates the position of an element's dropdown. **/
 	function update(): Void;
+}
+
+/** Specifies the auto close behavior of a dropdown. **/
+enum abstract DropdownAutoClose(String) to String {
+
+	/** The dropdown will be closed only by clicking inside the dropdown menu. **/
+	var Inside = "inside";
+
+	/** The dropdown will be closed only by clicking outside the dropdown menu. **/
+	var Outside = "outside";
 }
 
 /** Specifies how a dropdown is positioned. **/
@@ -57,17 +68,24 @@ enum abstract DropdownEvent(String) to String {
 }
 
 /** Defines the options of a `Dropdown` instance. **/
-typedef DropdownOptions = {
+typedef DropdownOptions = PopperOptions & {
 
-	/** The overflow constraint boundary of the dropdown menu. **/
-	var ?boundary: EitherType<String, Element>;
+	/** Configure the auto close behavior of the dropdown. **/
+	var ?autoClose: EitherType<Bool, DropdownAutoClose>;
 
 	/** Value indicating how the dropdown is positioned. **/
 	var ?display: DropdownDisplay;
 
-	/** The offset of the dropdown to its target. **/
-	var ?offset: EitherType<EitherType<Array<Int>, String>, ({}, Node) -> Array<Int>>;
-
 	/** The reference element of the dropdown menu. **/
-	var ?reference: EitherType<String, Element>;
+	var ?reference: EitherType<DropdownReference, EitherType<Element, {getBoundingClientRect: () -> DOMRect}>>;
+}
+
+/** Specifies the reference element of a dropdown menu. **/
+enum abstract DropdownReference(String) to String {
+
+	/** The reference element is the parent one. **/
+	var Parent = "parent";
+
+	/** The reference element is the toggle one. **/
+	var Toggle = "toggle";
 }

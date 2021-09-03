@@ -2,6 +2,7 @@ package js.bootstrap;
 
 import haxe.DynamicAccess;
 import haxe.extern.EitherType;
+import js.bootstrap.Popper.PopperOptions;
 import js.html.Element;
 import js.html.Node;
 
@@ -89,16 +90,13 @@ enum abstract TooltipPlacement(String) to String {
 }
 
 /** Defines the options of a `Tooltip` instance. **/
-typedef TooltipOptions = {
+typedef TooltipOptions = PopperOptions & {
 
 	/** Object which contains allowed attributes and tags. **/
 	var ?allowList: DynamicAccess<Array<EitherType<String, EReg>>>;
 
 	/** Value indicating whether to apply a fade transition to the tooltip. **/
 	var ?animation: Bool;
-
-	/** Overflow constraint boundary of the tooltip. **/
-	var ?boundary: EitherType<String, Element>;
 
 	/** Appends the tooltip to a specific element. **/
 	var ?container: EitherType<String, EitherType<Element, Bool>>;
@@ -115,14 +113,8 @@ typedef TooltipOptions = {
 	/** Value indicating whether to allow HTML in the tooltip. **/
 	var ?html: Bool;
 
-	/** The offset of the tooltip relative to its target. **/
-	var ?offset: EitherType<EitherType<Array<Int>, String>, ({}, Node) -> Array<Int>>;
-
 	/** How to position the tooltip. **/
 	var ?placement: EitherType<TooltipPlacement, (Node, Node) -> TooltipPlacement>;
-
-	/** Changes the default [Popper](https://popper.js.org) configuration. **/
-	var ?popperConfig: Null<{}>;
 
 	/** Value indicating whether to enable the sanitization. **/
 	var ?sanitize: Bool;

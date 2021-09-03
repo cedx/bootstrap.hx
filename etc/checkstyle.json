@@ -10,6 +10,7 @@
 			"src/js/bootstrap/Modal",
 			"src/js/bootstrap/Offcanvas",
 			"src/js/bootstrap/Popover",
+			"src/js/bootstrap/Popper",
 			"src/js/bootstrap/Scrollspy",
 			"src/js/bootstrap/Size",
 			"src/js/bootstrap/Tab",

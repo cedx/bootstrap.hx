@@ -10,7 +10,7 @@ extern class Offcanvas extends BaseComponent {
 	/** Creates a new offcanvas. **/
 	function new(element: EitherType<Element, String>, ?options: OffcanvasOptions);
 
-	/** Gets the offcanvas instance associated with the specified DOM element or creates a new one in case it wasn't initialised. **/
+	/** Gets the offcanvas instance associated with the specified DOM element or creates a new one in case it wasn't initialized. **/
 	static function getOrCreateInstance(element: EitherType<Element, String>): Offcanvas;
 
 	/** Gets the offcanvas instance associated with the specified DOM element. **/

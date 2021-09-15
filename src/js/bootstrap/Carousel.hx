@@ -11,7 +11,7 @@ extern class Carousel extends BaseComponent {
 	/** Creates a new carousel. **/
 	function new(element: EitherType<Element, String>, ?options: CarouselOptions);
 
-	/** Gets the carousel instance associated with the specified DOM element or creates a new one in case it wasn't initialised. **/
+	/** Gets the carousel instance associated with the specified DOM element or creates a new one in case it wasn't initialized. **/
 	static function getOrCreateInstance(element: EitherType<Element, String>): Carousel;
 
 	/** Gets the carousel instance associated with the specified DOM element. **/

@@ -13,7 +13,7 @@ extern class Tooltip extends BaseComponent {
 	/** Creates a new tooltip. **/
 	function new(element: EitherType<Element, String>, ?options: TooltipOptions);
 
-	/** Gets the tooltip instance associated with the specified DOM element or creates a new one in case it wasn't initialised. **/
+	/** Gets the tooltip instance associated with the specified DOM element or creates a new one in case it wasn't initialized. **/
 	static function getOrCreateInstance(element: EitherType<Element, String>): Tooltip;
 
 	/** Gets the tooltip instance associated with the specified DOM element. **/

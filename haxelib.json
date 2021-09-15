@@ -4,7 +4,7 @@
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"license": "MIT",
 	"name": "bootstrap_bundle",
-	"releasenote": "Added the `BaseComponent.VERSION` static property, added the `PopperOptions` typedef, added the `getOrCreateInstance()`/`getInstance()` static methods to `Carousel`, `Scrollspy` and `Toast` classes.",
+	"releasenote": "Provides Bootstrap 5.1.1.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://cedx.github.io/bootstrap.hx",
 	"version": "1.0.1"

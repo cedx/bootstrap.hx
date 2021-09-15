@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [1.0.1](https://github.com/cedx/bootstrap.hx/compare/v1.0.0...v1.0.1)
+- Provides [Bootstrap](https://getbootstrap.com) 5.1.1.
+
 ## Version [1.0.0](https://github.com/cedx/bootstrap.hx/compare/v0.5.0...v1.0.0)
 - Added the `BaseComponent.VERSION` static property.
 - Added the `PopperOptions` typedef.

@@ -3,6 +3,5 @@
 --define analyzer-optimize
 --define no-deprecation-warnings
 --library tink_cli
---library tink_core
 --main bootstrap.cli.Program
 --neko run.n

@@ -2,7 +2,7 @@
 --dce full
 --define analyzer-optimize
 --define js-es=6
---js var/bundle.js
+--js var/build.js
 
 js.bootstrap.Alert
 js.bootstrap.Button

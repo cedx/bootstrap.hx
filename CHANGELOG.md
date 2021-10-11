@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [1.0.2](https://github.com/cedx/bootstrap.hx/compare/v1.0.1...v1.0.2)
+- Provides [Bootstrap](https://getbootstrap.com) 5.1.3.
+
 ## Version [1.0.1](https://github.com/cedx/bootstrap.hx/compare/v1.0.0...v1.0.1)
 - Provides [Bootstrap](https://getbootstrap.com) 5.1.1.
 

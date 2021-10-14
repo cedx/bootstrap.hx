@@ -18,6 +18,8 @@ function main() {
 		"node_modules/bootstrap-icons/font/fonts" => "lib/fonts"
 	]) copyDirectory(source, destination, ~/\.map$/i);
 
-	copy("node_modules/bootstrap-icons/font/bootstrap-icons.css", "lib/css/bootstrap-icons.css");
-	replaceInFile("lib/css/bootstrap-icons.css", ~/\.\/fonts\//g, "../fonts/");
+	for (extension in ["css", "scss"]) {
+		copy('node_modules/bootstrap-icons/font/bootstrap-icons.$extension', 'lib/$extension/bootstrap-icons.$extension');
+		replaceInFile('lib/$extension/bootstrap-icons.$extension', ~/\.\/fonts\//g, "../fonts/");
+	}
 }

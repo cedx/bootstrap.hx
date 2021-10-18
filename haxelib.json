@@ -7,5 +7,5 @@
 	"releasenote": "Fixed the signature of the `getOrCreateInstance()` static methods.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://cedx.github.io/bootstrap.hx",
-	"version": "1.1.1"
+	"version": "1.2.0"
 }

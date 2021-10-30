@@ -2,22 +2,6 @@
 	"defaultSeverity": "ERROR",
 	"exclude": {
 		"path": "RELATIVE_TO_PROJECT",
-		"MemberName": [
-			"src/js/bootstrap/Alert",
-			"src/js/bootstrap/Carousel",
-			"src/js/bootstrap/Collapse",
-			"src/js/bootstrap/Dropdown",
-			"src/js/bootstrap/Modal",
-			"src/js/bootstrap/Offcanvas",
-			"src/js/bootstrap/Popover",
-			"src/js/bootstrap/Popper",
-			"src/js/bootstrap/Scrollspy",
-			"src/js/bootstrap/Size",
-			"src/js/bootstrap/Tab",
-			"src/js/bootstrap/Toast",
-			"src/js/bootstrap/Tooltip",
-			"src/js/bootstrap/Variant"
-		],
 		"ReturnCount": ["src/bootstrap/cli/CopyCommand:run"]
 	},
 	"checks": [
@@ -66,8 +50,9 @@
 		{"type": "CatchParameterName"},
 		{"type": "ListenerName"},
 		{"type": "LocalVariableName"},
-		{"type": "MemberName"},
-		{"type": "MethodName", "props": {"format": "^([a-z][a-zA-Z0-9]*|__init__)$"}},
+		{"type": "MemberName", "props": {"format": "^[a-z][a-zA-Z0-9]*$", "tokens": ["CLASS", "TYPEDEF"]}},
+		{"type": "MemberName", "props": {"format": "^[A-Z][a-zA-Z0-9]*$", "tokens": ["ENUM"]}},
+		{"type": "MethodName"},
 		{"type": "ParameterName"},
 		{"type": "TypeName"},
 

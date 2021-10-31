@@ -16,14 +16,14 @@ function main() {
 /** Returns the HTML content of the document body. **/
 private function render() return '
 	<div class="container">
-		<div class="alert alert-${Variant.Primary}" role="alert">
-			A simple primary alert - check it out!
-		</div>
-
 		<p>
 			<button class="btn btn-${Variant.Primary}" type="button">
 				Close alert
 			</button>
 		</p>
+
+		<div class="alert alert-${Variant.Info}" role="alert">
+			A simple info alert - check it out!
+		</div>
 	</div>
 ';

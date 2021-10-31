@@ -2,7 +2,7 @@ import js.Browser.document;
 import js.bootstrap.Alert;
 import js.bootstrap.Variant;
 
-/** Creates an alert and a button to control its closure. **/
+/** Creates an alert and a button to dismiss it. **/
 function main() {
 	document.body.innerHTML = render();
 
@@ -21,7 +21,7 @@ private function render() return '
 		</button>
 	</p>
 
-	<div class="alert alert-${Variant.Info}" role="alert">
+	<div class="alert alert-${Variant.Info}">
 		A simple info alert - check it out!
 	</div>
 ';

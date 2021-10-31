@@ -17,7 +17,7 @@ function main() {
 /** Returns the HTML content of the document body. **/
 private function render() return '
 	<p>
-		<button class="btn btn-primary" type="button">
+		<button class="btn btn-${Variant.Primary}" type="button">
 			Toggle content
 		</button>
 	</p>

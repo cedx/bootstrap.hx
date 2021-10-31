@@ -2,7 +2,7 @@ import js.Browser.document;
 import js.bootstrap.Alert;
 import js.bootstrap.Variant;
 
-/** Creates an alert and a button to handle its closure. **/
+/** Creates an alert and a button to control its closure. **/
 function main() {
 	document.body.innerHTML = render();
 
@@ -15,15 +15,13 @@ function main() {
 
 /** Returns the HTML content of the document body. **/
 private function render() return '
-	<div class="container">
-		<p>
-			<button class="btn btn-${Variant.Primary}" type="button">
-				Close alert
-			</button>
-		</p>
+	<p>
+		<button class="btn btn-${Variant.Primary}" type="button">
+			Close alert
+		</button>
+	</p>
 
-		<div class="alert alert-${Variant.Info}" role="alert">
-			A simple info alert - check it out!
-		</div>
+	<div class="alert alert-${Variant.Info}" role="alert">
+		A simple info alert - check it out!
 	</div>
 ';

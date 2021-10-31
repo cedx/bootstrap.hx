@@ -2,7 +2,7 @@ import js.Browser.document;
 import js.bootstrap.Button;
 import js.bootstrap.Variant;
 
-/** Creates a toggle button and an adjacent button to handle its state. **/
+/** Creates a toggle button and an adjacent button to control its state. **/
 function main() {
 	document.body.innerHTML = render();
 
@@ -13,13 +13,11 @@ function main() {
 
 /** Returns the HTML content of the document body. **/
 private function render() return '
-	<div class="container">
-		<button class="btn btn-${Variant.Danger}" type="button">
-			A toggle button
-		</button>
+	<button class="btn btn-${Variant.Danger}" type="button">
+		A toggle button
+	</button>
 
-		<button class="btn btn-${Variant.Primary} ms-1" type="button">
-			Toggle state of adjacent button
-		</button>
-	</div>
+	<button class="btn btn-${Variant.Primary} ms-1" type="button">
+		Toggle state of adjacent button
+	</button>
 ';

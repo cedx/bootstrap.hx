@@ -1,7 +1,10 @@
 package js.bootstrap;
 
 import haxe.extern.EitherType;
+import js.bootstrap.Tooltip.TooltipDelay;
+import js.bootstrap.Tooltip.TooltipPlacement;
 import js.bootstrap.Tooltip.TooltipOptions;
+import js.bootstrap.Tooltip.TooltipTrigger;
 import js.html.Element;
 
 /** A popover. **/
@@ -39,6 +42,9 @@ extern class Popover extends BaseComponent {
 	function update(): Void;
 }
 
+/** Defines the delay for showing and hiding a popover. **/
+typedef PopoverDelay = TooltipDelay;
+
 /** Enumeration of events emitted by popovers. **/
 enum abstract PopoverEvent(String) to String {
 
@@ -58,9 +64,15 @@ enum abstract PopoverEvent(String) to String {
 	var Shown = "shown.bs.popover";
 }
 
+/** Specifies the placement of a popover. **/
+typedef PopoverPlacement = TooltipPlacement;
+
 /** Defines the options of a `Popover` instance. **/
 typedef PopoverOptions = TooltipOptions & {
 
 	/** Default content value if `data-bs-content` attribute isn't present. **/
 	var ?content: EitherType<String, EitherType<Element, () -> String>>;
 }
+
+/** Specifies how a popover is triggered. **/
+typedef PopoverTrigger = TooltipTrigger;

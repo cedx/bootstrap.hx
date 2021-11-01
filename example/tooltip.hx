@@ -17,19 +17,19 @@ function main() {
 
 /** Returns the HTML content of the document body. **/
 private function render() return '
-	<button class="btn btn-${Variant.Danger}" data-bs-placement="top" title="Tooltip on top" type="button">
+	<button class="btn btn-${Variant.Danger}" data-bs-placement="${TooltipPlacement.Top}" title="Tooltip on top" type="button">
 		Tooltip on top
 	</button>
 
-	<button class="btn btn-${Variant.Warning}" data-bs-placement="right" title="Tooltip on right" type="button">
+	<button class="btn btn-${Variant.Warning}" data-bs-placement="${TooltipPlacement.Right}" title="Tooltip on right" type="button">
 		Tooltip on right
 	</button>
 
-	<button class="btn btn-${Variant.Info}" data-bs-placement="bottom" title="Tooltip on bottom" type="button">
+	<button class="btn btn-${Variant.Info}" data-bs-placement="${TooltipPlacement.Bottom}" title="Tooltip on bottom" type="button">
 		Tooltip on bottom
 	</button>
 
-	<button class="btn btn-${Variant.Success}" data-bs-placement="left" title="Tooltip on left" type="button">
+	<button class="btn btn-${Variant.Success}" data-bs-placement="${TooltipPlacement.Left}" title="Tooltip on left" type="button">
 		Tooltip on left
 	</button>
 

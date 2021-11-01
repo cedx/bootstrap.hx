@@ -132,7 +132,7 @@ typedef TooltipOptions = PopperOptions & {
 	var ?title: EitherType<String, EitherType<Element, () -> String>>;
 
 	/** How the tooltip is triggered. **/
-	var ?trigger: String;
+	var ?trigger: EitherType<TooltipTrigger, String>;
 }
 
 /** Specifies how a tooltip is triggered. **/

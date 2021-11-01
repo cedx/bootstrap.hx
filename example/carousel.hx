@@ -23,7 +23,7 @@ private function render() return '
 			Play
 		</button>
 
-		<button class="btn btn-${Variant.Secondary} ms-1" type="button">
+		<button class="btn btn-${Variant.Secondary}" type="button">
 			Pause
 		</button>
 	</p>

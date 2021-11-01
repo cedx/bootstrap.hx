@@ -23,7 +23,7 @@ private function render() return '
 		Open modal
 	</button>
 
-	<div class="modal fade" data-bs-backdrop="static">
+	<div class="modal" data-bs-backdrop="static">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">

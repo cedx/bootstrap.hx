@@ -18,7 +18,7 @@
 ## Version [1.0.0](https://github.com/cedx/bootstrap.hx/compare/v0.5.0...v1.0.0)
 - Added the `BaseComponent.VERSION` static property.
 - Added the `PopperOptions` typedef.
-- Added the missing `getOrCreateInstance()`/`getInstance()` static methods to `Carousel`, `Scrollspy` and `Toast` classes.
+- Added the missing `getOrCreateInstance()`/`getInstance()` static methods to `Carousel`, `ScrollSpy` and `Toast` classes.
 
 ## Version [0.5.0](https://github.com/cedx/bootstrap.hx/compare/v0.4.0...v0.5.0)
 - Breaking change: renamed the `bootstrap` package to `js.bootstrap`.

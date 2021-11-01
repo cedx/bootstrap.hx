@@ -3,7 +3,7 @@ import js.bootstrap.Popover;
 import js.bootstrap.Variant;
 import js.html.Element;
 
-/** Creates an popover and a button to open it. **/
+/** Creates buttons with an associated popover. **/
 function main() {
 	document.body.innerHTML = render();
 

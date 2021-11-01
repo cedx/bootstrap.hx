@@ -19,11 +19,11 @@ function main() {
 
 /** Returns the HTML content of the document body. **/
 private function render() return '
-	<button class="btn btn-${Variant.Primary}" id="openButton" type="button">
+	<button id="openButton" class="btn btn-${Variant.Primary}" type="button">
 		Open offcanvas element
 	</button>
 
-	<div class="offcanvas offcanvas-start" tabindex="-1">
+	<div class="offcanvas offcanvas-start">
 		<div class="offcanvas-header">
 			<h5 class="offcanvas-title">Offcanvas title</h5>
 			<button class="btn-close" type="button"></button>

@@ -3,7 +3,7 @@ import js.bootstrap.Tooltip;
 import js.bootstrap.Variant;
 import js.html.Element;
 
-/** Creates an tooltip and a button to open it. **/
+/** Creates buttons with an associated tooltip. **/
 function main() {
 	document.body.innerHTML = render();
 

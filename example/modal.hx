@@ -19,11 +19,11 @@ function main() {
 
 /** Returns the HTML content of the document body. **/
 private function render() return '
-	<button class="btn btn-${Variant.Primary}" id="openButton" type="button">
+	<button id="openButton" class="btn btn-${Variant.Primary}" type="button">
 		Open modal
 	</button>
 
-	<div class="modal fade" data-bs-backdrop="static" tabindex="-1">
+	<div class="modal fade" data-bs-backdrop="static">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">

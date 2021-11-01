@@ -12,7 +12,7 @@ js.bootstrap.Modal
 js.bootstrap.Offcanvas
 js.bootstrap.Popover
 js.bootstrap.Popper
-js.bootstrap.Scrollspy
+js.bootstrap.ScrollSpy
 js.bootstrap.Size
 js.bootstrap.Tab
 js.bootstrap.Toast

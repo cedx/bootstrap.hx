@@ -1,6 +1,5 @@
 import js.Browser.document;
 import js.bootstrap.ScrollSpy;
-import js.bootstrap.Variant;
 
 /** Creates a scrollspy that updates an adjacent list group. **/
 function main() {

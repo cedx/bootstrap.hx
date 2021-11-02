@@ -14,11 +14,11 @@ extern class Popover extends BaseComponent {
 	/** Creates a new popover. **/
 	function new(element: EitherType<Element, String>, ?options: PopoverOptions);
 
-	/** Gets the popover instance associated with the specified DOM element or creates a new one in case it wasn't initialized. **/
-	static function getOrCreateInstance(element: EitherType<Element, String>, ?options: PopoverOptions): Popover;
-
 	/** Gets the popover instance associated with the specified DOM element. **/
 	static function getInstance(element: EitherType<Element, String>): Popover;
+
+	/** Gets the popover instance associated with the specified DOM element or creates a new one in case it wasn't initialized. **/
+	static function getOrCreateInstance(element: EitherType<Element, String>, ?options: PopoverOptions): Popover;
 
 	/** Removes the ability for an element's popover to be shown. **/
 	function disable(): Void;

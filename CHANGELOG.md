@@ -1,7 +1,7 @@
 # Changelog
 
 ## Version [1.2.0](https://github.com/cedx/bootstrap.hx/compare/v1.1.1...v1.2.0)
-- Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.6.1.
+- Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.7.0.
 
 ## Version [1.1.1](https://github.com/cedx/bootstrap.hx/compare/v1.1.0...v1.1.1)
 - Fixed the signature of the `getOrCreateInstance()` static methods.

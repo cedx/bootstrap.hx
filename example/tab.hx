@@ -2,7 +2,7 @@ import js.Browser.document;
 import js.bootstrap.Tab;
 import js.html.Element;
 
-/** Creates a modal and a button to open it. **/
+/** Creates a tabbed interface. **/
 function main() {
 	document.body.innerHTML = render();
 

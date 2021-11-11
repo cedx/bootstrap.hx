@@ -7,22 +7,22 @@ import sys.io.File.*;
 
 /** Runs the script. **/
 function main() {
-	if (exists("docs/api")) removeDirectory("docs/api");
+	if (exists("docs")) removeDirectory("docs");
 
 	command("haxe --define doc-gen --no-output --xml var/api.xml build.hxml");
 	command("lix", [
 		"run", "dox",
 		"--define", "description", "Bundle providing Bootstrap and Bootstrap Icons in one Haxe package.",
-		"--define", "source-path", "https://github.com/cedx/bootstrap.hx/blob/main/src",
+		"--define", "source-path", "https://bitbucket.org/cedx/bootstrap.hx/src/main/src",
 		"--define", "themeColor", "0xffc105",
 		"--define", "version", getPackageVersion(),
-		"--define", "website", "https://cedx.github.io/bootstrap.hx",
+		"--define", "website", "https://bitbucket.org/cedx/bootstrap.hx",
 		"--include", "js\\.bootstrap\\.*",
 		"--input-path", "var",
-		"--output-path", "docs/api",
+		"--output-path", "docs",
 		"--title", "Bootstrap Bundle for Haxe",
 		"--toplevel-package", "js.bootstrap"
 	]);
 
-	copy("docs/favicon.ico", "docs/api/favicon.ico");
+	copy("www/favicon.ico", "docs/favicon.ico");
 }

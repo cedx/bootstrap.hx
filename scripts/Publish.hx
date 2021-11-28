@@ -9,6 +9,6 @@ function main() {
 	compress(["CHANGELOG.md", "LICENSE.md", "README.md", "haxelib.json", "lib", "run.n", "src"], "var/haxelib.zip");
 	command("haxelib submit var/haxelib.zip");
 
-	final tag = 'v${getPackageVersion())}';
-	for (action in ["tag", "push origin"]) command('git $action $tag');
+	final version = getPackageVersion();
+	for (action in ["tag", "push origin"]) command('git $action v$version');
 }

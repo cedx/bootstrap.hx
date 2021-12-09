@@ -7,5 +7,5 @@ abstract class Version {
 	public static inline final bootstrap = "5.1.3";
 
 	/** The version number of the [Bootstrap Icons](https://icons.getbootstrap.com) library. **/
-	public static inline final bootstrapIcons = "1.7.1";
+	public static inline final bootstrapIcons = "1.7.2";
 }

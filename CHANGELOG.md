@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [1.2.3](https://bitbucket.org/cedx/bootstrap.hx/branches/compare/v1.2.3..v1.2.21)
+- Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.7.2.
+
 ## Version [1.2.2](https://bitbucket.org/cedx/bootstrap.hx/branches/compare/v1.2.2..v1.2.1)
 - Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.7.1.
 

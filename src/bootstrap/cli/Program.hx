@@ -26,7 +26,7 @@ class Program {
 	// Runs this command.
 	@:defaultCommand
 	public function run() {
-		Sys.println(version ? Version.getPackageVersion() : Cli.getDoc(this));
+		Sys.println(help ? Cli.getDoc(this) : Version.packageVersion);
 		return Promise.NOISE;
 	}
 }

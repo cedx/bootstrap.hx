@@ -7,8 +7,7 @@ import sys.io.File.*;
 
 /** Runs the script. **/
 function main() {
-	final version = getPackageVersion();
-	replaceInFile("package.json", ~/"version": "\d+(\.\d+){2}"/, '"version": "$version"');
+	replaceInFile("package.json", ~/"version": "\d+(\.\d+){2}"/, '"version": "$packageVersion"');
 
 	final dependencies: DynamicAccess<String> = Json.parse(getContent("package.json")).dependencies;
 	final versions = [

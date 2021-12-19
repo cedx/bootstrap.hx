@@ -15,7 +15,7 @@ function main() {
 		"--define", "description", "Bundle providing Bootstrap and Bootstrap Icons in one Haxe package.",
 		"--define", "source-path", "https://bitbucket.org/cedx/bootstrap.hx/src/main/src",
 		"--define", "themeColor", "0xffc105",
-		"--define", "version", getPackageVersion(),
+		"--define", "version", packageVersion,
 		"--define", "website", "https://bitbucket.org/cedx/bootstrap.hx",
 		"--include", "js\\.bootstrap\\.*",
 		"--input-path", "var",

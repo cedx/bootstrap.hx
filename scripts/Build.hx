@@ -1,7 +1,5 @@
 import Sys.*;
-import Tools.copyDirectory;
-import Tools.removeDirectory;
-import Tools.replaceInFile;
+import Tools;
 import sys.FileSystem.*;
 import sys.io.File.*;
 

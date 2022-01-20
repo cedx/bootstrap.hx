@@ -1,5 +1,5 @@
 //! --class-path src --library tink_cli
-import Tools.replaceInFile;
+import Tools;
 import bootstrap.cli.Version.*;
 import haxe.DynamicAccess;
 import haxe.Json;

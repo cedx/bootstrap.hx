@@ -1,6 +1,6 @@
 //! --class-path src --library tink_cli
 import Sys.*;
-import Tools.compress;
+import Tools;
 import bootstrap.cli.Version.*;
 
 /** Runs the script. **/

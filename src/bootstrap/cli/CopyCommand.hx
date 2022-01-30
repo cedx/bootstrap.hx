@@ -2,7 +2,6 @@ package bootstrap.cli;
 
 import sys.FileSystem;
 import sys.io.File;
-
 using haxe.io.Path;
 
 /** Copy the Bootstrap assets to a given directory. **/

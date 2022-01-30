@@ -1,5 +1,4 @@
 import Sys.*;
-import Tools;
 import sys.FileSystem.*;
 import sys.io.File.*;
 
@@ -7,17 +6,17 @@ import sys.io.File.*;
 function main() {
 	command("haxe run.hxml");
 
-	if (exists("lib")) removeDirectory("lib");
+	if (exists("lib")) Tools.removeDirectory("lib");
 	for (source => destination in [
 		"node_modules/bootstrap/dist/css" => "lib/css",
 		"node_modules/bootstrap/dist/js" => "lib/js",
 		"node_modules/bootstrap/scss" => "lib/scss",
 		"node_modules/bootstrap-icons/icons" => "lib/icons",
 		"node_modules/bootstrap-icons/font/fonts" => "lib/fonts"
-	]) copyDirectory(source, destination, ~/\.map$/i);
+	]) Tools.copyDirectory(source, destination, ~/\.map$/i);
 
 	for (extension in ["css", "scss"]) {
 		copy('node_modules/bootstrap-icons/font/bootstrap-icons.$extension', 'lib/$extension/bootstrap-icons.$extension');
-		replaceInFile('lib/$extension/bootstrap-icons.$extension', ~/\.\/fonts\//g, "../fonts/");
+		Tools.replaceInFile('lib/$extension/bootstrap-icons.$extension', ~/\.\/fonts\//g, "../fonts/");
 	}
 }

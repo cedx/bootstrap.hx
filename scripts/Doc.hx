@@ -1,20 +1,19 @@
 //! --class-path src --library tink_cli
-import Sys.*;
-import bootstrap.cli.Version.*;
-import sys.FileSystem.*;
-import sys.io.File.*;
+import bootstrap.cli.Version;
+import sys.FileSystem;
+import sys.io.File;
 
 /** Runs the script. **/
 function main() {
-	if (exists("docs")) Tools.removeDirectory("docs");
+	if (FileSystem.exists("docs")) Tools.removeDirectory("docs");
 
-	command("haxe --define doc-gen --no-output --xml var/api.xml build.hxml");
-	command("lix", [
+	Sys.command("haxe --define doc-gen --no-output --xml var/api.xml build.hxml");
+	Sys.command("lix", [
 		"run", "dox",
 		"--define", "description", "Bundle providing Bootstrap and Bootstrap Icons in one Haxe package.",
 		"--define", "source-path", "https://bitbucket.org/cedx/bootstrap.hx/src/main/src",
 		"--define", "themeColor", "0xffc105",
-		"--define", "version", packageVersion,
+		"--define", "version", Version.packageVersion,
 		"--define", "website", "https://bitbucket.org/cedx/bootstrap.hx",
 		"--include", "js\\.bootstrap\\.*",
 		"--input-path", "var",
@@ -23,5 +22,5 @@ function main() {
 		"--toplevel-package", "js.bootstrap"
 	]);
 
-	copy("www/favicon.ico", "docs/favicon.ico");
+	File.copy("www/favicon.ico", "docs/favicon.ico");
 }

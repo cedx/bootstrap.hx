@@ -46,8 +46,8 @@ enum abstract CollapseEvent(String) to String {
 typedef CollapseOptions = {
 
 	/** If `parent` is provided, then all collapsible elements under the specified parent will be closed when the collapsible item is shown. **/
-	var ?parent: EitherType<String, EitherType<Element, Bool>>;
+	?parent: EitherType<String, EitherType<Element, Bool>>,
 
 	/** Value indicating whether to toggle the collapsible element on invocation. **/
-	var ?toggle: Bool;
+	?toggle: Bool
 }

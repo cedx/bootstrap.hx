@@ -15,11 +15,11 @@ enum abstract PopperBoundary(String) to String {
 typedef PopperOptions = {
 
 	/** The overflow constraint boundary of the component. **/
-	var ?boundary: EitherType<PopperBoundary, Element>;
+	?boundary: EitherType<PopperBoundary, Element>,
 
 	/** The offset of the component relative to its target. **/
-	var ?offset: EitherType<Array<Int>, EitherType<String, ({}, Node) -> Array<Int>>>;
+	?offset: EitherType<Array<Int>, EitherType<String, ({}, Node) -> Array<Int>>>,
 
 	/** Changes the default [Popper](https://popper.js.org) configuration. **/
-	var ?popperConfig: EitherType<Null<{}>, {} -> {}>;
+	?popperConfig: EitherType<Null<{}>, {} -> {}>
 }

@@ -46,11 +46,11 @@ enum abstract OffcanvasEvent(String) to String {
 typedef OffcanvasOptions = {
 
 	/** Value indicating whether to apply a backdrop on body while the offcanvas is open. **/
-	var ?backdrop: Bool;
+	?backdrop: Bool,
 
 	/** Value indicating whether to close the offcanvas when escape key is pressed. **/
-	var ?keyboard: Bool;
+	?keyboard: Bool,
 
 	/** Value indicating whether to allow body scrolling while the offcanvas is open. **/
-	var ?scroll: Bool;
+	?scroll: Bool
 }

@@ -43,11 +43,11 @@ enum abstract ToastEvent(String) to String {
 typedef ToastOptions = {
 
 	/** Value indicating whether to apply a CSS fade transition to the toast. **/
-	var ?animation: Bool;
+	?animation: Bool,
 
 	/** Value indicating whether to automatically hide the toast. **/
-	var ?autohide: Bool;
+	?autohide: Bool,
 
 	/** The delay, in milliseconds, for hiding the toast. **/
-	var ?delay: Int;
+	?delay: Int
 }

@@ -108,7 +108,7 @@ typedef TooltipOptions = PopperOptions & {
 	?delay: EitherType<Int, TooltipDelay>,
 
 	/** Allows to specify which position [Popper](https://popper.js.org) will use on fallback. **/
-	?fallbackPlacement: Null<Array<String>>,
+	?fallbackPlacement: Array<String>,
 
 	/** Value indicating whether to allow HTML in the tooltip. **/
 	?html: Bool,
@@ -120,7 +120,7 @@ typedef TooltipOptions = PopperOptions & {
 	?sanitize: Bool,
 
 	/** A custom sanitize function. **/
-	?sanitizeFn: Null<String -> String>,
+	?sanitizeFn: String -> String,
 
 	/** If a selector is provided, tooltip objects will be delegated to the specified targets. **/
 	?selector: EitherType<Bool, String>,

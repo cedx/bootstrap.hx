@@ -21,5 +21,5 @@ typedef PopperOptions = {
 	?offset: EitherType<Array<Int>, EitherType<String, ({}, Node) -> Array<Int>>>,
 
 	/** Changes the default [Popper](https://popper.js.org) configuration. **/
-	?popperConfig: EitherType<Null<{}>, {} -> {}>
+	?popperConfig: EitherType<{}, {} -> {}>
 }

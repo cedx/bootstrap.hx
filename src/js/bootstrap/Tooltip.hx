@@ -45,10 +45,10 @@ extern class Tooltip extends BaseComponent {
 typedef TooltipDelay = {
 
 	/** The delay for hiding the tooltip. **/
-	hide: Int,
+	var hide: Int;
 
 	/** The delay for showing the tooltip. **/
-	show: Int
+	var show: Int;
 }
 
 /** Enumeration of events emitted by tooltips. **/
@@ -93,46 +93,46 @@ enum abstract TooltipPlacement(String) to String {
 typedef TooltipOptions = PopperOptions & {
 
 	/** Object which contains allowed attributes and tags. **/
-	?allowList: DynamicAccess<Array<EitherType<String, EReg>>>,
+	var ?allowList: DynamicAccess<Array<EitherType<String, EReg>>>;
 
 	/** Value indicating whether to apply a fade transition to the tooltip. **/
-	?animation: Bool,
+	var ?animation: Bool;
 
 	/** Appends the tooltip to a specific element. **/
-	?container: EitherType<String, EitherType<Element, Bool>>,
+	var ?container: EitherType<String, EitherType<Element, Bool>>;
 
 	/** Adds classes to the tooltip when it is shown. **/
-	?customClass: EitherType<String, () -> String>,
+	var ?customClass: EitherType<String, () -> String>;
 
 	/** Delay showing and hiding the tooltip. **/
-	?delay: EitherType<Int, TooltipDelay>,
+	var ?delay: EitherType<Int, TooltipDelay>;
 
 	/** Allows to specify which position [Popper](https://popper.js.org) will use on fallback. **/
-	?fallbackPlacement: Array<String>,
+	var ?fallbackPlacement: Array<String>;
 
 	/** Value indicating whether to allow HTML in the tooltip. **/
-	?html: Bool,
+	var ?html: Bool;
 
 	/** How to position the tooltip. **/
-	?placement: EitherType<TooltipPlacement, (Node, Node) -> TooltipPlacement>,
+	var ?placement: EitherType<TooltipPlacement, (Node, Node) -> TooltipPlacement>;
 
 	/** Value indicating whether to enable the sanitization. **/
-	?sanitize: Bool,
+	var ?sanitize: Bool;
 
 	/** A custom sanitize function. **/
-	?sanitizeFn: String -> String,
+	var ?sanitizeFn: String -> String;
 
 	/** If a selector is provided, tooltip objects will be delegated to the specified targets. **/
-	?selector: EitherType<Bool, String>,
+	var ?selector: EitherType<Bool, String>;
 
 	/** Base HTML to use when creating the tooltip. **/
-	?template: String,
+	var ?template: String;
 
 	/** Default title value if `title` attribute isn't present. **/
-	?title: EitherType<String, EitherType<Element, () -> String>>,
+	var ?title: EitherType<String, EitherType<Element, () -> String>>;
 
 	/** How the tooltip is triggered. **/
-	?trigger: EitherType<TooltipTrigger, String>
+	var ?trigger: EitherType<TooltipTrigger, String>;
 }
 
 /** Specifies how a tooltip is triggered. **/

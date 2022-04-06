@@ -44,11 +44,11 @@ enum abstract ScrollSpyMethod(String) to String {
 typedef ScrollSpyOptions = {
 
 	/** The method that the scrollspy uses to find which section the spied element is in. **/
-	?method: ScrollSpyMethod,
+	var ?method: ScrollSpyMethod;
 
 	/** Pixels to offset from top when calculating position of scroll. **/
-	?offset: Int,
+	var ?offset: Int;
 
 	/** Specifies element to apply the scrollspy. **/
-	?target: EitherType<Element, String>
+	var ?target: EitherType<Element, String>;
 }

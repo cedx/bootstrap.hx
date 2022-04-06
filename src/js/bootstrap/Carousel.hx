@@ -50,23 +50,23 @@ enum abstract CarouselEvent(String) to String {
 typedef CarouselOptions = {
 
 	/** The amount of time to delay between automatically cycling an item. If set to `false`, carousel will not automatically cycle. **/
-	?interval: EitherType<Bool, Int>,
+	var ?interval: EitherType<Bool, Int>;
 
 	/** Value indicating whether the carousel should react to keyboard events. **/
-	?keyboard: Bool,
+	var ?keyboard: Bool;
 
 	/**
 		If set to `"hover"`, pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.
 		If set to `false`, hovering over the carousel won't pause it.
 	**/
-	?pause: EitherType<Bool, String>,
+	var ?pause: EitherType<Bool, String>;
 
 	/** Autoplays the carousel after the user manually cycles the first item. If set to `"carousel"`, autoplays the carousel on load. **/
-	?ride: EitherType<Bool, String>,
+	var ?ride: EitherType<Bool, String>;
 
 	/** Value indicating whether the carousel should support left/right swipe interactions on touchscreen devices. **/
-	?touch: Bool,
+	var ?touch: Bool;
 
 	/** Value indicating whether the carousel should cycle continuously or have hard stops. **/
-	?wrap: Bool
+	var ?wrap: Bool;
 }

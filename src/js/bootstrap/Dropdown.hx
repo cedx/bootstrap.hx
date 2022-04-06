@@ -71,13 +71,13 @@ enum abstract DropdownEvent(String) to String {
 typedef DropdownOptions = PopperOptions & {
 
 	/** Configure the auto close behavior of the dropdown. **/
-	?autoClose: EitherType<Bool, DropdownAutoClose>,
+	var ?autoClose: EitherType<Bool, DropdownAutoClose>;
 
 	/** Value indicating how the dropdown is positioned. **/
-	?display: DropdownDisplay,
+	var ?display: DropdownDisplay;
 
 	/** The reference element of the dropdown menu. **/
-	?reference: EitherType<DropdownReference, EitherType<Element, {getBoundingClientRect: () -> DOMRect}>>
+	var ?reference: EitherType<DropdownReference, EitherType<Element, {getBoundingClientRect: () -> DOMRect}>>;
 }
 
 /** Specifies the reference element of a dropdown menu. **/

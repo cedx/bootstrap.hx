@@ -55,11 +55,11 @@ enum abstract ModalEvent(String) to String {
 typedef ModalOptions = {
 
 	/** Value indicating whether to include a modal-backdrop element. Specify `"static"` for a backdrop which doesn't close the modal on click. **/
-	?backdrop: EitherType<Bool, String>,
+	var ?backdrop: EitherType<Bool, String>;
 
 	/** Value indicating whether to put the focus on the modal when initialized. **/
-	?focus: Bool,
+	var ?focus: Bool;
 
 	/** Value indicating whether to close the modal when escape key is pressed. **/
-	?keyboard: Bool
+	var ?keyboard: Bool;
 }

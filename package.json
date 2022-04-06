@@ -1,11 +1,11 @@
 {
-	"bugs": "https://bitbucket.org/cedx/bootstrap.hx/issues",
+	"bugs": "https://github.com/cedx/bootstrap.hx/issues",
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
-	"homepage": "https://bitbucket.org/cedx/bootstrap.hx",
+	"homepage": "https://github.com/cedx/bootstrap.hx",
 	"license": "MIT",
 	"name": "@cedx/bootstrap",
 	"private": true,
-	"repository": "bitbucket:cedx/bootstrap.hx",
+	"repository": "github:cedx/bootstrap.hx",
 	"type": "commonjs",
 	"version": "1.3.1",
 	"author": {

@@ -25,14 +25,11 @@ export async function build() {
 	return del("lib/**/*.map");
 }
 
-/** Builds the icon font. */
+/** Builds the icon stylesheet. */
 export function buildIcons() {
-	const streams = ["css", "scss"].map(extension => [
-		gulp.src(`node_modules/bootstrap-icons/font/bootstrap-icons.${extension}`).pipe(gulp.dest(`lib/${extension}`)),
-		gulp.src(`lib/${extension}/bootstrap-icons.${extension}`).pipe(replace(/\.\/fonts\//g, "../fonts/")).pipe(gulp.dest(`lib/${extension}`))
-	]);
-
-	return merge(...streams.flat());
+	return merge(["css", "scss"].map(type => gulp.src(`node_modules/bootstrap-icons/font/bootstrap-icons.${type}`)
+		.pipe(replace(/\.\/fonts\//g, "../fonts/"))
+		.pipe(gulp.dest(`lib/${type}`))));
 }
 
 /** Deletes all generated files and reset any saved state. */

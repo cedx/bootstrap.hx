@@ -11,26 +11,26 @@ import merge from "merge2";
 const pkg = JSON.parse(readFileSync("haxelib.json", "utf8"));
 
 /** Builds the project. */
-export async function build() {
-	const mapping = [
-		["bootstrap/dist/css", "css"],
-		["bootstrap/dist/js", "js"],
-		["bootstrap/scss", "scss"],
-		["bootstrap-icons/icons", "icons"],
-		["bootstrap-icons/font/fonts", "fonts"]
-	];
+export const build = gulp.series(
+	async function copyAssets() {
+		const mapping = [
+			["bootstrap/dist/css", "css"],
+			["bootstrap/dist/js", "js"],
+			["bootstrap/scss", "scss"],
+			["bootstrap-icons/icons", "icons"],
+			["bootstrap-icons/font/fonts", "fonts"]
+		];
 
-	await exec("haxe", ["run.hxml"]);
-	for (const [source, destination] of mapping) await cp(`node_modules/${source}`, `lib/${destination}`, {recursive: true});
-	return del("lib/**/*.map");
-}
-
-/** Builds the icon stylesheet. */
-export function buildIcons() {
-	return merge(["css", "scss"].map(type => gulp.src(`node_modules/bootstrap-icons/font/bootstrap-icons.${type}`)
-		.pipe(replace(/\.\/fonts\//g, "../fonts/"))
-		.pipe(gulp.dest(`lib/${type}`))));
-}
+		await exec("haxe", ["run.hxml"]);
+		for (const [source, destination] of mapping) await cp(`node_modules/${source}`, `lib/${destination}`, {recursive: true});
+		return del("lib/**/*.map");
+	},
+	function updateAssets() {
+		return merge(["css", "scss"].map(type => gulp.src(`node_modules/bootstrap-icons/font/bootstrap-icons.${type}`)
+			.pipe(replace(/\.\/fonts\//g, "../fonts/"))
+			.pipe(gulp.dest(`lib/${type}`))));
+	}
+);
 
 /** Deletes all generated files and reset any saved state. */
 export function clean() {
@@ -92,11 +92,10 @@ export function version() {
 		.pipe(gulp.dest("."));
 }
 
-/** The default task. */
+/** Runs the default task. */
 export default gulp.series(
 	clean,
 	build,
-	buildIcons,
 	version
 );
 

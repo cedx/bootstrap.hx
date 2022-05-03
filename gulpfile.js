@@ -3,6 +3,7 @@ import {cp} from "node:fs/promises";
 import archiver from "archiver";
 import del from "del";
 import {execa} from "execa";
+import log from "fancy-log";
 import gulp from "gulp";
 import replace from "gulp-replace";
 import merge from "merge2";
@@ -78,8 +79,8 @@ export async function publish() {
 	archive.on("error", error => { throw error; }).pipe(output);
 	archive.glob("*.md").glob("haxelib.json").glob("run.n").directory("lib", "lib").directory("src", "src").finalize();
 
-	await exec("haxelib", ["submit", "var/haxelib.zip"]);
 	for (const command of [["tag"], ["push", "origin"]]) await exec("git", [...command, `v${pkg.version}`]);
+	log("The package is ready to be published using 'haxelib submit var/haxelib.zip'.");
 }
 
 /** Updates the version numbers in the sources. */

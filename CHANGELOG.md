@@ -2,6 +2,7 @@
 
 ## Version [1.4.0](https://github.com/cedx/bootstrap.hx/compare/v1.3.2...v1.4.0)
 - Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.9.1.
+- Removed the `js.bootstrap.Version` class.
 
 ## Version [1.3.2](https://github.com/cedx/bootstrap.hx/compare/v1.3.1...v1.3.2)
 - Updated the project URL.

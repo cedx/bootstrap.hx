@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [1.5.0](https://github.com/cedx/bootstrap.hx/compare/v1.4.0...v1.5.0)
+- Provides [Bootstrap](https://getbootstrap.com) 5.2.0.
+
 ## Version [1.4.0](https://github.com/cedx/bootstrap.hx/compare/v1.3.2...v1.4.0)
 - Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.9.1.
 - Removed the `js.bootstrap.Version` class.

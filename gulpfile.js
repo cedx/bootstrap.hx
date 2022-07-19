@@ -1,7 +1,7 @@
 import {createWriteStream, existsSync} from "node:fs";
 import {cp, rm} from "node:fs/promises";
 import archiver from "archiver";
-import del from "del";
+import {deleteAsync} from "del";;
 import {execa} from "execa";
 import log from "fancy-log";
 import gulp from "gulp";
@@ -23,7 +23,7 @@ export const build = gulp.series(
 
 		await exec("haxe", ["run.hxml"]);
 		for (const [source, destination] of mapping) await cp(`node_modules/${source}`, `lib/${destination}`, {recursive: true});
-		return del("lib/**/*.map");
+		return deleteAsync("lib/**/*.map");
 	},
 	function updateAssets() {
 		return merge(["css", "scss"].map(type => gulp.src(`node_modules/bootstrap-icons/font/bootstrap-icons.${type}`)
@@ -34,7 +34,7 @@ export const build = gulp.series(
 
 /** Deletes all generated files and reset any saved state. */
 export function clean() {
-	return del(["lib", "res", "var/**/*"]);
+	return deleteAsync(["lib", "res", "var/**/*"]);
 }
 
 /** Builds the documentation. */

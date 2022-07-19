@@ -4,8 +4,8 @@
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"license": "MIT",
 	"name": "bootstrap_bundle",
-	"releasenote": "Provides Bootstrap Icons 1.9.1, removed the `js.bootstrap.Version` class.",
+	"releasenote": "Provides Bootstrap 5.2.0.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://github.com/cedx/bootstrap.hx",
-	"version": "1.4.0"
+	"version": "1.5.0"
 }

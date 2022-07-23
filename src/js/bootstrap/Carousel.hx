@@ -36,8 +36,19 @@ extern class Carousel extends BaseComponent {
 	function to(index: Int): Void;
 }
 
+/** Specifies the direction in which the carousel is sliding. **/
+enum abstract CarouselDirection(String) to String {
+
+	/** The carousel is sliding to the left. **/
+	var Left = "left";
+
+	/** The carousel is sliding to the right. **/
+	var Right = "right";
+}
+}
+
 /** Enumeration of events emitted by carousels. **/
-enum abstract CarouselEvent(String) to String {
+enum abstract CarouselEvents(String) to String {
 
 	/** Fired when the carousel has completed its slide transition. **/
 	var Slid = "slid.bs.carousel";

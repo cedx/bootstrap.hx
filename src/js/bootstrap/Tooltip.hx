@@ -28,6 +28,9 @@ extern class Tooltip extends BaseComponent {
 	/** Hides an element's tooltip. **/
 	function hide(): Void;
 
+	/** Changes the tooltip's content after its initialization. **/
+	function setContent(value: DynamicAccess<Any>): Void;
+
 	/** Reveals an element's tooltip. **/
 	function show(): Void;
 

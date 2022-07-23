@@ -9,7 +9,7 @@ import js.html.Element;
 
 /** A popover. **/
 @:native("bootstrap.Popover")
-extern class Popover extends BaseComponent {
+extern class Popover extends Tooltip {
 
 	/** Creates a new popover. **/
 	function new(element: EitherType<Element, String>, ?options: PopoverOptions);
@@ -19,27 +19,6 @@ extern class Popover extends BaseComponent {
 
 	/** Gets the popover instance associated with the specified DOM element or creates a new one in case it wasn't initialized. **/
 	static function getOrCreateInstance(element: EitherType<Element, String>, ?options: PopoverOptions): Popover;
-
-	/** Removes the ability for an element's popover to be shown. **/
-	function disable(): Void;
-
-	/** Gives an element's popover the ability to be shown. **/
-	function enable(): Void;
-
-	/** Hides an element's popover. **/
-	function hide(): Void;
-
-	/** Reveals an element's popover. **/
-	function show(): Void;
-
-	/** Toggles an element's popover. **/
-	function toggle(): Void;
-
-	/** Toggles the ability for an element's popover to be shown or hidden. **/
-	function toggleEnabled(): Void;
-
-	/** Updates the position of an element's popover. **/
-	function update(): Void;
 }
 
 /** Defines the delay for showing and hiding a popover. **/

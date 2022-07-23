@@ -27,7 +27,7 @@ extern class Carousel extends BaseComponent {
 	function nextWhenVisible(): Void;
 
 	/** Stops the carousel from cycling through items. **/
-	function pause(?event: Event): Void;
+	function pause(): Void;
 
 	/** Cycles to the previous item. **/
 	function prev(): Void;
@@ -45,6 +45,21 @@ enum abstract CarouselDirection(String) to String {
 	/** The carousel is sliding to the right. **/
 	var Right = "right";
 }
+
+/** An event for hooking into carousel functionality. **/
+extern class CarouselEvent extends Event {
+
+	/** The direction in which the carousel is sliding. **/
+	final direction: CarouselDirection;
+
+	/** The index of the current item. **/
+	final from: Int;
+
+	/** The DOM element that is being slid into place as the active item. **/
+	final relatedTarget: Element;
+
+	/** The index of the next item. **/
+	final to: Int;
 }
 
 /** Enumeration of events emitted by carousels. **/

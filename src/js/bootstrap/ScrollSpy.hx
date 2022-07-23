@@ -21,7 +21,7 @@ extern class ScrollSpy extends BaseComponent {
 }
 
 /** Enumeration of events emitted by scrollspies. **/
-enum abstract ScrollSpyEvent(String) to String {
+enum abstract ScrollSpyEvents(String) to String {
 
 	/** Fired on the scroll element whenever a new item becomes activated by the scrollspy. **/
 	var Activate = "activate.bs.scrollspy";

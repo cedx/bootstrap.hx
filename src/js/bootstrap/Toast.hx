@@ -24,7 +24,7 @@ extern class Toast extends BaseComponent {
 }
 
 /** Enumeration of events emitted by toasts. **/
-enum abstract ToastEvent(String) to String {
+enum abstract ToastEvents(String) to String {
 
 	/** Fired immediately when the `Toast.hide()` method is called. **/
 	var Hide = "hide.bs.toast";

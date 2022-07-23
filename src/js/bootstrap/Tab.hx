@@ -21,7 +21,7 @@ extern class Tab extends BaseComponent {
 }
 
 /** Enumeration of events emitted by tabs. **/
-enum abstract TabEvent(String) to String {
+enum abstract TabEvents(String) to String {
 
 	/** Fired when a new tab is to be shown (and thus the previous active tab is to be hidden). **/
 	var Hide = "hide.bs.tab";

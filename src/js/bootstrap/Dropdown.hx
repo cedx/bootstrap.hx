@@ -52,7 +52,7 @@ enum abstract DropdownDisplay(String) to String {
 }
 
 /** Enumeration of events emitted by dropdown elements. **/
-enum abstract DropdownEvent(String) to String {
+enum abstract DropdownEvents(String) to String {
 
 	/** Fired immediately when the `Dropdown.hide()` method is called. **/
 	var Hide = "hide.bs.dropdown";

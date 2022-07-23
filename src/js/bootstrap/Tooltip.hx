@@ -52,7 +52,7 @@ typedef TooltipDelay = {
 }
 
 /** Enumeration of events emitted by tooltips. **/
-enum abstract TooltipEvent(String) to String {
+enum abstract TooltipEvents(String) to String {
 
 	/** Fired immediately when the `Tooltip.hide()` method is called. **/
 	var Hide = "hide.bs.tooltip";

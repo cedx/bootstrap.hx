@@ -46,7 +46,7 @@ extern class Popover extends BaseComponent {
 typedef PopoverDelay = TooltipDelay;
 
 /** Enumeration of events emitted by popovers. **/
-enum abstract PopoverEvent(String) to String {
+enum abstract PopoverEvents(String) to String {
 
 	/** Fired immediately when the `Popover.hide()` method is called. **/
 	var Hide = "hide.bs.popover";

@@ -21,7 +21,7 @@ extern class Alert extends BaseComponent {
 }
 
 /** Enumeration of events emitted by alerts. **/
-enum abstract AlertEvent(String) to String {
+enum abstract AlertEvents(String) to String {
 
 	/** Fired immediately when the `Alert.close()` method is called. **/
 	var Close = "close.bs.alert";

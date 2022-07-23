@@ -30,7 +30,7 @@ extern class Modal extends BaseComponent {
 }
 
 /** Enumeration of events emitted by modals. **/
-enum abstract ModalEvent(String) to String {
+enum abstract ModalEvents(String) to String {
 
 	/** Fired immediately when the `Modal.hide()` method is called. **/
 	var Hide = "hide.bs.modal";

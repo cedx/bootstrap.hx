@@ -27,27 +27,14 @@ enum abstract ScrollSpyEvents(String) to String {
 	var Activate = "activate.bs.scrollspy";
 }
 
-/** Specifies how the scrollspy finds which section the spied element is in. **/
-enum abstract ScrollSpyMethod(String) to String {
-
-	/** Chooses the best method to get scroll coordinates. **/
-	var Auto = "auto";
-
-	/** Uses the `Element.getBoundingClientRect()` method to get scroll coordinates. **/
-	var Offset = "offset";
-
-	/** Uses the `Element.offsetTop` and `Element.offsetLeft` properties to get scroll coordinates. **/
-	var Position = "position";
-}
-
 /** Defines the options of a `ScrollSpy` instance. **/
 typedef ScrollSpyOptions = {
 
-	/** The method that the scrollspy uses to find which section the spied element is in. **/
-	var ?method: ScrollSpyMethod;
+	/** The `rootMargin` of the intersection observer. **/
+	var ?rootMargin: String;
 
-	/** Pixels to offset from top when calculating position of scroll. **/
-	var ?offset: Int;
+	/** Enables smooth scrolling. **/
+	var ?smoothScroll: Bool;
 
 	/** Specifies element to apply the scrollspy. **/
 	var ?target: EitherType<Element, String>;

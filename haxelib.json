@@ -4,7 +4,7 @@
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"license": "MIT",
 	"name": "bootstrap_bundle",
-	"releasenote": "Provides Bootstrap 5.2.0.",
+	"releasenote": "Provides Bootstrap 5.2.0. See the `CHANGELOG.md` file for a complete list of changes.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://github.com/cedx/bootstrap.hx",
 	"version": "2.0.0"

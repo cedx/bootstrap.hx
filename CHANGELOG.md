@@ -1,7 +1,14 @@
 # Changelog
 
-## Version [1.5.0](https://github.com/cedx/bootstrap.hx/compare/v1.4.0...v1.5.0)
+## Version [2.0.0](https://github.com/cedx/bootstrap.hx/compare/v1.4.0...v2.0.0)
+- Breaking change: renamed the `Event` enumerations to `Events`.
 - Provides [Bootstrap](https://getbootstrap.com) 5.2.0.
+- Added the `CarouselDirection` enumeration.
+- Added the `CarouselEvent` class.
+- Added the `Toast.isShown()` method.
+- Added the `Tooltip.setContent()` method.
+- Updated the `ScrollSpyOptions` type definition and removed the `ScrollSpyMethod` enumeration.
+- The `Popover` class now extends from the `Tooltip` one.
 
 ## Version [1.4.0](https://github.com/cedx/bootstrap.hx/compare/v1.3.2...v1.4.0)
 - Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.9.1.

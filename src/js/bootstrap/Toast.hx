@@ -16,10 +16,13 @@ extern class Toast extends BaseComponent {
 	/** Gets the toast instance associated with the specified DOM element or creates a new one in case it wasn't initialized. **/
 	static function getOrCreateInstance(element: EitherType<Element, String>, ?options: ToastOptions): Toast;
 
-	/** Hides an element's toast. **/
+	/** Hides the element's toast. **/
 	function hide(): Void;
 
-	/** Reveals an element's toast. **/
+	/** Gets a value indicating whether the element's toast is shown. **/
+	function isShown(): Bool;
+
+	/** Reveals the element's toast. **/
 	function show(): Void;
 }
 

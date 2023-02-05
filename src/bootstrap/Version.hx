@@ -1,4 +1,4 @@
-package bootstrap.cli;
+package bootstrap;
 
 #if macro
 import haxe.Json;
@@ -8,7 +8,7 @@ import sys.io.Process;
 #end
 
 /** Defines the Haxe compilation target. **/
-enum abstract HaxeTarget(String) from String {
+@:noDoc enum abstract HaxeTarget(String) from String {
 
 	/** The compilation target is C++. **/
 	var CPlusPlus = "cpp";
@@ -42,16 +42,18 @@ enum abstract HaxeTarget(String) from String {
 }
 
 /** Provides information about the program version. **/
-abstract class Version {
+@:noDoc abstract class Version {
 
 	/** The hash of the current Git commit. **/
 	public static var gitCommitHash(get, null): String;
 
 	/** The name of the Haxe target. **/
 	public static var haxeTarget(get, never): HaxeTarget;
+		static inline function get_haxeTarget() return getHaxeTarget();
 
 	/** The version of the Haxe compiler. **/
 	public static var haxeVersion(get, never): String;
+		static inline function get_haxeVersion() return getHaxeVersion();
 
 	/** The package version of this program. **/
 	public static var packageVersion(get, null): String;
@@ -61,12 +63,6 @@ abstract class Version {
 		if (gitCommitHash == null) gitCommitHash = getGitCommitHash();
 		return gitCommitHash;
 	}
-
-	/** Gets the name of the Haxe target. **/
-	static inline function get_haxeTarget() return getHaxeTarget();
-
-	/** Gets the version of the Haxe compiler. **/
-	static inline function get_haxeVersion() return getHaxeVersion();
 
 	/** Gets the package version of this program. **/
 	static function get_packageVersion() {

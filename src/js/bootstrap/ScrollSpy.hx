@@ -38,4 +38,7 @@ typedef ScrollSpyOptions = {
 
 	/** Specifies element to apply the scrollspy. **/
 	var ?target: EitherType<Element, String>;
+
+	/** The `threshold` of the intersection observer. **/
+	var ?threshold: Array<Float>;
 }

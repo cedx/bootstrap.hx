@@ -18,6 +18,6 @@ function main() {
 	for (extension in ["css", "scss"]) {
 		final output = 'lib/$extension/bootstrap-icons.$extension';
 		File.copy('node_modules/bootstrap-icons/font/bootstrap-icons.$extension', output);
-		Tools.replaceInFile(output, ~/\.\/fonts\//g, "../fonts/");
+		Tools.replaceInFile(output, ~/\.\/fonts/g, "../fonts");
 	}
 }

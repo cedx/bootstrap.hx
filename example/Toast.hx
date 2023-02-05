@@ -7,8 +7,8 @@ function main() {
 	document.body.innerHTML = render();
 
 	final toast = document.querySelector(".toast");
-	toast.addEventListener(ToastEvent.Hidden, () -> trace("The toast has been hidden."));
-	toast.addEventListener(ToastEvent.Shown, () -> trace("The toast has been made visible."));
+	toast.addEventListener(ToastEvents.Hidden, () -> trace("The toast has been hidden."));
+	toast.addEventListener(ToastEvents.Shown, () -> trace("The toast has been made visible."));
 
 	final closeButton = toast.querySelector(".btn-close");
 	closeButton.addEventListener("click", () -> Toast.getInstance(toast).hide());

@@ -7,7 +7,7 @@ function main() {
 	document.body.innerHTML = render();
 
 	final carousel = document.querySelector(".carousel");
-	carousel.addEventListener(CarouselEvent.Slid, () -> trace("The carousel has completed its slide transition."));
+	carousel.addEventListener(CarouselEvents.Slid, () -> trace("The carousel has completed its slide transition."));
 
 	final playButton = document.querySelector('.btn-${Variant.Primary}');
 	playButton.addEventListener("click", () -> Carousel.getOrCreateInstance(carousel).cycle());

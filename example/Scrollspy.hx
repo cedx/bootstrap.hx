@@ -6,7 +6,7 @@ function main() {
 	document.body.innerHTML = render();
 
 	final scrollspy = document.getElementById("scrollspy");
-	scrollspy.addEventListener(ScrollSpyEvent.Activate, () -> trace("A new item becomes activated by the scrollspy."));
+	scrollspy.addEventListener(ScrollSpyEvents.Activate, () -> trace("A new item becomes activated by the scrollspy."));
 
 	final listGroup = document.querySelector(".list-group");
 	new ScrollSpy(scrollspy, {target: listGroup});

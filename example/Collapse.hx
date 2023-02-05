@@ -7,8 +7,8 @@ function main() {
 	document.body.innerHTML = render();
 
 	final collapse = document.querySelector(".collapse");
-	collapse.addEventListener(CollapseEvent.Hidden, () -> trace("The collapse element has been hidden."));
-	collapse.addEventListener(CollapseEvent.Shown, () -> trace("The collapse element has been made visible."));
+	collapse.addEventListener(CollapseEvents.Hidden, () -> trace("The collapse element has been hidden."));
+	collapse.addEventListener(CollapseEvents.Shown, () -> trace("The collapse element has been made visible."));
 
 	final button = document.querySelector(".btn");
 	button.addEventListener("click", () -> Collapse.getOrCreateInstance(collapse).toggle());

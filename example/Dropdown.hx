@@ -8,8 +8,8 @@ function main() {
 
 	final dropdown = document.querySelector(".dropdown-toggle");
 	dropdown.addEventListener("click", () -> Dropdown.getOrCreateInstance(dropdown).toggle());
-	dropdown.addEventListener(DropdownEvent.Hidden, () -> trace("The dropdown menu has been hidden."));
-	dropdown.addEventListener(DropdownEvent.Shown, () -> trace("The dropdown menu has been made visible."));
+	dropdown.addEventListener(DropdownEvents.Hidden, () -> trace("The dropdown menu has been hidden."));
+	dropdown.addEventListener(DropdownEvents.Shown, () -> trace("The dropdown menu has been made visible."));
 }
 
 /** Returns the HTML content of the document body. **/

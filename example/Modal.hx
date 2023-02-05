@@ -7,8 +7,8 @@ function main() {
 	document.body.innerHTML = render();
 
 	final modal = document.querySelector(".modal");
-	modal.addEventListener(ModalEvent.Hidden, () -> trace("The modal has been hidden."));
-	modal.addEventListener(ModalEvent.Shown, () -> trace("The modal has been made visible."));
+	modal.addEventListener(ModalEvents.Hidden, () -> trace("The modal has been hidden."));
+	modal.addEventListener(ModalEvents.Shown, () -> trace("The modal has been made visible."));
 
 	final closeButtons = modal.querySelectorAll("button");
 	for (button in closeButtons) button.addEventListener("click", () -> Modal.getInstance(modal).hide());

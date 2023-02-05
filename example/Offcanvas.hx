@@ -7,8 +7,8 @@ function main() {
 	document.body.innerHTML = render();
 
 	final offcanvas = document.querySelector(".offcanvas");
-	offcanvas.addEventListener(OffcanvasEvent.Hidden, () -> trace("The offcanvas element has been hidden."));
-	offcanvas.addEventListener(OffcanvasEvent.Shown, () -> trace("The offcanvas element has been made visible."));
+	offcanvas.addEventListener(OffcanvasEvents.Hidden, () -> trace("The offcanvas element has been hidden."));
+	offcanvas.addEventListener(OffcanvasEvents.Shown, () -> trace("The offcanvas element has been made visible."));
 
 	final closeButton = offcanvas.querySelector(".btn-close");
 	closeButton.addEventListener("click", () -> Offcanvas.getInstance(offcanvas).hide());

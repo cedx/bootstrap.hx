@@ -1,5 +1,9 @@
 # Changelog
 
+## Version [2.1.0](https://github.com/cedx/bootstrap.hx/compare/v2.0.0...v2.1.0)
+- Provides [Bootstrap](https://getbootstrap.com) 5.2.3.
+- Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.10.3.
+
 ## Version [2.0.0](https://github.com/cedx/bootstrap.hx/compare/v1.4.0...v2.0.0)
 - Breaking change: renamed the `Event` enumerations to `Events`.
 - Provides [Bootstrap](https://getbootstrap.com) 5.2.0.

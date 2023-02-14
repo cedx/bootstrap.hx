@@ -7,7 +7,7 @@ final class Program {
 	@:command
 	public final copy = new CopyCommand();
 
-	/** Output usage information. **/
+	/** Display this help. **/
 	public var help = false;
 
 	/** Print the path to the Bootstrap assets. **/

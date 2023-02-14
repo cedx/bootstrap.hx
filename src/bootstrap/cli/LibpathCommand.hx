@@ -6,7 +6,7 @@ using haxe.io.Path;
 /** Print the path to the Bootstrap assets. **/
 class LibpathCommand {
 
-	/** Output usage information. **/
+	/** Display this help. **/
 	public var help = false;
 
 	/** Creates a new `libpath` command. **/

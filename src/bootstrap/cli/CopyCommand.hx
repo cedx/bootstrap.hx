@@ -13,7 +13,7 @@ class CopyCommand {
 	/** Copy only font files. **/
 	public var fonts = false;
 
-	/** Output usage information. **/
+	/** Display this help. **/
 	public var help = false;
 
 	/** Copy only icon files. **/

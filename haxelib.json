@@ -7,5 +7,5 @@
 	"releasenote": "Provides Bootstrap 5.2.3 and Bootstrap Icons 1.10.3.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://github.com/cedx/bootstrap.hx",
-	"version": "2.1.0"
+	"version": "2.1.1"
 }

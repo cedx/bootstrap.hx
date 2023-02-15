@@ -4,7 +4,7 @@ using haxe.io.Path;
 
 /** Runs the script. **/
 function main() {
-	Sys.command("haxe", ["run.hxml"]);
+	Sys.command("haxe run.hxml");
 	if (FileSystem.exists("lib")) Tools.removeDirectory("lib");
 
 	final sources = [

@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [2.1.1](https://github.com/cedx/bootstrap.hx/compare/v2.1.0...v2.1.1)
+- Alleviates the weight of the package by removing sourcemaps.
+
 ## Version [2.1.0](https://github.com/cedx/bootstrap.hx/compare/v2.0.0...v2.1.0)
 - Provides [Bootstrap](https://getbootstrap.com) 5.2.3.
 - Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.10.3.

@@ -2,7 +2,7 @@ import sys.FileSystem;
 import sys.io.File;
 using haxe.io.Path;
 
-/** Runs the script. **/
+/** Builds the project. **/
 function main() {
 	Sys.command("haxe run.hxml");
 	if (FileSystem.exists("lib")) Tools.removeDirectory("lib");

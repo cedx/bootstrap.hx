@@ -4,7 +4,7 @@ import haxe.DynamicAccess;
 import haxe.Json;
 import sys.io.File;
 
-/** Runs the script. **/
+/** Updates the version number in the sources. **/
 function main() {
 	Tools.replaceInFile("package.json", ~/"version": "\d+(\.\d+){2}"/, '"version": "${Version.packageVersion}"');
 

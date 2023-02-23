@@ -34,9 +34,8 @@ class CopyCommand {
 		if (help) return { Sys.println(Cli.getDoc(this)); Noise; };
 
 		final haxelibRun = Sys.getEnv("HAXELIB_RUN") == "1";
-		final requiredArgs = 1;
-		if (rest.length < requiredArgs || (haxelibRun && rest.length < requiredArgs + 1))
-			return new Error(BadRequest, "You must provide the path of the output directory.");
+		final requiredArgs = haxelibRun ? 2 : 1;
+		if (rest.length < requiredArgs) return new Error(BadRequest, "You must provide the path of the output directory.");
 
 		final sources = ["css", "fonts", "icons", "js", "scss"];
 		var directories = sources.filter(source -> Reflect.field(this, source));

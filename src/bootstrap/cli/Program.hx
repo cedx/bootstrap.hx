@@ -7,12 +7,12 @@ final class Program {
 	@:command
 	public final copy = new CopyCommand();
 
-	/** Display this help. **/
-	public var help = false;
-
 	/** Print the path to the Bootstrap assets. **/
 	@:command
 	public final libpath = new LibpathCommand();
+
+	/** Display this help. **/
+	public var help = false;
 
 	/** Output the version number. **/
 	public var version = false;

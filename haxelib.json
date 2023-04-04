@@ -7,5 +7,5 @@
 	"releasenote": "Alleviates the weight of the package by removing sourcemaps.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://github.com/cedx/bootstrap.hx",
-	"version": "2.1.1"
+	"version": "2.1.2"
 }

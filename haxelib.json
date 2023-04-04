@@ -4,7 +4,7 @@
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"license": "MIT",
 	"name": "bootstrap_bundle",
-	"releasenote": "Alleviates the weight of the package by removing sourcemaps.",
+	"releasenote": "Provides Bootstrap Icons 1.10.4, fixed the return type of the `getInstance()` static methods.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://github.com/cedx/bootstrap.hx",
 	"version": "2.1.2"

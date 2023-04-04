@@ -1,5 +1,9 @@
 # Changelog
 
+## Version [2.1.2](https://github.com/cedx/bootstrap.hx/compare/v2.1.1...v2.1.2)
+- Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.10.4.
+- Fixed the return type of the `getInstance()` static methods.
+
 ## Version [2.1.1](https://github.com/cedx/bootstrap.hx/compare/v2.1.0...v2.1.1)
 - Alleviates the weight of the package by removing sourcemaps.
 

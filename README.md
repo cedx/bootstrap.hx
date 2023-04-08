@@ -7,7 +7,7 @@ in one [Haxe](https://haxe.org) package.
 
 ## Documentation
 - [User guide](https://github.com/cedx/bootstrap.hx/wiki)
-- [API reference](https://cedx.github.io/bootstrap.hx)
+- [API reference](https://docs.belin.io/bootstrap.hx)
 
 ## Development
 - [Git repository](https://github.com/cedx/bootstrap.hx)

@@ -4,7 +4,11 @@ import sys.FileSystem;
 import sys.io.File;
 using haxe.io.Path;
 
-/** Copy the Bootstrap assets to a given directory. **/
+/**
+	Copy the Bootstrap assets to a given directory.
+
+	> bootstrap_bundle copy [flags] <directory>
+**/
 class CopyCommand {
 
 	/** Copy only CSS files. **/
@@ -12,9 +16,6 @@ class CopyCommand {
 
 	/** Copy only font files. **/
 	public var fonts = false;
-
-	/** Display this help. **/
-	public var help = false;
 
 	/** Copy only icon files. **/
 	public var icons = false;
@@ -25,10 +26,13 @@ class CopyCommand {
 	/** Copy only Sass files. **/
 	public var scss = false;
 
+	/** Display this help. **/
+	public var help = false;
+
 	/** Creates a new `copy` command. **/
 	public function new() {}
 
-	/** <directory> : The path to the output directory. **/
+	/** directory : The path to the output directory. **/
 	@:defaultCommand
 	public function run(rest: Rest<String>): Promise<Noise> {
 		if (help) return { Sys.println(Cli.getDoc(this)); Noise; };

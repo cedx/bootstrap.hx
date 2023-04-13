@@ -1,6 +1,10 @@
 package bootstrap.cli;
 
-/** Command line interface of Bootstrap Bundle for Haxe. **/
+/**
+	Command line interface of Bootstrap Bundle for Haxe.
+
+	> bootstrap_bundle <subcommand>
+**/
 final class Program {
 
 	/** Copy the Bootstrap assets to a given directory. **/

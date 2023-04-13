@@ -3,7 +3,11 @@ package bootstrap.cli;
 using StringTools;
 using haxe.io.Path;
 
-/** Print the path to the Bootstrap assets. **/
+/**
+	Print the path to the Bootstrap assets.
+
+	> bootstrap_bundle libpath [flags]
+**/
 class LibpathCommand {
 
 	/** Display this help. **/

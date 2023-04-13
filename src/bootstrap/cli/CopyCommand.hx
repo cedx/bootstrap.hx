@@ -46,7 +46,7 @@ class CopyCommand {
 		if (directories.length == 0) directories = sources;
 
 		final input = Path.join([Sys.programPath().directory(), "lib"]);
-		final output = rest[0].isAbsolute() ? rest[0] : Path.join([haxelibRun ? rest[rest.length - 1] : Sys.getCwd(), rest[0]]);
+		final output = rest[0].isAbsolute() ? rest.shift() : Path.join([haxelibRun ? rest.pop() : Sys.getCwd(), rest.shift()]);
 		for (directory in directories) copyDirectory(Path.join([input, directory]), directories.length == 1 ? output : Path.join([output, directory]));
 		return Noise;
 	}

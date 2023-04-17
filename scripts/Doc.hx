@@ -11,7 +11,7 @@ function main() {
 	Sys.command("lix", ["run", "dox",
 		"--define", "description", "Bundle providing Bootstrap and Bootstrap Icons in one Haxe package.",
 		"--define", "source-path", "https://github.com/cedx/bootstrap.hx/blob/main/src",
-		"--define", "themeColor", "0xffc105",
+		"--define", "themeColor", "0xea8220",
 		"--define", "version", Version.packageVersion,
 		"--define", "website", "https://github.com/cedx/bootstrap.hx",
 		"--input-path", "var",

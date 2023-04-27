@@ -16,7 +16,7 @@
 	},
 	"dependencies": {
 		"bootstrap": "^5.2.3",
-		"bootstrap-icons": "^1.10.4"
+		"bootstrap-icons": "^1.10.5"
 	},
 	"engines": {
 		"node": ">=18.0.0"

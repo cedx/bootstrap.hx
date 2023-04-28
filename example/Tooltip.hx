@@ -9,7 +9,7 @@ function main() {
 
 	final buttons = document.querySelectorAll(".btn");
 	for (button in buttons) {
-		new Tooltip(cast(button, Element));
+		new Tooltip((cast button: Element));
 		button.addEventListener(TooltipEvents.Hidden, () -> trace("The tooltip has been hidden."));
 		button.addEventListener(TooltipEvents.Shown, () -> trace("The tooltip has been made visible."));
 	}

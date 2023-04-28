@@ -9,7 +9,7 @@ function main() {
 
 	final buttons = document.querySelectorAll(".btn");
 	for (button in buttons) {
-		new Popover(cast(button, Element), {trigger: '${PopoverTrigger.Focus} ${PopoverTrigger.Hover}'});
+		new Popover((cast button: Element), {trigger: '${PopoverTrigger.Focus} ${PopoverTrigger.Hover}'});
 		button.addEventListener(PopoverEvents.Hidden, () -> trace("The popover has been hidden."));
 		button.addEventListener(PopoverEvents.Shown, () -> trace("The popover has been made visible."));
 	}

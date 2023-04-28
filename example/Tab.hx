@@ -8,7 +8,7 @@ function main() {
 
 	final buttons = document.querySelectorAll(".nav-tabs button");
 	for (button in buttons) {
-		button.addEventListener("click", () -> Tab.getOrCreateInstance(cast(button, Element)).show());
+		button.addEventListener("click", () -> Tab.getOrCreateInstance((cast button: Element)).show());
 		button.addEventListener(TabEvents.Hidden, event -> trace('The "${event.target.textContent}" tab has been hidden.'));
 		button.addEventListener(TabEvents.Shown, event -> trace('The "${event.target.textContent}" tab has been shown.'));
 	}

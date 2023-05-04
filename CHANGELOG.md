@@ -1,5 +1,9 @@
 # Changelog
 
+## Version [2.1.4](https://github.com/cedx/bootstrap.hx/compare/v2.1.3...v2.1.4)
+- Added the `NAME` static property to all components.
+- Improved the typings of the `Popover` and `Tooltip` components.
+
 ## Version [2.1.3](https://github.com/cedx/bootstrap.hx/compare/v2.1.2...v2.1.3)
 - Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.10.5.
 

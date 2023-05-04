@@ -10,6 +10,9 @@ import js.html.Node;
 @:native("bootstrap.Tooltip")
 extern class Tooltip extends BaseComponent {
 
+	/** The component name. **/
+	static final NAME: String;
+
 	/** Creates a new tooltip. **/
 	function new(element: EitherType<Element, String>, ?options: TooltipOptions);
 

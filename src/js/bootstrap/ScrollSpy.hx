@@ -7,6 +7,9 @@ import js.html.Element;
 @:native("bootstrap.ScrollSpy")
 extern class ScrollSpy extends BaseComponent {
 
+	/** The component name. **/
+	static final NAME: String;
+
 	/** Creates a new scrollspy. **/
 	function new(element: EitherType<Element, String>, ?options: ScrollSpyOptions);
 

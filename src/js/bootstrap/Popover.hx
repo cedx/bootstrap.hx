@@ -11,6 +11,9 @@ import js.html.Element;
 @:native("bootstrap.Popover")
 extern class Popover extends Tooltip {
 
+	/** The component name. **/
+	static final NAME: String;
+
 	/** Creates a new popover. **/
 	function new(element: EitherType<Element, String>, ?options: PopoverOptions);
 

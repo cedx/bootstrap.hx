@@ -7,6 +7,9 @@ import js.html.Element;
 @:native("bootstrap.Modal")
 extern class Modal extends BaseComponent {
 
+	/** The component name. **/
+	static final NAME: String;
+
 	/** Creates a new modal. **/
 	function new(element: EitherType<Element, String>, ?options: ModalOptions);
 

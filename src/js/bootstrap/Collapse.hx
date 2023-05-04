@@ -7,6 +7,9 @@ import js.html.Element;
 @:native("bootstrap.Collapse")
 extern class Collapse extends BaseComponent {
 
+	/** The component name. **/
+	static final NAME: String;
+
 	/** Creates a new collapsible element. **/
 	function new(element: EitherType<Element, String>, ?options: CollapseOptions);
 
@@ -46,7 +49,7 @@ enum abstract CollapseEvents(String) to String {
 typedef CollapseOptions = {
 
 	/** If `parent` is provided, then all collapsible elements under the specified parent will be closed when the collapsible item is shown. **/
-	var ?parent: EitherType<String, EitherType<Element, Bool>>;
+	var ?parent: EitherType<Bool, EitherType<Element, String>>;
 
 	/** Value indicating whether to toggle the collapsible element on invocation. **/
 	var ?toggle: Bool;

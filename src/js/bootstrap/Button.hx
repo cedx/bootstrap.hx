@@ -7,6 +7,9 @@ import js.html.Element;
 @:native("bootstrap.Button")
 extern class Button extends BaseComponent {
 
+	/** The component name. **/
+	static final NAME: String;
+
 	/** Creates a new button. **/
 	function new(element: EitherType<Element, String>);
 

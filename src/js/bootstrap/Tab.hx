@@ -7,6 +7,9 @@ import js.html.Element;
 @:native("bootstrap.Tab")
 extern class Tab extends BaseComponent {
 
+	/** The component name. **/
+	static final NAME: String;
+
 	/** Creates a new tab. **/
 	function new(element: EitherType<Element, String>);
 

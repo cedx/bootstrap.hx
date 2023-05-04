@@ -7,6 +7,9 @@ import js.html.Element;
 @:native("bootstrap.Alert")
 extern class Alert extends BaseComponent {
 
+	/** The component name. **/
+	static final NAME: String;
+
 	/** Creates a new alert. **/
 	function new(element: EitherType<Element, String>);
 

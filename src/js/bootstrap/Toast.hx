@@ -7,6 +7,9 @@ import js.html.Element;
 @:native("bootstrap.Toast")
 extern class Toast extends BaseComponent {
 
+	/** The component name. **/
+	static final NAME: String;
+
 	/** Creates a new toast. **/
 	function new(element: EitherType<Element, String>, ?options: ToastOptions);
 

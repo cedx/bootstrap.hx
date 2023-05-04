@@ -53,7 +53,7 @@ typedef PopoverPlacement = TooltipPlacement;
 typedef PopoverOptions = TooltipOptions & {
 
 	/** Default content value if `data-bs-content` attribute isn't present. **/
-	var ?content: EitherType<String, EitherType<Element, () -> String>>;
+	var ?content: EitherType<Element, EitherType<String, EitherType<() -> Element, () -> String>>>;
 }
 
 /** Specifies how a popover is triggered. **/

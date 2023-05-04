@@ -99,13 +99,13 @@ enum abstract TooltipPlacement(String) to String {
 typedef TooltipOptions = PopperOptions & {
 
 	/** Object which contains allowed attributes and tags. **/
-	var ?allowList: DynamicAccess<Array<EitherType<String, EReg>>>;
+	var ?allowList: DynamicAccess<Array<EitherType<EReg, String>>>;
 
 	/** Value indicating whether to apply a fade transition to the tooltip. **/
 	var ?animation: Bool;
 
 	/** Appends the tooltip to a specific element. **/
-	var ?container: EitherType<String, EitherType<Element, Bool>>;
+	var ?container: EitherType<Bool, EitherType<Element, String>>;
 
 	/** Adds classes to the tooltip when it is shown. **/
 	var ?customClass: EitherType<String, () -> String>;
@@ -135,7 +135,7 @@ typedef TooltipOptions = PopperOptions & {
 	var ?template: String;
 
 	/** Default title value if `title` attribute isn't present. **/
-	var ?title: EitherType<String, EitherType<Element, () -> String>>;
+	var ?title: EitherType<Element, EitherType<String, EitherType<() -> Element, () -> String>>>;
 
 	/** How the tooltip is triggered. **/
 	var ?trigger: EitherType<TooltipTrigger, String>;

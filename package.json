@@ -2,7 +2,7 @@
 	"bugs": "https://github.com/cedx/bootstrap.hx/issues",
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"files": [],
-	"homepage": "https://github.com/cedx/bootstrap.hx",
+	"homepage": "https://docs.belin.io/bootstrap.hx",
 	"license": "MIT",
 	"name": "@cedx/bootstrap",
 	"private": true,

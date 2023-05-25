@@ -6,6 +6,6 @@
 	"name": "bootstrap_bundle",
 	"releasenote": "Added the `NAME` static property to all components, improved the typings of the `Popover` and `Tooltip` components.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
-	"url": "https://github.com/cedx/bootstrap.hx",
+	"url": "https://docs.belin.io/bootstrap.hx",
 	"version": "2.1.4"
 }

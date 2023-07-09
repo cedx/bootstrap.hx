@@ -6,8 +6,8 @@ Bundle providing [Bootstrap](https://getbootstrap.com) and [Bootstrap Icons](htt
 in one [Haxe](https://haxe.org) package.
 
 ## Documentation
-- [User guide](https://github.com/cedx/bootstrap.hx/wiki)
-- [API reference](https://docs.belin.io/bootstrap.hx)
+- [User guide](https://docs.belin.io/bootstrap.hx)
+- [API reference](https://docs.belin.io/bootstrap.hx/api)
 
 ## Development
 - [Git repository](https://github.com/cedx/bootstrap.hx)
@@ -15,4 +15,4 @@ in one [Haxe](https://haxe.org) package.
 - [Submit an issue](https://github.com/cedx/bootstrap.hx/issues)
 
 ## License
-[Bootstrap Bundle for Haxe](https://github.com/cedx/bootstrap.hx) is distributed under the MIT License.
+[Bootstrap Bundle for Haxe](https://docs.belin.io/bootstrap.hx) is distributed under the MIT License.

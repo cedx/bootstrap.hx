@@ -1,12 +1,12 @@
 //! --class-path src
-import bootstrap.Version;
+import bootstrap.Platform;
 import haxe.DynamicAccess;
 import haxe.Json;
 import sys.io.File;
 
 /** Updates the version number in the sources. **/
 function main() {
-	Tools.replaceInFile("package.json", ~/"version": "\d+(\.\d+){2}"/, '"version": "${Version.packageVersion}"');
+	Tools.replaceInFile("package.json", ~/"version": "\d+(\.\d+){2}"/, '"version": "${Platform.packageVersion}"');
 
 	final dependencies: DynamicAccess<String> = Json.parse(File.getContent("package.json")).dependencies;
 	for (library in ["bootstrap", "bootstrap-icons"]) {

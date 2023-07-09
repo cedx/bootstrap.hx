@@ -30,7 +30,7 @@ final class Program {
 	// Runs this command.
 	@:defaultCommand
 	public function run() {
-		Sys.println(version ? Version.packageVersion : Cli.getDoc(this));
+		Sys.println(version ? Platform.packageVersion : Cli.getDoc(this));
 		return Promise.NOISE;
 	}
 }

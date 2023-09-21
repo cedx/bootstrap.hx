@@ -15,8 +15,8 @@
 		"url": "https://belin.io"
 	},
 	"dependencies": {
-		"bootstrap": "^5.3.1",
-		"bootstrap-icons": "^1.11.0"
+		"bootstrap": "^5.3.2",
+		"bootstrap-icons": "^1.11.1"
 	},
 	"engines": {
 		"node": ">=18.0.0"

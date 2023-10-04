@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"name": "@cedx/bootstrap",
 	"private": true,
-	"repository": "github:cedx/bootstrap.hx",
+	"repository": "cedx/bootstrap.hx",
 	"type": "commonjs",
 	"version": "2.3.1",
 	"author": {

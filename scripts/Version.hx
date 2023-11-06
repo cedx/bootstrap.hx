@@ -10,7 +10,7 @@ function main() {
 
 	final dependencies: DynamicAccess<String> = Json.parse(File.getContent("package.json")).dependencies;
 	for (library in ["bootstrap", "bootstrap-icons"]) {
-		final version = dependencies[library].substring(1);
+		final version = dependencies[library].substr(1);
 		Tools.replaceInFile("README.md", new EReg('$library/v\\d+(\\.\\d+){2}', ""), '$library/v$version');
 	}
 }

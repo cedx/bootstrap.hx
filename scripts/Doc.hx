@@ -15,7 +15,7 @@ function main() {
 		"--define", "source-path", "https://github.com/cedx/bootstrap.hx/blob/main/src",
 		"--define", "themeColor", "0xea8220",
 		"--define", "version", Platform.packageVersion,
-		"--define", "website", "https://docs.belin.io/bootstrap.hx",
+		"--define", "website", "https://cedx.github.io/bootstrap.hx",
 		"--input-path", "var",
 		"--output-path", "docs/api",
 		"--title", "Bootstrap Bundle for Haxe",

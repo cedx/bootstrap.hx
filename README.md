@@ -15,4 +15,4 @@ in one [Haxe](https://haxe.org) package.
 - [Submit an issue](https://github.com/cedx/bootstrap.hx/issues)
 
 ## License
-[Bootstrap Bundle for Haxe](https://cedx.github.io/bootstrap.hx) is distributed under the MIT License.
+[Bootstrap Bundle for Haxe](https://github.com/cedx/bootstrap.hx) is distributed under the MIT License.

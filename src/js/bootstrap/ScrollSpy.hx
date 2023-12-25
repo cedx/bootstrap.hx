@@ -7,6 +7,9 @@ import js.html.Element;
 @:native("bootstrap.ScrollSpy")
 extern class ScrollSpy extends BaseComponent {
 
+	/** The default options. **/
+	static final Default: ScrollSpyOptions;
+
 	/** The component name. **/
 	static final NAME: String;
 

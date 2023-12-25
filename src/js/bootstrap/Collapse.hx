@@ -7,6 +7,9 @@ import js.html.Element;
 @:native("bootstrap.Collapse")
 extern class Collapse extends BaseComponent {
 
+	/** The default options. **/
+	static final Default: CollapseOptions;
+
 	/** The component name. **/
 	static final NAME: String;
 

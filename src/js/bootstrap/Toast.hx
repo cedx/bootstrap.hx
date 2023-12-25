@@ -7,6 +7,9 @@ import js.html.Element;
 @:native("bootstrap.Toast")
 extern class Toast extends BaseComponent {
 
+	/** The default options. **/
+	static final Default: ToastOptions;
+
 	/** The component name. **/
 	static final NAME: String;
 

@@ -9,6 +9,9 @@ import js.html.Element;
 @:native("bootstrap.Dropdown")
 extern class Dropdown extends BaseComponent {
 
+	/** The default options. **/
+	static final Default: DropdownOptions;
+
 	/** The component name. **/
 	static final NAME: String;
 

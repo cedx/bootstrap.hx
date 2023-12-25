@@ -7,6 +7,9 @@ import js.html.Element;
 @:native("bootstrap.Offcanvas")
 extern class Offcanvas extends BaseComponent {
 
+	/** The default options. **/
+	static final Default: OffcanvasOptions;
+
 	/** The component name. **/
 	static final NAME: String;
 

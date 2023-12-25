@@ -8,6 +8,9 @@ import js.html.Event;
 @:native("bootstrap.Carousel")
 extern class Carousel extends BaseComponent {
 
+	/** The default options. **/
+	static final Default: CarouselOptions;
+
 	/** The component name. **/
 	static final NAME: String;
 

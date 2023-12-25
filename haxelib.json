@@ -4,7 +4,7 @@
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"license": "MIT",
 	"name": "bootstrap_bundle",
-	"releasenote": "Provides Bootstrap Icons 1.11.2.",
+	"releasenote": "Added the `Default` static property to most components.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://github.com/cedx/bootstrap.hx",
 	"version": "2.3.3"

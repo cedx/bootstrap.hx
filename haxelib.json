@@ -7,5 +7,5 @@
 	"releasenote": "Added the `Default` static property to most components.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://github.com/cedx/bootstrap.hx",
-	"version": "2.3.3"
+	"version": "3.0.0"
 }

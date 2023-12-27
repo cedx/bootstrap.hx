@@ -11,7 +11,7 @@ extern class Collapse extends BaseComponent {
 	static final Default: CollapseOptions;
 
 	/** The component name. **/
-	static final NAME: String;
+	@:native("NAME") static final name: String;
 
 	/** Creates a new collapsible element. **/
 	function new(element: EitherType<Element, String>, ?options: CollapseOptions);

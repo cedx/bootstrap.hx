@@ -8,7 +8,7 @@ import js.html.Element;
 extern class Alert extends BaseComponent {
 
 	/** The component name. **/
-	static final NAME: String;
+	@:native("NAME") static final name: String;
 
 	/** Creates a new alert. **/
 	function new(element: EitherType<Element, String>);

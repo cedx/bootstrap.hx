@@ -11,7 +11,7 @@ extern class Modal extends BaseComponent {
 	static final Default: ModalOptions;
 
 	/** The component name. **/
-	static final NAME: String;
+	@:native("NAME") static final name: String;
 
 	/** Creates a new modal. **/
 	function new(element: EitherType<Element, String>, ?options: ModalOptions);

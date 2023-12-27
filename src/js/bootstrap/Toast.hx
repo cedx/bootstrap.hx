@@ -11,7 +11,7 @@ extern class Toast extends BaseComponent {
 	static final Default: ToastOptions;
 
 	/** The component name. **/
-	static final NAME: String;
+	@:native("NAME") static final name: String;
 
 	/** Creates a new toast. **/
 	function new(element: EitherType<Element, String>, ?options: ToastOptions);

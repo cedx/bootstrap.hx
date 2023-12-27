@@ -12,7 +12,7 @@ extern class Carousel extends BaseComponent {
 	static final Default: CarouselOptions;
 
 	/** The component name. **/
-	static final NAME: String;
+	@:native("NAME") static final name: String;
 
 	/** Creates a new carousel. **/
 	function new(element: EitherType<Element, String>, ?options: CarouselOptions);

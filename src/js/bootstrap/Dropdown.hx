@@ -13,7 +13,7 @@ extern class Dropdown extends BaseComponent {
 	static final Default: DropdownOptions;
 
 	/** The component name. **/
-	static final NAME: String;
+	@:native("NAME") static final name: String;
 
 	/** Creates a new dropdown element. **/
 	function new(element: EitherType<Element, String>, ?options: DropdownOptions);

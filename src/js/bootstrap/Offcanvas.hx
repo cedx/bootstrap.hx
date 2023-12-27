@@ -11,7 +11,7 @@ extern class Offcanvas extends BaseComponent {
 	static final Default: OffcanvasOptions;
 
 	/** The component name. **/
-	static final NAME: String;
+	@:native("NAME") static final name: String;
 
 	/** Creates a new offcanvas. **/
 	function new(element: EitherType<Element, String>, ?options: OffcanvasOptions);

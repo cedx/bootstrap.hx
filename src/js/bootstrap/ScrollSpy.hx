@@ -11,7 +11,7 @@ extern class ScrollSpy extends BaseComponent {
 	static final Default: ScrollSpyOptions;
 
 	/** The component name. **/
-	static final NAME: String;
+	@:native("NAME") static final name: String;
 
 	/** Creates a new scrollspy. **/
 	function new(element: EitherType<Element, String>, ?options: ScrollSpyOptions);

@@ -14,7 +14,7 @@ extern class Tooltip extends BaseComponent {
 	static final Default: TooltipOptions;
 
 	/** The component name. **/
-	static final NAME: String;
+	@:native("NAME") static final name: String;
 
 	/** Creates a new tooltip. **/
 	function new(element: EitherType<Element, String>, ?options: TooltipOptions);

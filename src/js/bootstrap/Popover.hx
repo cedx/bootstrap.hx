@@ -15,7 +15,7 @@ extern class Popover extends Tooltip {
 	static final Default: PopoverOptions;
 
 	/** The component name. **/
-	static final NAME: String;
+	@:native("NAME") static final name: String;
 
 	/** Creates a new popover. **/
 	function new(element: EitherType<Element, String>, ?options: PopoverOptions);

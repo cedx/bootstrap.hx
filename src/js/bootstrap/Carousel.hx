@@ -9,7 +9,7 @@ import js.html.Event;
 extern class Carousel extends BaseComponent {
 
 	/** The default options. **/
-	static final Default: CarouselOptions;
+	@:native("Default") static final defaults: CarouselOptions;
 
 	/** The component name. **/
 	@:native("NAME") static final name: String;

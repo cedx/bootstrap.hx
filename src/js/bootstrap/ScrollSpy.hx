@@ -8,7 +8,7 @@ import js.html.Element;
 extern class ScrollSpy extends BaseComponent {
 
 	/** The default options. **/
-	static final Default: ScrollSpyOptions;
+	@:native("Default") static final defaults: ScrollSpyOptions;
 
 	/** The component name. **/
 	@:native("NAME") static final name: String;

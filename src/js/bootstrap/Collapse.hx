@@ -8,7 +8,7 @@ import js.html.Element;
 extern class Collapse extends BaseComponent {
 
 	/** The default options. **/
-	static final Default: CollapseOptions;
+	@:native("Default") static final defaults: CollapseOptions;
 
 	/** The component name. **/
 	@:native("NAME") static final name: String;

@@ -11,7 +11,7 @@ import js.html.Node;
 extern class Tooltip extends BaseComponent {
 
 	/** The default options. **/
-	static final Default: TooltipOptions;
+	@:native("Default") static final defaults: TooltipOptions;
 
 	/** The component name. **/
 	@:native("NAME") static final name: String;

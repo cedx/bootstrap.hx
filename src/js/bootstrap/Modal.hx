@@ -8,7 +8,7 @@ import js.html.Element;
 extern class Modal extends BaseComponent {
 
 	/** The default options. **/
-	static final Default: ModalOptions;
+	@:native("Default") static final defaults: ModalOptions;
 
 	/** The component name. **/
 	@:native("NAME") static final name: String;

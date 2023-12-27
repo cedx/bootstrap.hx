@@ -12,7 +12,7 @@ import js.html.Element;
 extern class Popover extends Tooltip {
 
 	/** The default options. **/
-	static final Default: PopoverOptions;
+	@:native("Default") static final defaults: PopoverOptions;
 
 	/** The component name. **/
 	@:native("NAME") static final name: String;

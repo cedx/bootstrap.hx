@@ -10,7 +10,7 @@ import js.html.Element;
 extern class Dropdown extends BaseComponent {
 
 	/** The default options. **/
-	static final Default: DropdownOptions;
+	@:native("Default") static final defaults: DropdownOptions;
 
 	/** The component name. **/
 	@:native("NAME") static final name: String;

@@ -8,7 +8,7 @@ import js.html.Element;
 extern class Toast extends BaseComponent {
 
 	/** The default options. **/
-	static final Default: ToastOptions;
+	@:native("Default") static final defaults: ToastOptions;
 
 	/** The component name. **/
 	@:native("NAME") static final name: String;

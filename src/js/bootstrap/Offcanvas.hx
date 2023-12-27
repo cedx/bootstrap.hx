@@ -8,7 +8,7 @@ import js.html.Element;
 extern class Offcanvas extends BaseComponent {
 
 	/** The default options. **/
-	static final Default: OffcanvasOptions;
+	@:native("Default") static final defaults: OffcanvasOptions;
 
 	/** The component name. **/
 	@:native("NAME") static final name: String;

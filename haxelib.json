@@ -7,5 +7,5 @@
 	"releasenote": "Renamed the `Default` static properties to `defaults`, renamed the `NAME` static properties to `name`",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "scss", "ui"],
 	"url": "https://github.com/cedx/bootstrap.hx",
-	"version": "3.0.0"
+	"version": "3.0.1"
 }

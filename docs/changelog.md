@@ -1,5 +1,12 @@
 # Changelog
 
+## Version [3.0.1](https://github.com/cedx/bootstrap.hx/compare/v3.0.0...v3.0.1)
+- Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.11.3.
+
+## Version [3.0.0](https://github.com/cedx/bootstrap.hx/compare/v2.3.3...v3.0.0)
+- Breaking change: renamed the `Default` static properties to `defaults`.
+- Breaking change: renamed the `NAME` static properties to `name`.
+
 ## Version [2.3.3](https://github.com/cedx/bootstrap.hx/compare/v2.3.2...v2.3.3)
 - Added the `Default` static property to most components.
 

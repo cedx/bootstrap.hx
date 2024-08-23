@@ -6,7 +6,7 @@
 	"private": true,
 	"repository": "cedx/bootstrap.hx",
 	"type": "commonjs",
-	"version": "3.0.1",
+	"version": "3.0.2",
 	"author": {
 		"email": "cedric@belin.io",
 		"name": "Cédric Belin",

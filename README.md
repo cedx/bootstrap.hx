@@ -1,5 +1,5 @@
 # Bootstrap Bundle for Haxe
-![Bootstrap](https://badgen.net/badge/bootstrap/v5.3.2/yellow) ![Bootstrap Icons](https://badgen.net/badge/bootstrap-icons/v1.11.2/yellow)  
+![Bootstrap](https://badgen.net/badge/bootstrap/v5.3.3/yellow) ![Bootstrap Icons](https://badgen.net/badge/bootstrap-icons/v1.11.3/yellow)  
 ![Haxe](https://badgen.net/badge/haxe/%3E%3D4.3.0/green) ![Haxelib](https://badgen.net/haxelib/v/bootstrap_bundle) ![License](https://badgen.net/haxelib/license/bootstrap_bundle) ![Downloads](https://badgen.net/haxelib/d/bootstrap_bundle)
 
 Bundle providing [Bootstrap](https://getbootstrap.com) and [Bootstrap Icons](https://icons.getbootstrap.com)

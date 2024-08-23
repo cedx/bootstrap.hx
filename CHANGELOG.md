@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [3.0.2](https://github.com/cedx/bootstrap.hx/compare/v3.0.1...v3.0.2)
+- Provides [Bootstrap](https://getbootstrap.com) 5.3.3.
+
 ## Version [3.0.1](https://github.com/cedx/bootstrap.hx/compare/v3.0.0...v3.0.1)
 - Provides [Bootstrap Icons](https://icons.getbootstrap.com) 1.11.3.
 

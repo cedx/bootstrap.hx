@@ -6,12 +6,11 @@ Bundle providing [Bootstrap](https://getbootstrap.com) and [Bootstrap Icons](htt
 in one [Haxe](https://haxe.org) package.
 
 ## Documentation
-- [User guide](https://cedx.github.io/bootstrap.hx)
-- [API reference](https://cedx.github.io/bootstrap.hx/api)
+- [User guide](https://github.com/cedx/bootstrap.hx/wiki)
+- [Examples](https://github.com/cedx/bootstrap.hx/tree/main/example)
 
 ## Development
 - [Git repository](https://github.com/cedx/bootstrap.hx)
-- [Haxelib package](https://lib.haxe.org/p/bootstrap_bundle)
 - [Submit an issue](https://github.com/cedx/bootstrap.hx/issues)
 
 ## License

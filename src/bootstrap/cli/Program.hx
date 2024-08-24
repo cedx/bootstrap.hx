@@ -29,8 +29,8 @@ final class Program {
 
 	// Runs this command.
 	@:defaultCommand
-	public function run() {
+	public function run(): Promise<Noise> {
 		Sys.println(version ? Platform.packageVersion : Cli.getDoc(this));
-		return Promise.NOISE;
+		return Noise;
 	}
 }

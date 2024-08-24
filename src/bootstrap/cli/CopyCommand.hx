@@ -34,10 +34,10 @@ class CopyCommand {
 
 	/** directory : The path to the output directory. **/
 	@:defaultCommand
-	public function run(rest: Rest<String>) {
+	public function run(rest: Rest<String>): Promise<Noise> {
 		if (help) {
 			Sys.println(Cli.getDoc(this));
-			return Promise.NOISE;
+			return Noise;
 		}
 
 		final haxelibRun = Sys.getEnv("HAXELIB_RUN") == "1";
@@ -51,7 +51,7 @@ class CopyCommand {
 		final input = Path.join([Sys.programPath().directory(), "lib"]);
 		final output = rest[0].isAbsolute() ? rest.shift() : Path.join([haxelibRun ? rest.pop() : Sys.getCwd(), rest.shift()]);
 		for (directory in directories) copyDirectory(Path.join([input, directory]), directories.length == 1 ? output : Path.join([output, directory]));
-		return Promise.NOISE;
+		return Noise;
 	}
 
 	/** Recursively copies all files in the specified `source` directory to a given `destination` directory. **/

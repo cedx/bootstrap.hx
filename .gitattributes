@@ -11,6 +11,7 @@
 *.json text
 *.md text diff=markdown
 *.mjs text
+*.ps1 text
 *.sql text
 *.svg text
 *.txt text
@@ -23,5 +24,4 @@
 *.pdf binary
 *.png binary
 *.webp binary
-*.woff binary
 *.woff2 binary

@@ -1,7 +1,8 @@
 import sys.FileSystem;
+using Lambda;
 
 /** Deletes all generated files. **/
 function main() {
-	if (FileSystem.exists("lib")) Tools.removeDirectory("lib");
+	["lib", "res"].filter(FileSystem.exists).iter(Tools.removeDirectory);
 	Tools.cleanDirectory("var");
 }

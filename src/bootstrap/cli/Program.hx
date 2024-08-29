@@ -25,7 +25,8 @@ final class Program {
 	public function new() {}
 
 	/** Application entry point. **/
-	static function main() Cli.process(Sys.args(), new Program()).handle(Cli.exit);
+	static function main()
+		Cli.process(Sys.args(), new Program()).handle(Cli.exit);
 
 	// Runs this command.
 	@:defaultCommand

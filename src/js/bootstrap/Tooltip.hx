@@ -1,6 +1,5 @@
 package js.bootstrap;
 
-import haxe.DynamicAccess;
 import haxe.extern.EitherType;
 import js.bootstrap.Popper.PopperOptions;
 import js.html.Element;
@@ -35,7 +34,7 @@ extern class Tooltip extends BaseComponent {
 	function hide(): Void;
 
 	/** Changes the tooltip's content after its initialization. **/
-	function setContent(value: DynamicAccess<Any>): Void;
+	function setContent(value: Dynamic<Any>): Void;
 
 	/** Reveals an element's tooltip. **/
 	function show(): Void;
@@ -102,7 +101,7 @@ enum abstract TooltipPlacement(String) to String {
 typedef TooltipOptions = PopperOptions & {
 
 	/** Object which contains allowed attributes and tags. **/
-	var ?allowList: DynamicAccess<Array<EitherType<EReg, String>>>;
+	var ?allowList: Dynamic<Array<EitherType<EReg, String>>>;
 
 	/** Value indicating whether to apply a fade transition to the tooltip. **/
 	var ?animation: Bool;

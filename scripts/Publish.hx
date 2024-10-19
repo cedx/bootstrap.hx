@@ -1,4 +1,4 @@
-//! --class-path src --library tink_core
+//! --class-path src
 import bootstrap.Platform;
 import haxe.crypto.Crc32;
 import haxe.zip.Entry;

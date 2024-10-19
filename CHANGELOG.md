@@ -1,5 +1,9 @@
 # Changelog
 
+## Version [3.1.0](https://github.com/cedx/bootstrap.hx/compare/v3.0.2...v3.1.0)
+- Added partial externs for the [sass-embedded](https://www.npmjs.com/package/sass-embedded) package.
+- Added a [Sass](https://sass-lang.com) importer for `bootstrap:` URLs.
+
 ## Version [3.0.2](https://github.com/cedx/bootstrap.hx/compare/v3.0.1...v3.0.2)
 - Provides [Bootstrap](https://getbootstrap.com) 5.3.3.
 

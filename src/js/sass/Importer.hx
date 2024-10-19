@@ -13,9 +13,9 @@ class BootstrapImporter {
 	final pkgUrl: URL;
 
 	/** Creates a new Bootstrap importer. **/
-	public function new() {
-		final path = ChildProcess.execFileSync("lix", ["run", "bootstrap_bundle", "libpath"], {encoding: "utf8", shell: true});
-		pkgUrl = Url.pathToFileURL(Path.join([path.rtrim(), "scss"]).addTrailingSlash());
+	public function new(?entryPointDirectory: String) {
+		entryPointDirectory ??= ChildProcess.execFileSync("lix", ["run", "bootstrap_bundle", "libpath"], {encoding: "utf8", shell: true}).rtrim();
+		pkgUrl = Url.pathToFileURL(Path.join([entryPointDirectory, "scss"]).addTrailingSlash());
 	}
 
 	/** Partially resolves a load (such as `@use` or `@import`) to a file on disk. **/

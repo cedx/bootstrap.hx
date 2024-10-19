@@ -4,7 +4,7 @@
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"license": "MIT",
 	"name": "bootstrap_bundle",
-	"releasenote": "Added partial externs for the `sass-embedded` package, added a Sass importer for `bootstrap:` URLs.",
+	"releasenote": "Fixed a packaging issue.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "sass", "scss", "ui"],
 	"url": "https://github.com/cedx/bootstrap.hx",
 	"version": "3.1.1"

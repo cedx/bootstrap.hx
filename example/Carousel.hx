@@ -31,13 +31,13 @@ private function render() return '
 	<div class="carousel slide" data-bs-interval="2000">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="d-block w-100" src="img/1.jpg"/>
+				<img class="d-block w-100" src="img/1.jpg">
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="img/2.jpg"/>
+				<img class="d-block w-100" src="img/2.jpg">
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="img/3.jpg"/>
+				<img class="d-block w-100" src="img/3.jpg">
 			</div>
 		</div>
 	</div>

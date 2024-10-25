@@ -33,7 +33,7 @@ private function cleanDirectory(directory: String) for (entry in FileSystem.read
 }
 
 /** Recursively copies all files in the specified `source` directory to a given `destination` directory. **/
-function copyDirectory(source: String, destination: String, ?exclude: EReg) for (entry in FileSystem.readDirectory(source)) {
+private function copyDirectory(source: String, destination: String, ?exclude: EReg) for (entry in FileSystem.readDirectory(source)) {
 	final input = Path.join([source, entry]);
 	final output = Path.join([destination, entry]);
 	if (FileSystem.isDirectory(input)) copyDirectory(input, output, exclude);

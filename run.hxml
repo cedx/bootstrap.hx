@@ -1,7 +1,3 @@
---class-path src
---dce full
---define analyzer-optimize
---define no-deprecation-warnings
---library tink_cli
 --main bootstrap.cli.Program
 --neko run.n
+share/build.hxml

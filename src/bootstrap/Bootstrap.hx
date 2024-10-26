@@ -16,7 +16,7 @@ abstract class Bootstrap {
 
 	/** Copies the Bootstrap assets to a given `output` directory. **/
 	@:expose("copyAssets")
-	public static function copyAssets(output: String, ?options: CopyOptions) {
+	public static function copyAssets(output: String, ?options: CopyOptions): Void {
 		options ??= {};
 		final sources = ["css", "fonts", "icons", "js"];
 		final directories = sources.filter(source -> Reflect.field(options, source) ?? false);
@@ -25,15 +25,16 @@ abstract class Bootstrap {
 	}
 
 	/** Recursively copies all files in the specified `source` directory to a given `destination` directory. **/
-	static function copyDirectory(source: String, destination: String) for (entry in FileSystem.readDirectory(source)) {
-		final input = Path.join([source, entry]);
-		final output = Path.join([destination, entry]);
-		if (FileSystem.isDirectory(input)) copyDirectory(input, output);
-		else {
-			FileSystem.createDirectory(output.directory());
-			File.copy(input, output);
+	static function copyDirectory(source: String, destination: String): Void
+		for (entry in FileSystem.readDirectory(source)) {
+			final input = Path.join([source, entry]);
+			final output = Path.join([destination, entry]);
+			if (FileSystem.isDirectory(input)) copyDirectory(input, output);
+			else {
+				FileSystem.createDirectory(output.directory());
+				File.copy(input, output);
+			}
 		}
-	}
 }
 
 /** Defines the options of the `Bootstrap.copyAssets()` method. **/

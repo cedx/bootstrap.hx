@@ -4,4 +4,3 @@
 --library hxnodejs
 share/build.hxml
 bootstrap.Bootstrap
-js.sass.Importer

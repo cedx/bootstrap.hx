@@ -3,7 +3,7 @@ package bootstrap.cli;
 /**
 	Command line interface of Bootstrap Bundle for Haxe.
 
-	> bootstrap_bundle <subcommand>
+	> bootstrap_bundle [flags] <subcommand>
 **/
 final class Program {
 

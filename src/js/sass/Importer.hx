@@ -7,6 +7,7 @@ using StringTools;
 using haxe.io.Path;
 
 /** Loads `bootstrap:` URLs according to the location of the `bootstrap_bundle` package. **/
+@:expose("BootstrapImporter")
 class BootstrapImporter implements FileImporter {
 
 	/** The file URL of the `bootstrap_bundle` package. **/

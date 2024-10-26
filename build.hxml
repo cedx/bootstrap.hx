@@ -3,3 +3,5 @@
 --js var/build.js
 --library hxnodejs
 share/build.hxml
+bootstrap.Bootstrap
+js.sass.Importer

@@ -18,7 +18,7 @@ abstract class Bootstrap {
 	@:expose("copyAssets")
 	public static function copyAssets(output: String, ?options: CopyOptions) {
 		options ??= {};
-		final sources = ["css", "fonts", "icons", "js", "scss"];
+		final sources = ["css", "fonts", "icons", "js"];
 		final directories = sources.filter(source -> Reflect.field(options, source) ?? false);
 		for (directory in (directories.length > 0 ? directories : sources))
 			copyDirectory(Path.join([assetPath, directory]), directories.length == 1 ? output : Path.join([output, directory]));
@@ -50,7 +50,4 @@ typedef CopyOptions = {
 
 	/** Value indicating whether to only copy the JavaScript files.  **/
 	var ?js: Bool;
-
-	/** Value indicating whether to only copy the Sass files.  **/
-	var ?scss: Bool;
 }

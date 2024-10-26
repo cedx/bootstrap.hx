@@ -1,7 +1,5 @@
 package bootstrap.cli;
 
-import sys.FileSystem;
-import sys.io.File;
 using haxe.io.Path;
 
 /**
@@ -23,9 +21,6 @@ class CopyCommand {
 	/** Copy only JavaScript files. **/
 	public var js = false;
 
-	/** Copy only Sass files. **/
-	public var scss = false;
-
 	/** Display this help. **/
 	public var help = false;
 
@@ -44,23 +39,8 @@ class CopyCommand {
 		final requiredArgs = haxelibRun ? 2 : 1;
 		if (rest.length < requiredArgs) return new Error(BadRequest, "You must provide the path of the output directory.");
 
-		final sources = ["css", "fonts", "icons", "js", "scss"];
-		var directories = sources.filter(source -> Reflect.field(this, source));
-		if (directories.length == 0) directories = sources;
-
 		final output = rest[0].isAbsolute() ? rest.shift() : Path.join([haxelibRun ? rest.pop() : Sys.getCwd(), rest.shift()]);
-		Bootstrap.copyAssets(output, {css: css, fonts: fonts, icons: icons, js: js, scss: scss});
+		Bootstrap.copyAssets(output, {css: css, fonts: fonts, icons: icons, js: js});
 		return Noise;
-	}
-
-	/** Recursively copies all files in the specified `source` directory to a given `destination` directory. **/
-	static function copyDirectory(source: String, destination: String) for (entry in FileSystem.readDirectory(source)) {
-		final input = Path.join([source, entry]);
-		final output = Path.join([destination, entry]);
-		if (FileSystem.isDirectory(input)) copyDirectory(input, output);
-		else {
-			FileSystem.createDirectory(output.directory());
-			File.copy(input, output);
-		}
 	}
 }

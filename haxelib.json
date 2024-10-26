@@ -7,5 +7,5 @@
 	"releasenote": "Fixed a packaging issue.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "sass", "scss", "ui"],
 	"url": "https://github.com/cedx/bootstrap.hx",
-	"version": "3.1.1"
+	"version": "3.2.0"
 }

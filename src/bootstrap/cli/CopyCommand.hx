@@ -48,9 +48,8 @@ class CopyCommand {
 		var directories = sources.filter(source -> Reflect.field(this, source));
 		if (directories.length == 0) directories = sources;
 
-		final input = Path.join([Sys.programPath().directory(), "lib"]);
 		final output = rest[0].isAbsolute() ? rest.shift() : Path.join([haxelibRun ? rest.pop() : Sys.getCwd(), rest.shift()]);
-		for (directory in directories) copyDirectory(Path.join([input, directory]), directories.length == 1 ? output : Path.join([output, directory]));
+		Bootstrap.copyAssets(output, {css: css, fonts: fonts, icons: icons, js: js, scss: scss});
 		return Noise;
 	}
 

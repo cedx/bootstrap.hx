@@ -19,8 +19,7 @@ class LibpathCommand {
 	// Runs this command.
 	@:defaultCommand
 	public function run(): Promise<Noise> {
-		final path = Path.join([Sys.programPath().directory(), "lib"]);
-		Sys.println(help ? Cli.getDoc(this) : path.replace("/", Sys.systemName() == "Windows" ? "\\" : "/"));
+		Sys.println(help ? Cli.getDoc(this) : Bootstrap.assetPath);
 		return Noise;
 	}
 }

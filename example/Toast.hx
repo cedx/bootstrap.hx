@@ -29,7 +29,7 @@ private function render() return '
 		<div class="toast" data-bs-autohide="false">
 			<div class="toast-header">
 				<svg xmlns="http://www.w3.org/2000/svg" class="rounded me-2" width="20" height="20">
-					<rect width="100%" height="100%" fill="#007aff"></rect>
+					<rect width="100%" height="100%" fill="#007aff"/>
 				</svg>
 				<strong class="me-auto">Bootstrap</strong>
 				<small>2 seconds ago</small>

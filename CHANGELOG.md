@@ -1,6 +1,9 @@
 # Changelog
 
-## Version [3.1.1](https://github.com/cedx/bootstrap.hx/compare/v3.1.1...v3.1.1)
+## Version [3.2.0](https://github.com/cedx/bootstrap.hx/compare/v3.1.1...v3.2.0)
+- Updated the externs of the [sass-embedded](https://www.npmjs.com/package/sass-embedded) package.
+
+## Version [3.1.1](https://github.com/cedx/bootstrap.hx/compare/v3.1.0...v3.1.1)
 - Fixed a packaging issue.
 
 ## Version [3.1.0](https://github.com/cedx/bootstrap.hx/compare/v3.0.2...v3.1.0)

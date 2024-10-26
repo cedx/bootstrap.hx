@@ -39,15 +39,15 @@ abstract class Bootstrap {
 /** Defines the options of the `Bootstrap.copyAssets()` method. **/
 typedef CopyOptions = {
 
-	/** Value indicating whether to only copy the CSS files.  **/
+	/** Value indicating whether to only copy the CSS files. **/
 	var ?css: Bool;
 
-	/** Value indicating whether to only copy the font files.  **/
+	/** Value indicating whether to only copy the font files. **/
 	var ?fonts: Bool;
 
-	/** Value indicating whether to only copy the icon files.  **/
+	/** Value indicating whether to only copy the icon files. **/
 	var ?icons: Bool;
 
-	/** Value indicating whether to only copy the JavaScript files.  **/
+	/** Value indicating whether to only copy the JavaScript files. **/
 	var ?js: Bool;
 }

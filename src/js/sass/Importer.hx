@@ -30,7 +30,7 @@ extern interface FileImporter {
 	function findFileUrl(url: String): Null<URL>;
 }
 
-/** Loads `pkg:` URLs from the `node_modules` folder according to the standard Node.js resolution algorithm. **/
+/** Loads `pkg:` URLs from the `node_modules` folder according to the Node.js resolution algorithm. **/
 @:jsRequire("sass-embedded", "NodePackageImporter")
 extern class NodePackageImporter {
 

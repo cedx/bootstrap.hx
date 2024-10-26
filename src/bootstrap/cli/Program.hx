@@ -1,5 +1,9 @@
 package bootstrap.cli;
 
+#if nodejs
+import js.Node;
+#end
+
 /**
 	Command line interface of Bootstrap Bundle for Haxe.
 
@@ -25,8 +29,10 @@ final class Program {
 	public function new() {}
 
 	/** Application entry point. **/
-	static function main()
+	static function main() {
+		#if nodejs Node.process.title = "Bootstrap Bundle"; #end
 		Cli.process(Sys.args(), new Program()).handle(Cli.exit);
+	}
 
 	// Runs this command.
 	@:defaultCommand

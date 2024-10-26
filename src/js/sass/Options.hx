@@ -1,14 +1,14 @@
 package js.sass;
 
 import haxe.extern.EitherType;
-import js.sass.Importer.BootstrapImporter;
+import js.sass.Importer.FileImporter;
 import js.sass.Importer.NodePackageImporter;
 
 /** Defines the options for a Sass compilation. **/
 typedef Options = {
 
 	/** The custom importers that control how Sass resolves loads from rules like `@use` and `@import`. **/
-	var ?importers: Array<EitherType<BootstrapImporter, NodePackageImporter>>;
+	var ?importers: Array<EitherType<FileImporter, NodePackageImporter>>;
 
 	/** The paths in which to look for stylesheets loaded by rules like `@use` and `@import`. **/
 	var ?loadPaths: Array<String>;

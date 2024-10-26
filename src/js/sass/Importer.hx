@@ -7,7 +7,7 @@ using StringTools;
 using haxe.io.Path;
 
 /** Loads `bootstrap:` URLs according to the location of the `bootstrap_bundle` package. **/
-class BootstrapImporter {
+class BootstrapImporter implements FileImporter {
 
 	/** The file URL of the `bootstrap_bundle` package. **/
 	final pkgUrl: URL;
@@ -21,6 +21,13 @@ class BootstrapImporter {
 	/** Partially resolves a load (such as `@use` or `@import`) to a file on disk. **/
 	public function findFileUrl(url: String): Null<URL>
 		return url.startsWith("bootstrap:") ? new URL(url.substr(10), pkgUrl) : null;
+}
+
+/** An importer that redirects all loads to existing files on disk. **/
+extern interface FileImporter {
+
+	/** Partially resolves a load (such as `@use` or `@import`) to a file on disk. **/
+	function findFileUrl(url: String): Null<URL>;
 }
 
 /** Loads `pkg:` URLs from the `node_modules` folder according to the standard Node.js resolution algorithm. **/

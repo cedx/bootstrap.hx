@@ -24,7 +24,7 @@ class BootstrapImporter implements FileImporter {
 }
 
 /** An importer that redirects all loads to existing files on disk. **/
-extern interface FileImporter {
+typedef FileImporter = {
 
 	/** Partially resolves a load (such as `@use` or `@import`) to a file on disk. **/
 	function findFileUrl(url: String): Null<URL>;

@@ -7,14 +7,14 @@ import js.lib.Promise;
 extern class Sass {
 
 	/** Synchronously compiles the Sass file at the specified `path` to CSS. **/
-	static function compile(path: String, ?options: Options): Compiler.CompileResult;
+	static function compile(path: String, ?options: Options): Compile.CompileResult;
 
 	/** Asynchronously compiles the Sass file at the specified `path` to CSS. **/
-	static function compileAsync(path: String, ?options: Options): Promise<Compiler.CompileResult>;
+	static function compileAsync(path: String, ?options: Options): Promise<Compile.CompileResult>;
 
 	/** Creates a synchronous compiler. **/
-	static function initCompiler(): Compiler;
+	static function initCompiler(): Compile.Compiler;
 
 	/** Creates an asynchronous compiler. **/
-	static function initAsyncCompiler(): Promise<Compiler.AsyncCompiler>;
+	static function initAsyncCompiler(): Promise<Compile.AsyncCompiler>;
 }

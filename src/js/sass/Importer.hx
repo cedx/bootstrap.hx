@@ -2,6 +2,16 @@ package js.sass;
 
 import js.node.url.URL;
 
+/** Contextual information passed to `FileImporter.findFileUrl()`. **/
+typedef CanonicalizeContext = {
+
+	/** The canonical URL of the file that contains the load, if that information is available. **/
+	var containingUrl: Null<URL>;
+
+	/** Value indicating whether this is being invoked because of an `@import` rule, as opposed to a `@use` or `@forward` rule. **/
+	var fromImport: Bool;
+}
+
 /** An importer that redirects all loads to existing files on disk. **/
 typedef FileImporter = {
 

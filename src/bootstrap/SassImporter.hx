@@ -3,6 +3,7 @@ package bootstrap;
 import js.node.ChildProcess;
 import js.node.Url;
 import js.node.url.URL;
+import js.sass.Importer.CanonicalizeContext;
 using StringTools;
 using haxe.io.Path;
 
@@ -19,6 +20,6 @@ class SassImporter {
 	}
 
 	/** Partially resolves a load (such as `@use` or `@import`) to a file on disk. **/
-	public function findFileUrl(url: String): Null<URL>
+	public function findFileUrl(url: String, context: CanonicalizeContext): Null<URL>
 		return url.startsWith("bootstrap:") ? new URL(url.substr(10), pkgUrl) : null;
 }

@@ -16,7 +16,7 @@ typedef CanonicalizeContext = {
 typedef FileImporter = {
 
 	/** Partially resolves a load (such as `@use` or `@import`) to a file on disk. **/
-	function findFileUrl(url: String): Null<URL>;
+	function findFileUrl(url: String, context: CanonicalizeContext): Null<URL>;
 }
 
 /** Loads `pkg:` URLs from the `node_modules` folder according to the Node.js resolution algorithm. **/

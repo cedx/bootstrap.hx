@@ -12,7 +12,7 @@ class SassImporter {
 	/** The file URL of the `bootstrap_bundle` package. **/
 	final pkgUrl: URL;
 
-	/** Creates a new Bootstrap importer. **/
+	/** Creates a new Sass importer. **/
 	public function new(?entryPointDirectory: String) {
 		entryPointDirectory ??= ChildProcess.execFileSync("lix", ["run", "bootstrap_bundle", "libpath"], {encoding: "utf8", shell: true}).rtrim();
 		pkgUrl = Url.pathToFileURL(Path.join([entryPointDirectory, "scss"]).addTrailingSlash());

@@ -31,7 +31,7 @@ extern interface FileImporter {
 }
 
 /** Loads `pkg:` URLs from the `node_modules` folder according to the Node.js resolution algorithm. **/
-@:jsRequire("sass-embedded", "NodePackageImporter")
+@:jsRequire(#if sass_embedded "sass-embedded" #else "sass" #end, "NodePackageImporter")
 extern class NodePackageImporter {
 
 	/** Creates a new Node.js package importer. **/

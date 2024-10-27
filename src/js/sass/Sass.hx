@@ -3,7 +3,7 @@ package js.sass;
 import js.lib.Promise;
 
 /** Compiles Sass stylesheets to CSS. **/
-@:jsRequire("sass-embedded")
+@:jsRequire(#if sass_embedded "sass-embedded" #else "sass" #end)
 extern class Sass {
 
 	/** Synchronously compiles the Sass file at the specified `path` to CSS. **/

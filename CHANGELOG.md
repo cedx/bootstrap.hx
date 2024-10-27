@@ -1,5 +1,11 @@
 # Changelog
 
+## Version [4.0.0](https://github.com/cedx/bootstrap.hx/compare/v3.2.0...v4.0.0)
+- Breaking change: renamed the `js.sass.Importer.BootstrapImporter` class to `bootstrap.SassImporter`.
+- Added the `CanonicalizeContext` type.
+- Added support for the [sass](https://www.npmjs.com/package/sass) package.
+- Fixed the definition of the `FileImporter` type.
+
 ## Version [3.2.0](https://github.com/cedx/bootstrap.hx/compare/v3.1.1...v3.2.0)
 - Updated the externs of the [sass-embedded](https://www.npmjs.com/package/sass-embedded) package.
 

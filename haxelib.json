@@ -4,7 +4,7 @@
 	"description": "Bundle providing Bootstrap and Bootstrap Icons in one package.",
 	"license": "MIT",
 	"name": "bootstrap_bundle",
-	"releasenote": "Updated the externs of the `sass-embedded` package.",
+	"releasenote": "Renamed the `js.sass.Importer.BootstrapImporter` class to `bootstrap.SassImporter`, added the `CanonicalizeContext` type, added support for the `sass` package, fixed the definition of the `FileImporter` type.",
 	"tags": ["bootstrap", "css", "extern", "icons", "js", "sass", "scss", "ui"],
 	"url": "https://github.com/cedx/bootstrap.hx",
 	"version": "4.0.0"

@@ -1,7 +1,7 @@
 # MIT License
-Copyright (c) Cédric Belin  
-Copyright (c) The Bootstrap Authors  
-Copyright (c) Twitter, Inc.
+Copyright © Cédric Belin  
+Copyright © The Bootstrap Authors  
+Copyright © Twitter, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
